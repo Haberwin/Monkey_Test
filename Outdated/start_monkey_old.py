@@ -18,14 +18,14 @@ test_time = re.findall(r'\d+', config.get('monkey', 'test time'))
 
 def start_monkey():
     """ Start Monkey"""
-   
+
     devices = get_devices()
 
     if not devices:
         print('No devices found. Exit')
         return
     else:
-        with open('setting.ini', 'w') as f:
+        with open('../Main/setting.ini', 'w') as f:
             config.set('monkey', 'start time',
                        value=start_time.strftime("%Y%m%d_%H%M%S"))
             config.write(f)
@@ -61,7 +61,6 @@ def start_monkey():
             print('Exit!')
 
 
-
 def get_devices():
     pipe = subprocess.Popen(
         'adb devices', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
@@ -83,8 +82,6 @@ def run_monkey(serial_no):
         'start /b adb -s {0} shell "{1}" > {2}/monkey-{0}-{3}.txt'.format(
             serial_no, monkey_command, log_path / 'Monkey-log', datetime.now().strftime("%Y%m%d%H%M%S")),
         shell=True)
-
-
 
 
 def assert_monkey_ps(do_next=True):

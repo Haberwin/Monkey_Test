@@ -73,13 +73,15 @@ def run_monkey(serial_no):
     print("Push blacklist...")
     subprocess.Popen('adb -s {0} push blacklist.txt /sdcard/'.format(serial_no), shell=True)
     monkey_command = config.get('monkey', 'command')
-    print('adb -s {0} shell {1} '.format(serial_no, monkey_command))
-    run_cmd = 'start /b adb -s {0} shell "{1}" > {2}/monkey-{0}-{3}.txt'
+    # print('adb -s {0} shell {1} '.format(serial_no, monkey_command))
+    run_cmd = 'start /b adb -s {0} shell "{1}" >> {2}/monkey-{0}-{3}.txt'
     if platform.system().__eq__('Linux'):
-        run_cmd = 'adb -s {0} shell "{1}" > {2}/monkey-{0}-{3}.txt &'
+        run_cmd = 'adb -s {0} shell "{1}" >> {2}/monkey-{0}-{3}.txt &'
+    print(run_cmd.format(
+            serial_no, monkey_command, log_path / 'Monkey-log', start_time.strftime("%Y%m%d%H%M%S")))
     subprocess.Popen(
         run_cmd.format(
-            serial_no, monkey_command, log_path / 'Monkey-log', datetime.now().strftime("%Y%m%d%H%M%S")),
+            serial_no, monkey_command, log_path / 'Monkey-log', start_time.strftime("%Y%m%d%H%M%S")),
         shell=True)
 
 
@@ -91,7 +93,6 @@ def assert_monkey_ps(do_next=True):
     assert_cmd = "adb -s {0} shell ps | findstr monkey"
     if platform.system().__eq__('Linux'):
         assert_cmd = 'adb -s {0} shell ps | grep monkey'
-
     for serial_no in devices:
         monkey_ps = subprocess.Popen(assert_cmd.format(serial_no), shell=True,
                                      stdout=subprocess.PIPE)

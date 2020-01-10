@@ -73,7 +73,7 @@ class ParseLog(object):
                         f'\r\nNO.{index}\t{aee_type[index]}\r\nInfo:{aee_info[index]} in the module {aee_err_package[index]} at {aee_err_time[index]},error path:{aee_parent_path[index]} \n AEE file path:\r\n{log_url}{aee_parent[index]}')
         print(self.aee_dict)
         print(self.Issue_Description)
-        with open("Report.txt", "w") as report:
+        with open("../Main/Report.txt", "w") as report:
             report.write(self.Issue_Description)
 
     def create_issue(self, redmine_url, project_issue, assigned_to):
