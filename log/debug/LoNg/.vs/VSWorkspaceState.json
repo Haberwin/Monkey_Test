@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\resources",
+    "\\resources\\org",
+    "\\resources\\org\\apache\\log4j",
+    "\\sources",
+    "\\sources\\com",
+    "\\sources\\com\\mediatek",
+    "\\sources\\com\\mediatek\\LoNg"
+  ],
+  "SelectedNode": "\\sources\\com\\mediatek\\LoNg\\AdbAdapter.java",
+  "PreviewInSolutionExplorer": false
+}

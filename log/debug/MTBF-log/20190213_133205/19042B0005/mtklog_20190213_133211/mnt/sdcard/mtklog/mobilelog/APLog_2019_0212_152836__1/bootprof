@@ -1,0 +1,108 @@
+<< /proc/bootprof >>:
+----------------------------------------
+0	    BOOT PROF (unit:msec)
+----------------------------------------
+       551        : preloader
+      1645        : lk (Start->Show logo: 580)
+----------------------------------------
+        23.327384 : ON
+       134.832846 :    1-swapper/0       : initcall: arm64_device_init    39.072461ms
+       155.245461 :    1-swapper/0       : initcall: param_sysfs_init    16.129231ms
+       210.526385 :    1-swapper/0       : initcall: ccci_util_init    40.821692ms
+       246.204231 :    1-swapper/0       : initcall: event_trace_init    26.330384ms
+       316.925154 :    1-swapper/0       : initcall: populate_rootfs    53.044846ms
+       387.249846 :    1-swapper/0       : probe: probe=platform_drv_probe drv=musb-hdrc(ffffff800941d260)    15.427000ms
+       387.308923 :    1-swapper/0       : initcall: musb_init    15.982616ms
+       421.263616 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mtkfb(ffffff8009423808)    27.553077ms
+       421.565693 :    1-swapper/0       : initcall: mtkfb_init    28.699692ms
+       518.861078 :    1-swapper/0       : probe: probe=i2c_device_probe drv=aw9523_led(ffffff80094532e0)    15.926000ms
+       673.247078 :    1-swapper/0       : probe: probe=i2c_device_probe drv=leds-AW2013(ffffff8009453470)   153.954615ms
+       673.288309 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mt-i2c(ffffff8009469510)   171.274154ms
+       740.707847 :    1-swapper/0       : probe: probe=i2c_device_probe drv=fg_27542(ffffff8009411a50)    63.617846ms
+       740.788924 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mt-i2c(ffffff8009469510)    64.264000ms
+       741.723693 :    1-swapper/0       : initcall: mt_i2c_init   241.515231ms
+       760.718001 :    1-swapper/0       : probe: probe=platform_drv_probe drv=battery(ffffff800946a3a0)    17.702923ms
+       760.755924 :    1-swapper/0       : probe: pdev=battery(ffffff800946a7b8)    18.011846ms
+       762.907540 :    1-swapper/0       : probe: probe=platform_drv_probe drv=battery-dts(ffffff800946a450)    20.176923ms
+       763.062078 :    1-swapper/0       : initcall: battery_init    21.208847ms
+       917.382771 :    1-swapper/0       : initcall: mt_spm_init    80.524693ms
+       922.595848 :   21-kworker/3:0     : probe: probe=mmc_bus_probe drv=mmcblk(ffffff8009475850)    34.546538ms
+       943.427617 :    1-swapper/0       : probe: probe=i2c_device_probe drv=stk3x1x(ffffff800940e7e0)    24.618692ms
+       943.514848 :    1-swapper/0       : initcall: alsps_init    24.869847ms
+       971.024309 :    1-swapper/0       : probe: probe=i2c_device_probe drv=mir3da(ffffff800940ef58)    27.221923ms
+       971.142771 :    1-swapper/0       : initcall: acc_init    27.561538ms
+      1097.359925 :   53-kworker/u8:1    : probe: probe=i2c_device_probe drv=gt1x(ffffff8009468178)   114.727615ms
+      1097.966079 :   53-kworker/u8:1    : probe: probe=platform_drv_probe drv=mtk-tpd(ffffff8009467900)   115.851154ms
+      1098.696310 :    1-swapper/0       : initcall: mtk_charger_init   116.169846ms
+      1108.381694 :    1-swapper/0       : Kernel_init_done
+      2176.577851 :    1-init            : INIT:early-init
+      2945.749699 :    1-init            : INIT:late-init
+      2946.162314 :    1-init            : INIT:Mount_START
+      3199.246853 :    1-init            : INIT:Mount_END
+      3320.074623 :    1-init            : INIT:post-fs
+      3582.958931 :    1-init            : INIT:post-fs-data
+      3621.471700 :    1-init            : post-fs-data: on modem start
+      3777.960316 :    1-init            : INIT:boot
+      3905.655701 :    1-init            : USB ready
+      3998.338470 :  371-vold            : vold:decrypt_master_key:START
+      4117.787317 :  360-ccci_mdinit     : ccci_md3: md_init srv start
+      4176.283394 :  358-ccci_mdinit     : ccci_md1: md_init srv start
+      4180.508548 :  358-ccci_mdinit     : ccci_md1: init
+      4600.514241 :  371-vold            : vold:decrypt_master_key:END
+      4903.857088 :  424-SurfaceFlinger: : BOOT_Animation:START
+      5146.143858 :  371-vold            : vold:cryptfs_restart_internal:START
+      5198.579396 :    1-init            : INIT:vold.decrypt=trigger_post_fs_data
+      5339.666628 :    1-init            : INIT:post-fs-data
+      5393.061012 :    1-init            : post-fs-data: on modem start
+      5775.515398 :    1-init            : INIT:vold.decrypt=trigger_restart_framework
+      6404.929015 :  371-vold            : vold:cryptfs_restart_internal:END
+      6537.731861 :  447-zygote64        : boot_progress_start
+      6989.619708 :  358-ccci_mdinit     : ccci_md1: decpyt ready
+      7000.514478 :  358-ccci_mdinit     : ccci_md1: reset
+      7380.798017 :  358-ccci_mdinit     : ccci_md1: bootup
+      8501.234789 :  358-ccci_mdinit     : ccci_md1: ready
+      8616.635558 :  447-main            : Zygote:Preload Start
+      9234.638483 :  448-main            : Zygote:Preload End
+     10226.251485 :  447-main            : Zygote:Preload 4715 classes in 1439ms
+     10576.048717 :  447-main            : Zygote:Preload 64 obtain resources in 92ms
+     10589.177640 :  447-main            : Zygote:Preload 41 resources in 13ms
+     10883.119333 :  447-main            : Zygote:Preload End
+     11158.795488 :  800-system_server   : Android:SysServerInit_START
+     11959.835566 :  800-system_server   : Android:PackageManagerService_Start
+     12221.274413 :  800-system_server   : Android:PMS_scan_START
+     12246.249106 :  800-system_server   : Android:PMS_scan_data:/vendor/overlay
+     12274.511721 :  800-system_server   : Android:PMS_scan_data:/system/framework
+     12352.299490 :  800-system_server   : Android:PMS_scan_data:/vendor/framework
+     12353.889875 :  800-system_server   : Android:PMS_scan_data:/system/priv-app
+     12835.238492 :  800-system_server   : Android:PMS_scan_data:/system/app
+     13375.789185 :  800-system_server   : Android:PMS_scan_data:/vendor/app
+     13430.102339 :  800-system_server   : Android:PMS_scan_data:/system/plugin
+     13470.510262 :  800-system_server   : Android:PMS_scan_END
+     13484.928185 :  800-system_server   : PMS:reconcileAppsDataLI
+     13957.717802 :  800-system_server   : Android:PMS_READY
+     15583.228344 :  448-main            : Zygote:Preload 4715 classes in 1167ms
+     15807.961191 :  448-main            : Zygote:Preload 64 obtain resources in 103ms
+     15825.359576 :  448-main            : Zygote:Preload 41 resources in 17ms
+     16618.205885 :  800-system_server   : AMS:systemReady
+     16628.785193 :  800-system_server   : AMS:AMS_READY
+     16767.183655 :  800-system_server   : AP_Init:[service]:[com.google.android.inputmethod.pinyin]:[com.google.android.inputmethod.pinyin/.PinyinIME]:pid:986
+     16794.293963 :  800-system_server   : AP_Init:[service]:[com.android.systemui]:[com.android.systemui/.ImageWallpaper]:pid:999:(PersistAP)
+     16945.213809 :  925-system-server-i : AP_Init:[]:[WebViewLoader-armeabi-v7a]:pid:1031
+     16966.048040 :  800-system_server   : SystemServer:NetworkStatsService systemReady
+     16977.380425 :  925-system-server-i : AP_Init:[]:[WebViewLoader-arm64-v8a]:pid:1036
+     17055.477194 :  800-system_server   : SystemServer:ConnectivityService systemReady
+     17080.631502 :  800-system_server   : SystemServer:NetworkPolicyManagerServ systemReady
+     17415.196502 :  800-system_server   : SystemServer:PhaseThirdPartyAppsCanStart
+     17446.925656 :  800-system_server   : AP_Init:[added application]:[com.mediatek.ims]:[com.mediatek.ims]:pid:1110:(PersistAP)
+     17487.345580 :  800-system_server   : AP_Init:[added application]:[com.android.phone]:[com.android.phone]:pid:1127:(PersistAP)
+     17583.831734 :  800-system_server   : AP_Init:[activity]:[com.android.settings]:[com.android.settings/.FallbackHome]:pid:1151
+     17654.972426 :  800-system_server   : Android:SysServerInit_END
+     18012.591735 :  870-ActivityManager : AMS:ENABLE_SCREEN
+     18029.015735 :  877-android.display : AP_Launch: com.android.settings/.FallbackHome 447ms
+     19057.993891 :  870-ActivityManager : AP_Init:[broadcast]:[com.mediatek.ppl]:[com.mediatek.ppl/.PplReceiver]:pid:1342
+     19200.104430 : 1016-Binder:800_5    : AP_Init:[broadcast]:[com.android.cellbroadcastreceiver]:[com.android.cellbroadcastreceiver/.CellBroadcastReceiver]:pid:1359
+     22417.641899 :  535-Binder:364_3    : BOOT_Animation:END
+     22417.674130 : OFF
+----------------------------------------
+================ END of FILE ===============
+

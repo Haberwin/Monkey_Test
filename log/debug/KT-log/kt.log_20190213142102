@@ -1,0 +1,4 @@
+[2019-02-13 14:20:51,257] (main)(Configuration.java): ConfigDescriptor [sleep=5, logPath=/data/aee_exp/,/data/core/,/data/tombstones/,/data/mdlog/bootupLog/,/mnt/sdcard0/mtklog/,/mnt/sdcard/mtklog/,/mnt/sdcard/sdcard2/mtklog/,/mnt/sdcard2/mtklog/,/mnt/sdcard1/mtklog/,/mnt/m_external_sd/mtklog,, pcStoragePath=D:\AutoTest\monkey\log\debug, pull_modem_log=true]
+[2019-02-13 14:20:51,263] (main)(Main.java): LoNg version: v2.1710.5
+[2019-02-13 14:20:51,274] (main)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb devices
+[2019-02-13 14:20:51,368] (main)(Main.java): No devices!!!

@@ -1,0 +1,987 @@
+----- timezone:GMT
+[ATF](0)[0.898990]INFO:    ATF log service is registered (0xbfe00000, aee:0xbfe3c000)
+[ATF](0)[0.899911]NOTICE:  BL3-1: v1.3(debug):c4f8b9a
+[ATF](0)[0.900503]NOTICE:  BL3-1: Built : 02:15:34, Feb  6 2019
+[ATF](0)[0.901204]NOTICE:  BL31: v1.3(debug):c4f8b9a
+[ATF](0)[0.901785]NOTICE:  BL31: Built : 02:15:34, Feb  6 2019
+[ATF](0)[0.902498]NOTICE:  call pccif1_hw_init
+[ATF](0)[0.902999]INFO:    BL31: Initializing runtime services
+[ATF](0)[0.903699]INFO:    BL31: Preparing for EL3 exit to normal world
+[ATF](0)[0.904474]INFO:    Entry point address = 0x46000000
+[ATF](0)[0.905131]INFO:    SPSR = 0x1d3
+[ATF](0)[0.905576]NOTICE:  NS-SCR_EL3_EFIN=0x4
+[ATF](0)[1.306121]INFO:    LK Dump
+[ATF](0)[1.306493]INFO:    - Buf addr:0xbfe18000 buf size:131072 flag addr:0xbfe00040 flag:0x41544641
+[ATF](0)[2.023636]INFO:    ROT: 0xb2e64153, 0xa7796964, 0x3065570e, 0x10f3a107
+[ATF](0)[2.023713]INFO:    ROT: 0xec219416, 0x1a9fdd9b, 0x5af74856, 0xf15a00de
+[ATF](0)[2.023786]INFO:    ROT: 0x1, 0x0, 0x1004012c, 0x0
+[ATF](0)[2.030858]INFO:    #@# spm_config_spmfw_base(1111) spm_base_addr 0x77ac0000, spm_base_size 0x10000
+[ATF](0)[2.032011]INFO:    mmap:
+[ATF](0)[2.032373]INFO:     VA:0x100000  PA:0x100000  size:0x1000  attr:0xa
+[ATF](0)[2.033202]INFO:     VA:0x10d000  PA:0x10d000  size:0x1000  attr:0x18
+[ATF](0)[2.034042]INFO:     VA:0xc000000  PA:0xc000000  size:0x700000  attr:0x8
+[ATF](0)[2.034914]INFO:     VA:0xc500000  PA:0xc500000  size:0x10000  attr:0x8
+[ATF](0)[2.035775]INFO:     VA:0x10000000  PA:0x10000000  size:0xc00000  attr:0x8
+[ATF](0)[2.036669]INFO:     VA:0x11000000  PA:0x11000000  size:0x4000000  attr:0x8
+[ATF](0)[2.037574]INFO:     VA:0x201d7000  PA:0x201d7000  size:0x1000  attr:0x8
+[ATF](0)[2.038446]INFO:     VA:0x44600000  PA:0x44600000  size:0x3f000  attr:0xa
+[ATF](0)[2.039329]INFO:     VA:0x44601000  PA:0x44601000  size:0x1b000  attr:0x2
+[ATF](0)[2.040212]INFO:     VA:0x4463e000  PA:0x4463e000  size:0x1000  attr:0x8
+[ATF](0)[2.041085]INFO:     VA:0x77ac0000  PA:0x77ac0000  size:0x10000  attr:0xa
+[ATF](0)[2.041968]INFO:     VA:0xbfe00000  PA:0xbfe00000  size:0x200000  attr:0x18
+[ATF](0)[2.042872]INFO:    
+[ATF](0)[2.045228]INFO:    #@# spm_load_pcm_firmware(144) use spmfw partition for pcm_suspend_dvfs.bin - suspend_dvfs_v2p2_1
+[ATF](0)[2.046572]INFO:    #@# spm_load_pcm_firmware(144) use spmfw partition for pcm_deepidle_dvfs.bin - deepidle_dvfs_v2p2_1
+[ATF](0)[2.047950]INFO:    #@# spm_load_pcm_firmware(144) use spmfw partition for pcm_sodi_dvfs.bin - sodi_dvfs_v2p2_1
+[ATF](0)[2.053162]INFO:    [mcdi] from LK: mcdi_base_addr 0x77ab0000, mcdi_base_size 0x10000
+[ATF](0)[2.054162]INFO:    mmap:
+[ATF](0)[2.054525]INFO:     VA:0x100000  PA:0x100000  size:0x1000  attr:0xa
+[ATF](0)[2.055354]INFO:     VA:0x10d000  PA:0x10d000  size:0x1000  attr:0x18
+[ATF](0)[2.056194]INFO:     VA:0xc000000  PA:0xc000000  size:0x700000  attr:0x8
+[ATF](0)[2.057066]INFO:     VA:0xc500000  PA:0xc500000  size:0x10000  attr:0x8
+[ATF](0)[2.057928]INFO:     VA:0x10000000  PA:0x10000000  size:0xc00000  attr:0x8
+[ATF](0)[2.058822]INFO:     VA:0x11000000  PA:0x11000000  size:0x4000000  attr:0x8
+[ATF](0)[2.059726]INFO:     VA:0x201d7000  PA:0x201d7000  size:0x1000  attr:0x8
+[ATF](0)[2.060599]INFO:     VA:0x44600000  PA:0x44600000  size:0x3f000  attr:0xa
+[ATF](0)[2.061482]INFO:     VA:0x44601000  PA:0x44601000  size:0x1b000  attr:0x2
+[ATF](0)[2.062365]INFO:     VA:0x4463e000  PA:0x4463e000  size:0x1000  attr:0x8
+[ATF](0)[2.063237]INFO:     VA:0x77ab0000  PA:0x77ab0000  size:0x10000  attr:0xa
+[ATF](0)[2.064120]INFO:     VA:0x77ac0000  PA:0x77ac0000  size:0x10000  attr:0xa
+[ATF](0)[2.065003]INFO:     VA:0xbfe00000  PA:0xbfe00000  size:0x200000  attr:0x18
+[ATF](0)[2.065908]INFO:    
+[ATF](0)[2.068362]INFO:    [mcdi] binary start at 0x77ab0044
+[ATF](0)[2.069016]INFO:    [mcdi] desc start at 0x77ab0b4c
+[ATF](0)[2.069662]INFO:    [mcdi] desc.pmem_words : 0x2c2
+[ATF](0)[2.070297]INFO:    [mcdi] desc.dmem_start : 0x10000000
+[ATF](0)[2.070988]INFO:    [mcdi] use mcupmfw partition for mcdi.bin - mcdi_20170824
+[ATF](0)[2.333669]NOTICE:  sip_amms_set_md_base_address:357 md_base_address = 62000000
+[ATF](0)[2.333752]NOTICE:  sip_amms_get_md_base_address:365 md_base_address = 62000000
+[ATF](0)[2.587877]INFO:    [DAPC] Walk Non-TEE (ATF only)
+[ATF](0)[2.588120]INFO:    [DAPC] (INFRA)D0_APC_0 = 0x10000000, (INFRA)D1_APC_0 = 0x30ff23c3, (INFRA)D7_APC_0 = 0x0
+[ATF](0)[2.588225]INFO:    [DAPC] (INFRA)D0_APC_1 = 0x1043000, (INFRA)D1_APC_1 = 0xfffc8fcf, (INFRA)D7_APC_1 = 0x0
+[ATF](0)[2.588326]INFO:    [DAPC] (INFRA)D0_APC_2 = 0x0, (INFRA)D1_APC_2 = 0xfc0fffff, (INFRA)D7_APC_2 = 0x0
+[ATF](0)[2.588424]INFO:    [DAPC] (INFRA)D0_APC_3 = 0x1, (INFRA)D1_APC_3 = 0xfc33ffff, (INFRA)D7_APC_3 = 0x0
+[ATF](0)[2.588521]INFO:    [DAPC] (INFRA)D0_APC_4 = 0x0, (INFRA)D1_APC_4 = 0xffff3fff, (INFRA)D7_APC_4 = 0x0
+[ATF](0)[2.588617]INFO:    [DAPC] (INFRA)D0_APC_5 = 0x0, (INFRA)D1_APC_5 = 0xfffffff3, (INFRA)D7_APC_5 = 0x0
+[ATF](0)[2.588714]INFO:    [DAPC] (INFRA)D0_APC_6 = 0x80000c, (INFRA)D1_APC_6 = 0xff0ffff0, (INFRA)D7_APC_6 = 0x0
+[ATF](0)[2.588815]INFO:    [DAPC] (INFRA)D0_APC_7 = 0x0, (INFRA)D1_APC_7 = 0xf3f3fff, (INFRA)D7_APC_7 = 0x0
+[ATF](0)[2.588912]INFO:    [DAPC] (INFRA)D0_APC_8 = 0x0, (INFRA)D1_APC_8 = 0x0, (INFRA)D7_APC_8 = 0x0
+[ATF](0)[2.589003]INFO:    [DAPC] (INFRA)D0_APC_9 = 0x0, (INFRA)D1_APC_9 = 0x0, (INFRA)D7_APC_9 = 0x0
+[ATF](0)[2.589094]INFO:    [DAPC] (INFRA)D0_APC_10 = 0x0, (INFRA)D1_APC_10 = 0x0, (INFRA)D7_APC_10 = 0x0
+[ATF](0)[2.589187]INFO:    [DAPC] (INFRA)D0_APC_11 = 0x0, (INFRA)D1_APC_11 = 0x0, (INFRA)D7_APC_11 = 0x0
+[ATF](0)[2.589280]INFO:    [DAPC] (MM)D0_APC_0 = 0x0, (MM)D3_APC_0 = 0xffffffff
+[ATF](0)[2.589352]INFO:    [DAPC] (MM)D0_APC_1 = 0x0, (MM)D3_APC_1 = 0xffffffff
+[ATF](0)[2.589424]INFO:    [DAPC] (MM)D0_APC_2 = 0x0, (MM)D3_APC_2 = 0xffffffff
+[ATF](0)[2.589496]INFO:    [DAPC] (MM)D0_APC_3 = 0x0, (MM)D3_APC_3 = 0xff
+[ATF](0)[2.589562]INFO:    [DAPC] (MM)D0_APC_4 = 0x0, (MM)D3_APC_4 = 0x0
+[ATF](0)[2.589628]INFO:    [DAPC] (MM)D0_APC_5 = 0x0, (MM)D3_APC_5 = 0x0
+[ATF](0)[2.589693]INFO:    [DAPC] (MD)D0_APC_0 = 0xfffff800, (MD)D3_APC_0 = 0xffffffff
+[ATF](0)[2.589771]INFO:    [DAPC] (MD)D0_APC_1 = 0xffffffff, (MD)D3_APC_1 = 0xffffffff
+[ATF](0)[2.589848]INFO:    [DAPC] (INFRA)MAS_SEC_0 = 0x0
+[ATF](0)[2.589900]INFO:    [DAPC] (INFRA)VIO_STA_0=0x0
+[ATF](0)[2.589951]INFO:    [DAPC] (INFRA)VIO_STA_1=0x0
+[ATF](0)[2.590001]INFO:    [DAPC] (INFRA)VIO_STA_2=0x0
+[ATF](0)[2.590051]INFO:    [DAPC] (INFRA)VIO_STA_3=0x0
+[ATF](0)[2.590101]INFO:    [DAPC] (INFRA)VIO_STA_4=0x0
+[ATF](0)[2.590151]INFO:    [DAPC] (INFRA)VIO_STA_5=0x0
+[ATF](0)[2.590201]INFO:    [DAPC] (INFRA)VIO_STA_6=0x80
+[ATF](0)[2.590252]INFO:    [DAPC] (INFRA)VIO_STA_7=0x0
+[ATF](0)[2.590302]INFO:    [DAPC] (INFRA)VIO_STA_8=0x0
+[ATF](0)[2.590352]INFO:    [DAPC] (INFRA)VIO_STA_9=0x0
+[ATF](0)[2.590402]INFO:    
+[DAPC] MM_SEC_EN_0: 0x0, MM_SEC_EN_1: 0x0
+[ATF](0)[2.590466]INFO:    [DAPC] INFRA_AO_SEC_CON = 0x10200
+[ATF](0)[2.590522]INFO:    [DAPC] INFRA_AO_SEC_CG_CON 0: 0x20, 1: 0x18100200, 2: 0x0, 3: 0x0
+[ATF](0)[2.590605]INFO:    [DAPC] Init Done
+[ATF](0)[2.590645]INFO:    [DAPC] INFRA_APC_CON = 0x1, MM_APC_CON = 0x1, MD_APC_CON = 0x1
+[ATF](0)[2.607835]INFO:    save kernel info
+[ATF](0)[2.608304]INFO:    Kernel_EL 2
+[ATF](0)[2.608734]NOTICE:  Kernel is 64Bit
+[ATF](0)[2.609208]NOTICE:  pc=0x40080000, r0=0x44000000, r1=0x0
+[ATF](0)[2.609909]INFO:    BL3-1: Preparing for EL3 exit to normal world, Kernel
+[ATF](0)[2.610791]INFO:    BL3-1: Next image address = 0x40080000
+[ATF](0)[2.611513]INFO:    BL3-1: Next image spsr = 0x3c9
+[ATF](0)[2.612153]INFO:    el3_exit
+[ATF](0)[2.789427]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)[2.789536]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)[2.789639]INFO:    spmc: power on core 0.1
+[ATF](0)[2.789702]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)[2.789759]INFO:    psci: core 0:1 ON
+[ATF](0)[2.790480]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)[2.790586]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)[2.790690]INFO:    spmc: power on core 0.2
+[ATF](0)[2.790752]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)[2.790809]INFO:    psci: core 0:2 ON
+[ATF](0)[2.791473]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)[2.791578]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)[2.791681]INFO:    spmc: power on core 0.3
+[ATF](0)[2.791744]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)[2.791801]INFO:    psci: core 0:3 ON
+[ATF](1)[2.841604]NOTICE:  MTK_SIP_KERNEL_WDT : 0xffffff80087178ac 
+[ATF](1)[2.841670]NOTICE:  teearg->atf_aee_debug_buf_start : 0xbfe3c000 
+[ATF](2)[3.230058]INFO:    SIP_KTIME: 0x1c678bed 0x0 atf: 0xc086bb8b
+[ATF](2)K:[0.476549]INFO:    ATF wall time is now synced with kernel, 0x1c678c3a
+[ATF](1)K:[35.176876]INFO:    psci: core 0:1 OFF
+[ATF](0)K:[35.192776]INFO:    [ATF]Power down core 1
+[ATF](0)K:[35.192867]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[35.192958]INFO:    spmc: power off core 0.1
+[ATF](0)K:[35.193056]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[35.197686]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[35.212755]INFO:    [ATF]Power down core 2
+[ATF](0)K:[35.212845]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[35.212936]INFO:    spmc: power off core 0.2
+[ATF](0)K:[35.213033]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[35.217154]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[35.232787]INFO:    [ATF]Power down core 3
+[ATF](0)K:[35.232877]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[35.232968]INFO:    spmc: power off core 0.3
+[ATF](0)K:[35.233066]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[35.430542]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[35.430834]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[35.431089]INFO:    md_settle = 99, settle = 99
+[ATF](0)[36.183560]INFO:    spm_wake_reason=4
+[ATF](0)[36.186167]INFO:    SIP_KTIME: 0x83438a7b0 0x0 atf: 0x86cdd081f
+[ATF](0)K:[35.235869]INFO:    ATF wall time is now synced with kernel, 0x83438a84a
+[ATF](0)K:[35.236415]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[35.236604]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[35.236790]INFO:    spmc: power on core 0.1
+[ATF](0)K:[35.236890]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[36.187411]INFO:    psci: core 0:1 ON
+[ATF](0)K:[35.238874]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[35.239063]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[35.239248]INFO:    spmc: power on core 0.2
+[ATF](0)K:[35.239348]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[36.189869]INFO:    psci: core 0:2 ON
+[ATF](0)K:[35.241682]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[35.241871]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[35.242057]INFO:    spmc: power on core 0.3
+[ATF](0)K:[35.242157]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[36.192678]INFO:    psci: core 0:3 ON
+[ATF](1)K:[36.020188]INFO:    psci: core 0:1 OFF
+[ATF](3)K:[36.032674]INFO:    [ATF]Power down core 1
+[ATF](3)K:[36.032765]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[36.032856]INFO:    spmc: power off core 0.1
+[ATF](3)K:[36.032954]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[36.036778]INFO:    psci: core 0:2 OFF
+[ATF](3)K:[36.052589]INFO:    [ATF]Power down core 2
+[ATF](3)K:[36.052680]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[36.052771]INFO:    spmc: power off core 0.2
+[ATF](3)K:[36.052869]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[36.056217]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[36.068626]INFO:    [ATF]Power down core 3
+[ATF](0)K:[36.068717]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[36.068808]INFO:    spmc: power off core 0.3
+[ATF](0)K:[36.068905]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[36.072379]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[36.072669]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[36.072926]INFO:    md_settle = 99, settle = 99
+[ATF](0)[41.565847]INFO:    spm_wake_reason=4
+[ATF](0)[41.567155]INFO:    SIP_KTIME: 0x866024097 0x0 atf: 0x9ad9865b8
+[ATF](0)K:[36.071164]INFO:    ATF wall time is now synced with kernel, 0x866024131
+[ATF](0)K:[36.071775]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[36.071964]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[36.072150]INFO:    spmc: power on core 0.1
+[ATF](0)K:[36.072250]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)[41.568464]INFO:    psci: core 0:1 ON
+[ATF](0)K:[36.074222]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[36.074411]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[36.074596]INFO:    spmc: power on core 0.2
+[ATF](0)K:[36.074696]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[41.570910]INFO:    psci: core 0:2 ON
+[ATF](0)K:[36.077015]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[36.077205]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[36.077390]INFO:    spmc: power on core 0.3
+[ATF](0)K:[36.077491]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[41.573705]INFO:    psci: core 0:3 ON
+[ATF](1)K:[36.491897]INFO:    psci: core 0:1 OFF
+[ATF](2)K:[36.504609]INFO:    [ATF]Power down core 1
+[ATF](2)K:[36.504700]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](2)K:[36.504792]INFO:    spmc: power off core 0.1
+[ATF](2)K:[36.504890]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[36.508573]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[36.524527]INFO:    [ATF]Power down core 2
+[ATF](0)K:[36.524617]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[36.524709]INFO:    spmc: power off core 0.2
+[ATF](0)K:[36.524807]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[36.528247]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[36.540499]INFO:    [ATF]Power down core 3
+[ATF](0)K:[36.540590]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[36.540681]INFO:    spmc: power off core 0.3
+[ATF](0)K:[36.540779]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[36.542990]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[36.543281]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[36.543537]INFO:    md_settle = 99, settle = 99
+[ATF](0)[38.065422]INFO:    spm_wake_reason=4
+[ATF](0)[38.066614]INFO:    SIP_KTIME: 0x8821d2384 0x0 atf: 0x8dcf2608b
+[ATF](0)K:[36.542689]INFO:    ATF wall time is now synced with kernel, 0x8821d246a
+[ATF](0)K:[36.543236]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[36.543425]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[36.543610]INFO:    spmc: power on core 0.1
+[ATF](0)K:[36.543710]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[38.067858]INFO:    psci: core 0:1 ON
+[ATF](0)K:[36.545723]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[36.545912]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[36.546097]INFO:    spmc: power on core 0.2
+[ATF](0)K:[36.546197]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[38.070345]INFO:    psci: core 0:2 ON
+[ATF](0)K:[36.548500]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[36.548690]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[36.548876]INFO:    spmc: power on core 0.3
+[ATF](0)K:[36.548976]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[38.073124]INFO:    psci: core 0:3 ON
+[ATF](1)K:[36.987513]INFO:    psci: core 0:1 OFF
+[ATF](2)K:[37.000515]INFO:    [ATF]Power down core 1
+[ATF](2)K:[37.000607]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](2)K:[37.000698]INFO:    spmc: power off core 0.1
+[ATF](2)K:[37.000795]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[37.004482]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[37.020433]INFO:    [ATF]Power down core 2
+[ATF](0)K:[37.020524]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[37.020616]INFO:    spmc: power off core 0.2
+[ATF](0)K:[37.020713]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[37.024280]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[37.025374]INFO:    [ATF]Power down core 3
+[ATF](0)K:[37.025463]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[37.025554]INFO:    spmc: power off core 0.3
+[ATF](0)K:[37.025652]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[37.027899]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[37.028191]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[37.028446]INFO:    md_settle = 99, settle = 99
+[ATF](0)[38.036054]INFO:    spm_wake_reason=4
+[ATF](0)[38.037370]INFO:    SIP_KTIME: 0x89f045722 0x0 atf: 0x8db342329
+[ATF](0)K:[37.027603]INFO:    ATF wall time is now synced with kernel, 0x89f045808
+[ATF](0)K:[37.028453]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[37.028643]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[37.028828]INFO:    spmc: power on core 0.1
+[ATF](0)K:[37.028928]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[38.038917]INFO:    psci: core 0:1 ON
+[ATF](0)K:[37.030927]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[37.031115]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[37.031300]INFO:    spmc: power on core 0.2
+[ATF](0)K:[37.031400]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[38.041389]INFO:    psci: core 0:2 ON
+[ATF](0)K:[37.033772]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[37.033962]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[37.034148]INFO:    spmc: power on core 0.3
+[ATF](0)K:[37.034249]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[38.044239]INFO:    psci: core 0:3 ON
+[ATF](1)K:[49.076070]INFO:    psci: core 0:1 OFF
+[ATF](0)K:[49.088374]INFO:    [ATF]Power down core 1
+[ATF](0)K:[49.088465]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[49.088555]INFO:    spmc: power off core 0.1
+[ATF](0)K:[49.088654]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[49.092804]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[49.108311]INFO:    [ATF]Power down core 2
+[ATF](0)K:[49.108401]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[49.108492]INFO:    spmc: power off core 0.2
+[ATF](0)K:[49.108590]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[49.112533]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[49.112742]INFO:    [ATF]Power down core 3
+[ATF](0)K:[49.112832]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[49.112924]INFO:    spmc: power off core 0.3
+[ATF](0)K:[49.113022]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[49.115579]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[49.115870]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[49.116126]INFO:    md_settle = 99, settle = 99
+[ATF](0)[49.632263]INFO:    spm_wake_reason=4
+[ATF](0)[49.633459]INFO:    SIP_KTIME: 0xb6f7f23e9 0x0 atf: 0xb8e626985
+[ATF](0)K:[49.115246]INFO:    ATF wall time is now synced with kernel, 0xb6f7f2483
+[ATF](0)K:[49.115793]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[49.115982]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[49.116167]INFO:    spmc: power on core 0.1
+[ATF](0)K:[49.116267]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[49.634702]INFO:    psci: core 0:1 ON
+[ATF](0)K:[49.118236]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[49.118425]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[49.118611]INFO:    spmc: power on core 0.2
+[ATF](0)K:[49.118711]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[49.637147]INFO:    psci: core 0:2 ON
+[ATF](0)K:[49.121019]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[49.121209]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[49.121395]INFO:    spmc: power on core 0.3
+[ATF](0)K:[49.121496]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[49.639931]INFO:    psci: core 0:3 ON
+[ATF](1)K:[49.873627]INFO:    psci: core 0:1 OFF
+[ATF](3)K:[49.888109]INFO:    [ATF]Power down core 1
+[ATF](3)K:[49.888169]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[49.888229]INFO:    spmc: power off core 0.1
+[ATF](3)K:[49.888295]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[49.890205]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[49.904120]INFO:    [ATF]Power down core 2
+[ATF](0)K:[49.904179]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[49.904239]INFO:    spmc: power off core 0.2
+[ATF](0)K:[49.904305]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[49.906101]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[49.920112]INFO:    [ATF]Power down core 3
+[ATF](0)K:[49.920171]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[49.920232]INFO:    spmc: power off core 0.3
+[ATF](0)K:[49.920298]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[49.921762]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[49.921981]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[49.922171]INFO:    md_settle = 99, settle = 99
+[ATF](0)[53.453893]INFO:    spm_wake_reason=4
+[ATF](0)[53.454597]INFO:    SIP_KTIME: 0xb9f8ff029 0x0 atf: 0xc7224625b
+[ATF](0)K:[49.921652]INFO:    ATF wall time is now synced with kernel, 0xb9f8ff076
+[ATF](0)K:[49.921981]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[49.922107]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[49.922230]INFO:    spmc: power on core 0.1
+[ATF](0)K:[49.922297]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)[53.455388]INFO:    psci: core 0:1 ON
+[ATF](0)K:[49.923255]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[49.923379]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[49.923502]INFO:    spmc: power on core 0.2
+[ATF](0)K:[49.923569]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[53.456660]INFO:    psci: core 0:2 ON
+[ATF](0)K:[49.924597]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[49.924722]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[49.924846]INFO:    spmc: power on core 0.3
+[ATF](0)K:[49.924914]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[53.458005]INFO:    psci: core 0:3 ON
+[ATF](1)K:[79.383226]INFO:    psci: core 0:1 OFF
+[ATF](3)K:[79.396221]INFO:    [ATF]Power down core 1
+[ATF](3)K:[79.396311]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[79.396403]INFO:    spmc: power off core 0.1
+[ATF](3)K:[79.396501]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[79.400441]INFO:    psci: core 0:2 OFF
+[ATF](3)K:[79.416189]INFO:    [ATF]Power down core 2
+[ATF](3)K:[79.416280]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[79.416371]INFO:    spmc: power off core 0.2
+[ATF](3)K:[79.416469]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[79.420210]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[79.436196]INFO:    [ATF]Power down core 3
+[ATF](0)K:[79.436287]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[79.436379]INFO:    spmc: power off core 0.3
+[ATF](0)K:[79.436477]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[79.439111]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[79.439402]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[79.439658]INFO:    md_settle = 99, settle = 99
+[ATF](0)[79.581870]INFO:    spm_wake_reason=4
+[ATF](0)[79.583078]INFO:    SIP_KTIME: 0x127eeb54b0 0x0 atf: 0x128785578f
+[ATF](0)K:[79.438766]INFO:    ATF wall time is now synced with kernel, 0x127eeb5597
+[ATF](0)K:[79.439317]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[79.439506]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[79.439691]INFO:    spmc: power on core 0.1
+[ATF](0)K:[79.439790]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[79.584328]INFO:    psci: core 0:1 ON
+[ATF](0)K:[79.441759]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[79.441948]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[79.442133]INFO:    spmc: power on core 0.2
+[ATF](0)K:[79.442233]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[79.586771]INFO:    psci: core 0:2 ON
+[ATF](0)K:[79.444428]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[79.444618]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[79.444803]INFO:    spmc: power on core 0.3
+[ATF](0)K:[79.444903]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[79.589441]INFO:    psci: core 0:3 ON
+[ATF](1)K:[87.539428]INFO:    psci: core 0:1 OFF
+[ATF](3)K:[87.552072]INFO:    [ATF]Power down core 1
+[ATF](3)K:[87.552162]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[87.552254]INFO:    spmc: power off core 0.1
+[ATF](3)K:[87.552352]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[87.556171]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[87.572069]INFO:    [ATF]Power down core 2
+[ATF](0)K:[87.572159]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[87.572251]INFO:    spmc: power off core 0.2
+[ATF](0)K:[87.572349]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[87.576050]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[87.592039]INFO:    [ATF]Power down core 3
+[ATF](0)K:[87.592129]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[87.592220]INFO:    spmc: power off core 0.3
+[ATF](0)K:[87.592318]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[87.594668]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[87.594959]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[87.595215]INFO:    md_settle = 99, settle = 99
+[ATF](0)[109.762577]INFO:    spm_wake_reason=4
+[ATF](0)[109.763786]INFO:    SIP_KTIME: 0x146507f8e3 0x0 atf: 0x198e6e6541
+[ATF](0)K:[87.594370]INFO:    ATF wall time is now synced with kernel, 0x146507f9ca
+[ATF](0)K:[87.594919]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[87.595108]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[87.595293]INFO:    spmc: power on core 0.1
+[ATF](0)K:[87.595393]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[109.765036]INFO:    psci: core 0:1 ON
+[ATF](0)K:[87.597392]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[87.597580]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[87.597766]INFO:    spmc: power on core 0.2
+[ATF](0)K:[87.597866]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[109.767509]INFO:    psci: core 0:2 ON
+[ATF](0)K:[87.600026]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[87.600217]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[87.600402]INFO:    spmc: power on core 0.3
+[ATF](0)K:[87.600503]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[87.600606]INFO:    psci: core 0:3 ON
+[ATF](1)K:[88.038878]INFO:    psci: core 0:1 OFF
+[ATF](0)K:[88.052022]INFO:    [ATF]Power down core 1
+[ATF](0)K:[88.052113]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[88.052204]INFO:    spmc: power off core 0.1
+[ATF](0)K:[88.052302]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[88.055906]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[88.071948]INFO:    [ATF]Power down core 2
+[ATF](0)K:[88.072038]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[88.072129]INFO:    spmc: power off core 0.2
+[ATF](0)K:[88.072227]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[88.075578]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[88.087925]INFO:    [ATF]Power down core 3
+[ATF](0)K:[88.088015]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[88.088106]INFO:    spmc: power off core 0.3
+[ATF](0)K:[88.088205]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[88.090446]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[88.090737]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[88.090993]INFO:    md_settle = 99, settle = 99
+[ATF](0)[90.053497]INFO:    spm_wake_reason=4
+[ATF](0)[90.054697]INFO:    SIP_KTIME: 0x148295294a 0x0 atf: 0x14f7ad906c
+[ATF](0)K:[88.090162]INFO:    ATF wall time is now synced with kernel, 0x14829529e4
+[ATF](0)K:[88.090708]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[88.090896]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[88.091081]INFO:    spmc: power on core 0.1
+[ATF](0)K:[88.091182]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[90.055942]INFO:    psci: core 0:1 ON
+[ATF](0)K:[88.093185]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[88.093373]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[88.093559]INFO:    spmc: power on core 0.2
+[ATF](0)K:[88.093659]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[90.058420]INFO:    psci: core 0:2 ON
+[ATF](0)K:[88.095647]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[88.095835]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[88.096020]INFO:    spmc: power on core 0.3
+[ATF](0)K:[88.096120]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[90.060881]INFO:    psci: core 0:3 ON
+[ATF](1)K:[88.526863]INFO:    psci: core 0:1 OFF
+[ATF](3)K:[88.539877]INFO:    [ATF]Power down core 1
+[ATF](3)K:[88.539967]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[88.540058]INFO:    spmc: power off core 0.1
+[ATF](3)K:[88.540156]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[88.543659]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[88.555895]INFO:    [ATF]Power down core 2
+[ATF](0)K:[88.555985]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[88.556076]INFO:    spmc: power off core 0.2
+[ATF](0)K:[88.556174]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[88.559455]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[88.571899]INFO:    [ATF]Power down core 3
+[ATF](0)K:[88.571988]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[88.572079]INFO:    spmc: power off core 0.3
+[ATF](0)K:[88.572177]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[88.574456]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[88.574748]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[88.575002]INFO:    md_settle = 99, settle = 99
+[ATF](0)[91.159998]INFO:    spm_wake_reason=4
+[ATF](0)[91.161207]INFO:    SIP_KTIME: 0x149f6e69b1 0x0 atf: 0x1539a192ea
+[ATF](0)K:[88.574162]INFO:    ATF wall time is now synced with kernel, 0x149f6e6a98
+[ATF](0)K:[88.574715]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[88.574911]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[88.575101]INFO:    spmc: power on core 0.1
+[ATF](0)K:[88.575204]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[91.162482]INFO:    psci: core 0:1 ON
+[ATF](1)K:[88.577364]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](1)K:[88.577560]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](1)K:[88.577751]INFO:    spmc: power on core 0.2
+[ATF](1)K:[88.577855]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[91.165133]INFO:    psci: core 0:2 ON
+[ATF](1)K:[88.580001]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](1)K:[88.580196]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](1)K:[88.580387]INFO:    spmc: power on core 0.3
+[ATF](1)K:[88.580490]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[91.167768]INFO:    psci: core 0:3 ON
+[ATF](1)K:[88.994818]INFO:    psci: core 0:1 OFF
+[ATF](0)K:[89.007770]INFO:    [ATF]Power down core 1
+[ATF](0)K:[89.007864]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[89.007958]INFO:    spmc: power off core 0.1
+[ATF](0)K:[89.008059]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[89.011563]INFO:    psci: core 0:2 OFF
+[ATF](3)K:[89.023787]INFO:    [ATF]Power down core 2
+[ATF](3)K:[89.023881]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[89.023975]INFO:    spmc: power off core 0.2
+[ATF](3)K:[89.024076]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[89.027416]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[89.039739]INFO:    [ATF]Power down core 3
+[ATF](0)K:[89.039831]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[89.039924]INFO:    spmc: power off core 0.3
+[ATF](0)K:[89.040025]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[89.042267]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[89.042560]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[89.042818]INFO:    md_settle = 99, settle = 99
+[ATF](0)[89.596807]INFO:    spm_wake_reason=4
+[ATF](0)[89.598013]INFO:    SIP_KTIME: 0x14bb50a469 0x0 atf: 0x14dc75200e
+[ATF](0)K:[89.041973]INFO:    ATF wall time is now synced with kernel, 0x14bb50a54f
+[ATF](0)K:[89.042527]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[89.042722]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[89.042912]INFO:    spmc: power on core 0.1
+[ATF](0)K:[89.043015]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[89.599288]INFO:    psci: core 0:1 ON
+[ATF](0)K:[89.045101]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[89.045296]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[89.045487]INFO:    spmc: power on core 0.2
+[ATF](0)K:[89.045590]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[89.601862]INFO:    psci: core 0:2 ON
+[ATF](0)K:[89.047723]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[89.047918]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[89.048109]INFO:    spmc: power on core 0.3
+[ATF](0)K:[89.048212]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[89.604486]INFO:    psci: core 0:3 ON
+[ATF](1)K:[89.482626]INFO:    psci: core 0:1 OFF
+[ATF](0)K:[89.495711]INFO:    [ATF]Power down core 1
+[ATF](0)K:[89.495805]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[89.495899]INFO:    spmc: power off core 0.1
+[ATF](0)K:[89.496000]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[89.499590]INFO:    psci: core 0:2 OFF
+[ATF](3)K:[89.515684]INFO:    [ATF]Power down core 2
+[ATF](3)K:[89.515775]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[89.515866]INFO:    spmc: power off core 0.2
+[ATF](3)K:[89.515964]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[89.519254]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[89.531651]INFO:    [ATF]Power down core 3
+[ATF](0)K:[89.531741]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[89.531833]INFO:    spmc: power off core 0.3
+[ATF](0)K:[89.531931]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[89.534129]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[89.534421]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[89.534676]INFO:    md_settle = 99, settle = 99
+[ATF](0)[101.089178]INFO:    spm_wake_reason=4
+[ATF](0)[101.090487]INFO:    SIP_KTIME: 0x14d8a1ea2c 0x0 atf: 0x17897659e9
+[ATF](0)K:[89.533838]INFO:    ATF wall time is now synced with kernel, 0x14d8a1eb13
+[ATF](0)K:[89.534444]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[89.534633]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[89.534818]INFO:    spmc: power on core 0.1
+[ATF](0)K:[89.534918]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[101.091795]INFO:    psci: core 0:1 ON
+[ATF](0)K:[89.536949]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[89.537139]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[89.537324]INFO:    spmc: power on core 0.2
+[ATF](0)K:[89.537424]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[101.094300]INFO:    psci: core 0:2 ON
+[ATF](0)K:[89.539521]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[89.539710]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[89.539896]INFO:    spmc: power on core 0.3
+[ATF](0)K:[89.539997]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[101.096872]INFO:    psci: core 0:3 ON
+[ATF](1)K:[89.969798]INFO:    psci: core 0:1 OFF
+[ATF](0)K:[89.983502]INFO:    [ATF]Power down core 1
+[ATF](0)K:[89.983565]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[89.983629]INFO:    spmc: power off core 0.1
+[ATF](0)K:[89.983697]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[89.985622]INFO:    psci: core 0:2 OFF
+[ATF](3)K:[89.999481]INFO:    [ATF]Power down core 2
+[ATF](3)K:[89.999544]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[89.999607]INFO:    spmc: power off core 0.2
+[ATF](3)K:[89.999676]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[90.001577]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[90.015463]INFO:    [ATF]Power down core 3
+[ATF](0)K:[90.015525]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[90.015588]INFO:    spmc: power off core 0.3
+[ATF](0)K:[90.015657]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[90.017014]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[90.017252]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[90.017459]INFO:    md_settle = 99, settle = 99
+[ATF](0)[95.418685]INFO:    spm_wake_reason=4
+[ATF](0)[95.419401]INFO:    SIP_KTIME: 0x14f56ce2ec 0x0 atf: 0x1637707756
+[ATF](0)K:[90.016901]INFO:    ATF wall time is now synced with kernel, 0x14f56ce339
+[ATF](0)K:[90.017232]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[90.017362]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[90.017491]INFO:    spmc: power on core 0.1
+[ATF](0)K:[90.017562]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[95.420217]INFO:    psci: core 0:1 ON
+[ATF](0)K:[90.018643]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[90.018774]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[90.018903]INFO:    spmc: power on core 0.2
+[ATF](0)K:[90.018974]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[95.421628]INFO:    psci: core 0:2 ON
+[ATF](0)K:[90.020081]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[90.020213]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[90.020342]INFO:    spmc: power on core 0.3
+[ATF](0)K:[90.020413]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[95.423068]INFO:    psci: core 0:3 ON
+[ATF](1)K:[90.846473]INFO:    psci: core 0:1 OFF
+[ATF](2)K:[90.859642]INFO:    [ATF]Power down core 1
+[ATF](2)K:[90.859733]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](2)K:[90.859824]INFO:    spmc: power off core 0.1
+[ATF](2)K:[90.859922]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[90.863499]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[90.879596]INFO:    [ATF]Power down core 2
+[ATF](0)K:[90.879687]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[90.879778]INFO:    spmc: power off core 0.2
+[ATF](0)K:[90.879876]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[90.883276]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[90.895514]INFO:    [ATF]Power down core 3
+[ATF](0)K:[90.895604]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[90.895696]INFO:    spmc: power off core 0.3
+[ATF](0)K:[90.895794]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[90.898084]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[90.898376]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[90.898631]INFO:    md_settle = 99, settle = 99
+[ATF](0)[91.037315]INFO:    spm_wake_reason=4
+[ATF](0)[91.038522]INFO:    SIP_KTIME: 0x1529eda945 0x0 atf: 0x1532518c0a
+[ATF](0)K:[90.897757]INFO:    ATF wall time is now synced with kernel, 0x1529eda9df
+[ATF](0)K:[90.898305]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[90.898495]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[90.898681]INFO:    spmc: power on core 0.1
+[ATF](0)K:[90.898781]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[91.039771]INFO:    psci: core 0:1 ON
+[ATF](0)K:[90.900774]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[90.900962]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[90.901148]INFO:    spmc: power on core 0.2
+[ATF](0)K:[90.901248]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[91.042239]INFO:    psci: core 0:2 ON
+[ATF](0)K:[90.903396]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[90.903585]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[90.903770]INFO:    spmc: power on core 0.3
+[ATF](0)K:[90.903871]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[91.044862]INFO:    psci: core 0:3 ON
+[ATF](1)K:[91.334337]INFO:    psci: core 0:1 OFF
+[ATF](2)K:[91.347505]INFO:    [ATF]Power down core 1
+[ATF](2)K:[91.347596]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](2)K:[91.347688]INFO:    spmc: power off core 0.1
+[ATF](2)K:[91.347785]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[91.351273]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[91.367420]INFO:    [ATF]Power down core 2
+[ATF](0)K:[91.367510]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[91.367601]INFO:    spmc: power off core 0.2
+[ATF](0)K:[91.367699]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[91.371055]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[91.383392]INFO:    [ATF]Power down core 3
+[ATF](0)K:[91.383482]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[91.383573]INFO:    spmc: power off core 0.3
+[ATF](0)K:[91.383672]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[91.385844]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[91.386135]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[91.386390]INFO:    md_settle = 99, settle = 99
+[ATF](0)[91.612046]INFO:    spm_wake_reason=4
+[ATF](0)[91.613252]INFO:    SIP_KTIME: 0x154700ac07 0x0 atf: 0x15549339e7
+[ATF](0)K:[91.385542]INFO:    ATF wall time is now synced with kernel, 0x154700acee
+[ATF](0)K:[91.386090]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[91.386280]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[91.386465]INFO:    spmc: power on core 0.1
+[ATF](0)K:[91.386565]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[91.614501]INFO:    psci: core 0:1 ON
+[ATF](0)K:[91.388575]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[91.388765]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[91.388950]INFO:    spmc: power on core 0.2
+[ATF](0)K:[91.389051]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[91.616987]INFO:    psci: core 0:2 ON
+[ATF](0)K:[91.391035]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[91.391223]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[91.391408]INFO:    spmc: power on core 0.3
+[ATF](0)K:[91.391508]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[91.619443]INFO:    psci: core 0:3 ON
+[ATF](1)K:[91.828181]INFO:    psci: core 0:1 OFF
+[ATF](0)K:[91.843289]INFO:    [ATF]Power down core 1
+[ATF](0)K:[91.843361]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[91.843433]INFO:    spmc: power off core 0.1
+[ATF](0)K:[91.843511]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[91.845943]INFO:    psci: core 0:2 OFF
+[ATF](3)K:[91.859259]INFO:    [ATF]Power down core 2
+[ATF](3)K:[91.859331]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[91.859403]INFO:    spmc: power off core 0.2
+[ATF](3)K:[91.859481]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[91.861741]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[91.875235]INFO:    [ATF]Power down core 3
+[ATF](0)K:[91.875306]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[91.875379]INFO:    spmc: power off core 0.3
+[ATF](0)K:[91.875457]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[91.877139]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[91.877382]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[91.877596]INFO:    md_settle = 99, settle = 99
+[ATF](0)[91.896167]INFO:    spm_wake_reason=4
+[ATF](0)[91.897035]INFO:    SIP_KTIME: 0x15644b44f5 0x0 atf: 0x15657d6f8f
+[ATF](0)K:[91.876969]INFO:    ATF wall time is now synced with kernel, 0x15644b4542
+[ATF](0)K:[91.877361]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[91.877511]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[91.877659]INFO:    spmc: power on core 0.1
+[ATF](0)K:[91.877739]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[91.897985]INFO:    psci: core 0:1 ON
+[ATF](0)K:[91.879075]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[91.879224]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[91.879371]INFO:    spmc: power on core 0.2
+[ATF](0)K:[91.879451]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[91.899696]INFO:    psci: core 0:2 ON
+[ATF](0)K:[91.880762]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[91.880912]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[91.881059]INFO:    spmc: power on core 0.3
+[ATF](0)K:[91.881139]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[91.901385]INFO:    psci: core 0:3 ON
+[ATF](1)K:[94.146342]INFO:    psci: core 0:1 OFF
+[ATF](0)K:[94.159317]INFO:    [ATF]Power down core 1
+[ATF](0)K:[94.159408]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[94.159499]INFO:    spmc: power off core 0.1
+[ATF](0)K:[94.159597]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[94.163169]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[94.179256]INFO:    [ATF]Power down core 2
+[ATF](0)K:[94.179346]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[94.179437]INFO:    spmc: power off core 0.2
+[ATF](0)K:[94.179535]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[94.182887]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[94.195247]INFO:    [ATF]Power down core 3
+[ATF](0)K:[94.195337]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[94.195428]INFO:    spmc: power off core 0.3
+[ATF](0)K:[94.195526]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[94.197870]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[94.198161]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[94.198417]INFO:    md_settle = 99, settle = 99
+[ATF](0)[101.815717]INFO:    spm_wake_reason=4
+[ATF](0)[101.816977]INFO:    SIP_KTIME: 0x15ee9c5d58 0x0 atf: 0x17b4c3b6b1
+[ATF](0)K:[94.197541]INFO:    ATF wall time is now synced with kernel, 0x15ee9c5df1
+[ATF](0)K:[94.198090]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[94.198279]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[94.198465]INFO:    spmc: power on core 0.1
+[ATF](0)K:[94.198565]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[101.818228]INFO:    psci: core 0:1 ON
+[ATF](0)K:[94.200539]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[94.200728]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[94.200914]INFO:    spmc: power on core 0.2
+[ATF](0)K:[94.201014]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[101.820678]INFO:    psci: core 0:2 ON
+[ATF](0)K:[94.203150]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[94.203340]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[94.203525]INFO:    spmc: power on core 0.3
+[ATF](0)K:[94.203625]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[101.823289]INFO:    psci: core 0:3 ON
+[ATF](1)K:[95.610096]INFO:    psci: core 0:1 OFF
+[ATF](3)K:[95.623161]INFO:    [ATF]Power down core 1
+[ATF](3)K:[95.623252]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[95.623342]INFO:    spmc: power off core 0.1
+[ATF](3)K:[95.623441]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[95.626976]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[95.639188]INFO:    [ATF]Power down core 2
+[ATF](0)K:[95.639279]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[95.639370]INFO:    spmc: power off core 0.2
+[ATF](0)K:[95.639468]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[95.642825]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[95.655124]INFO:    [ATF]Power down core 3
+[ATF](0)K:[95.655213]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[95.655305]INFO:    spmc: power off core 0.3
+[ATF](0)K:[95.655403]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[95.657767]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[95.658058]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[95.658314]INFO:    md_settle = 99, settle = 99
+[ATF](0)[96.037580]INFO:    spm_wake_reason=4
+[ATF](0)[96.038778]INFO:    SIP_KTIME: 0x1645a13bf6 0x0 atf: 0x165c5b635d
+[ATF](0)K:[95.657477]INFO:    ATF wall time is now synced with kernel, 0x1645a13c90
+[ATF](0)K:[95.658028]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[95.658216]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[95.658401]INFO:    spmc: power on core 0.1
+[ATF](0)K:[95.658501]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[96.040027]INFO:    psci: core 0:1 ON
+[ATF](0)K:[95.660482]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[95.660671]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[95.660856]INFO:    spmc: power on core 0.2
+[ATF](0)K:[95.660956]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[96.042483]INFO:    psci: core 0:2 ON
+[ATF](0)K:[95.663112]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[95.663301]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[95.663486]INFO:    spmc: power on core 0.3
+[ATF](0)K:[95.663586]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[96.045112]INFO:    psci: core 0:3 ON
+[ATF](1)K:[96.097951]INFO:    psci: core 0:1 OFF
+[ATF](0)K:[96.111058]INFO:    [ATF]Power down core 1
+[ATF](0)K:[96.111149]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[96.111241]INFO:    spmc: power off core 0.1
+[ATF](0)K:[96.111339]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[96.114844]INFO:    psci: core 0:2 OFF
+[ATF](3)K:[96.127067]INFO:    [ATF]Power down core 2
+[ATF](3)K:[96.127158]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[96.127249]INFO:    spmc: power off core 0.2
+[ATF](3)K:[96.127347]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[96.130630]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[96.143023]INFO:    [ATF]Power down core 3
+[ATF](0)K:[96.143113]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[96.143204]INFO:    spmc: power off core 0.3
+[ATF](0)K:[96.143302]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[96.145470]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[96.145760]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[96.146018]INFO:    md_settle = 99, settle = 99
+[ATF](0)[112.052775]INFO:    spm_wake_reason=4
+[ATF](0)[112.053976]INFO:    SIP_KTIME: 0x1662b3089f 0x0 atf: 0x1a16efeb2a
+[ATF](0)K:[96.145183]INFO:    ATF wall time is now synced with kernel, 0x1662b30986
+[ATF](0)K:[96.145738]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[96.145927]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[96.146112]INFO:    spmc: power on core 0.1
+[ATF](0)K:[96.146212]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[112.055231]INFO:    psci: core 0:1 ON
+[ATF](0)K:[96.148285]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[96.148474]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[96.148659]INFO:    spmc: power on core 0.2
+[ATF](0)K:[96.148760]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[112.057780]INFO:    psci: core 0:2 ON
+[ATF](0)K:[96.150763]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[96.150952]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[96.151138]INFO:    spmc: power on core 0.3
+[ATF](0)K:[96.151238]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[112.060258]INFO:    psci: core 0:3 ON
+[ATF](1)K:[96.585821]INFO:    psci: core 0:1 OFF
+[ATF](2)K:[96.598962]INFO:    [ATF]Power down core 1
+[ATF](2)K:[96.599053]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](2)K:[96.599144]INFO:    spmc: power off core 0.1
+[ATF](2)K:[96.599242]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[96.602733]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[96.614928]INFO:    [ATF]Power down core 2
+[ATF](0)K:[96.615019]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[96.615111]INFO:    spmc: power off core 0.2
+[ATF](0)K:[96.615209]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[96.618629]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[96.630936]INFO:    [ATF]Power down core 3
+[ATF](0)K:[96.631026]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[96.631118]INFO:    spmc: power off core 0.3
+[ATF](0)K:[96.631215]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[96.633443]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[96.633733]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[96.633989]INFO:    md_settle = 99, settle = 99
+[ATF](0)[96.756873]INFO:    spm_wake_reason=4
+[ATF](0)[96.758073]INFO:    SIP_KTIME: 0x167fc8d0d1 0x0 atf: 0x16873afae1
+[ATF](0)K:[96.633150]INFO:    ATF wall time is now synced with kernel, 0x167fc8d16a
+[ATF](0)K:[96.633706]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[96.633895]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[96.634081]INFO:    spmc: power on core 0.1
+[ATF](0)K:[96.634180]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[96.759330]INFO:    psci: core 0:1 ON
+[ATF](0)K:[96.636175]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[96.636364]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[96.636549]INFO:    spmc: power on core 0.2
+[ATF](0)K:[96.636649]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[96.761798]INFO:    psci: core 0:2 ON
+[ATF](0)K:[96.638657]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[96.638846]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[96.639030]INFO:    spmc: power on core 0.3
+[ATF](0)K:[96.639131]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[96.764280]INFO:    psci: core 0:3 ON
+[ATF](1)K:[97.054028]INFO:    psci: core 0:1 OFF
+[ATF](2)K:[97.066952]INFO:    [ATF]Power down core 1
+[ATF](2)K:[97.067043]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](2)K:[97.067135]INFO:    spmc: power off core 0.1
+[ATF](2)K:[97.067232]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[97.070773]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[97.086871]INFO:    [ATF]Power down core 2
+[ATF](0)K:[97.086961]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[97.087052]INFO:    spmc: power off core 0.2
+[ATF](0)K:[97.087151]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[97.090543]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[97.102818]INFO:    [ATF]Power down core 3
+[ATF](0)K:[97.102909]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[97.103000]INFO:    spmc: power off core 0.3
+[ATF](0)K:[97.103098]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[97.105341]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[97.105633]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[97.105889]INFO:    md_settle = 99, settle = 99
+[ATF](0)[97.246619]INFO:    spm_wake_reason=4
+[ATF](0)[97.247808]INFO:    SIP_KTIME: 0x169be97b50 0x0 atf: 0x16a46bbcb9
+[ATF](0)K:[97.105053]INFO:    ATF wall time is now synced with kernel, 0x169be97be9
+[ATF](0)K:[97.105605]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[97.105794]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[97.105979]INFO:    spmc: power on core 0.1
+[ATF](0)K:[97.106079]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[97.249060]INFO:    psci: core 0:1 ON
+[ATF](0)K:[97.108088]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[97.108278]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[97.108463]INFO:    spmc: power on core 0.2
+[ATF](0)K:[97.108563]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[97.251544]INFO:    psci: core 0:2 ON
+[ATF](0)K:[97.110570]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[97.110758]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[97.110944]INFO:    spmc: power on core 0.3
+[ATF](0)K:[97.111045]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[97.254026]INFO:    psci: core 0:3 ON
+[ATF](1)K:[97.929705]INFO:    psci: core 0:1 OFF
+[ATF](3)K:[97.942854]INFO:    [ATF]Power down core 1
+[ATF](3)K:[97.942945]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[97.943037]INFO:    spmc: power off core 0.1
+[ATF](3)K:[97.943135]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[97.946663]INFO:    psci: core 0:2 OFF
+[ATF](3)K:[97.962732]INFO:    [ATF]Power down core 2
+[ATF](3)K:[97.962822]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[97.962913]INFO:    spmc: power off core 0.2
+[ATF](3)K:[97.963010]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[97.966359]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[97.978777]INFO:    [ATF]Power down core 3
+[ATF](0)K:[97.978867]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[97.978958]INFO:    spmc: power off core 0.3
+[ATF](0)K:[97.979056]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[97.981510]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[97.981800]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[97.982056]INFO:    md_settle = 99, settle = 99
+[ATF](0)[97.983822]INFO:    spm_wake_reason=4
+[ATF](0)[97.985012]INFO:    SIP_KTIME: 0x16d02264ba 0x0 atf: 0x16d05c92a6
+[ATF](0)K:[97.981198]INFO:    ATF wall time is now synced with kernel, 0x16d0226553
+[ATF](0)K:[97.981727]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[97.981917]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[97.982101]INFO:    spmc: power on core 0.1
+[ATF](0)K:[97.982201]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[97.986241]INFO:    psci: core 0:1 ON
+[ATF](1)K:[97.984352]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](1)K:[97.984542]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](1)K:[97.984727]INFO:    spmc: power on core 0.2
+[ATF](1)K:[97.984827]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[97.988867]INFO:    psci: core 0:2 ON
+[ATF](1)K:[97.986919]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](1)K:[97.987109]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](1)K:[97.987294]INFO:    spmc: power on core 0.3
+[ATF](1)K:[97.987395]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[97.991435]INFO:    psci: core 0:3 ON
+[ATF](1)K:[98.401764]INFO:    psci: core 0:1 OFF
+[ATF](0)K:[98.414758]INFO:    [ATF]Power down core 1
+[ATF](0)K:[98.414849]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[98.414940]INFO:    spmc: power off core 0.1
+[ATF](0)K:[98.415038]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[98.418522]INFO:    psci: core 0:2 OFF
+[ATF](3)K:[98.434690]INFO:    [ATF]Power down core 2
+[ATF](3)K:[98.434780]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[98.434871]INFO:    spmc: power off core 0.2
+[ATF](3)K:[98.434969]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[98.438222]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[98.450650]INFO:    [ATF]Power down core 3
+[ATF](0)K:[98.450741]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[98.450832]INFO:    spmc: power off core 0.3
+[ATF](0)K:[98.450931]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[98.453127]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[98.453417]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[98.453674]INFO:    md_settle = 99, settle = 99
+[ATF](0)[98.534774]INFO:    spm_wake_reason=4
+[ATF](0)[98.535980]INFO:    SIP_KTIME: 0x16ec3ee7d2 0x0 atf: 0x16f133a9cd
+[ATF](0)K:[98.452828]INFO:    ATF wall time is now synced with kernel, 0x16ec3ee86c
+[ATF](0)K:[98.453378]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[98.453568]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[98.453753]INFO:    spmc: power on core 0.1
+[ATF](0)K:[98.453853]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[98.537230]INFO:    psci: core 0:1 ON
+[ATF](0)K:[98.455946]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[98.456136]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[98.456321]INFO:    spmc: power on core 0.2
+[ATF](0)K:[98.456421]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[98.539799]INFO:    psci: core 0:2 ON
+[ATF](0)K:[98.458496]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[98.458685]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[98.458871]INFO:    spmc: power on core 0.3
+[ATF](0)K:[98.458971]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[98.542350]INFO:    psci: core 0:3 ON
+[ATF](1)K:[99.534062]INFO:    psci: core 0:1 OFF
+[ATF](3)K:[99.546577]INFO:    [ATF]Power down core 1
+[ATF](3)K:[99.546668]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](3)K:[99.546760]INFO:    spmc: power off core 0.1
+[ATF](3)K:[99.546858]INFO:    spmc: power off core 0.1 successfully
+[ATF](2)K:[99.550422]INFO:    psci: core 0:2 OFF
+[ATF](0)K:[99.566570]INFO:    [ATF]Power down core 2
+[ATF](0)K:[99.566661]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[99.566751]INFO:    spmc: power off core 0.2
+[ATF](0)K:[99.566850]INFO:    spmc: power off core 0.2 successfully
+[ATF](3)K:[99.570220]INFO:    psci: core 0:3 OFF
+[ATF](0)K:[99.582597]INFO:    [ATF]Power down core 3
+[ATF](0)K:[99.582687]INFO:    [ATF]mt_core_ops ,state=0
+[ATF](0)K:[99.582778]INFO:    spmc: power off core 0.3
+[ATF](0)K:[99.582876]INFO:    spmc: power off core 0.3 successfully
+[ATF](0)K:[99.585149]INFO:    Online CPU is 0, suspend FW ver. is suspend_dvfs_v2p2_1
+[ATF](0)K:[99.585440]INFO:    sec = 157286400, wakesrc = 0xe87c567 (1)(1)
+[ATF](0)K:[99.585696]INFO:    md_settle = 99, settle = 99
+[ATF](0)[120.626228]INFO:    spm_wake_reason=4
+[ATF](0)[120.627551]INFO:    SIP_KTIME: 0x172fb85051 0x0 atf: 0x1c15f64d3a
+[ATF](0)K:[99.584859]INFO:    ATF wall time is now synced with kernel, 0x172fb850eb
+[ATF](0)K:[99.585469]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[99.585657]INFO:    [ATF]: plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[99.585843]INFO:    spmc: power on core 0.1
+[ATF](0)K:[99.585943]INFO:    spmc: power on core 0.1 successfully
+[ATF](1)K:[120.628863]INFO:    psci: core 0:1 ON
+[ATF](0)K:[99.587950]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[99.588139]INFO:    [ATF]: plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[99.588325]INFO:    spmc: power on core 0.2
+[ATF](0)K:[99.588425]INFO:    spmc: power on core 0.2 successfully
+[ATF](2)K:[120.631344]INFO:    psci: core 0:2 ON
+[ATF](0)K:[99.590596]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 1, state = 1
+[ATF](0)K:[99.590785]INFO:    [ATF]: plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x446010e8, afflvl = 0, state = 1
+[ATF](0)K:[99.590971]INFO:    spmc: power on core 0.3
+[ATF](0)K:[99.591071]INFO:    spmc: power on core 0.3 successfully
+[ATF](3)K:[120.633991]INFO:    psci: core 0:3 ON

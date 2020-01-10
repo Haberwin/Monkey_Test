@@ -1,0 +1,47 @@
+[2019-02-13 14:34:46,001] (main)(Configuration.java): ConfigDescriptor [sleep=5, logPath=/data/aee_exp/,/data/core/,/data/tombstones/,/data/mdlog/bootupLog/,/mnt/sdcard0/mtklog/,/mnt/sdcard/mtklog/,/mnt/sdcard/sdcard2/mtklog/,/mnt/sdcard2/mtklog/,/mnt/sdcard1/mtklog/,/mnt/m_external_sd/mtklog,, pcStoragePath=D:\AutoTest\monkey\log\debug, pull_modem_log=true]
+[2019-02-13 14:34:46,004] (main)(Main.java): LoNg version: v2.1710.5
+[2019-02-13 14:34:46,009] (main)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb devices
+[2019-02-13 14:34:49,106] (main)(AdbOP.java): device SN: 19029B1234
+[2019-02-13 14:34:49,122] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell am broadcast -a com.mediatek.mtklogger.ADB_CMD -e cmd_name switch_taglog --ei cmd_target 0
+[2019-02-13 14:34:49,460] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell ls -R -l /data/aee_exp/ /data/core/ /data/tombstones/ /data/mdlog/bootupLog/ /mnt/sdcard0/mtklog/ /mnt/m_external_sd/mtklog/ /mnt/sdcard/mtklog/ /mnt/sdcard/sdcard2/mtklog/ /mnt/sdcard2/mtklog/ /mnt/sdcard1/mtklog/
+[2019-02-13 14:34:49,718] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell id
+[2019-02-13 14:34:49,972] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell am broadcast -a com.mediatek.mtklogger.ADB_CMD -e cmd_name start --ei cmd_target 1
+[2019-02-13 14:34:55,279] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell date +%Y-%m-%d-%H:%M:%S
+[2019-02-13 14:34:55,563] (thread_19029B1234)(ProcessRun.java): get devices time success!!
+[2019-02-13 14:34:55,565] (thread_19029B1234)(ProcessRun.java): skip root folder: /mnt/sdcard/mtklog/netlog/
+[2019-02-13 14:34:55,568] (thread_19029B1234)(ProcessRun.java): skip root folder: /mnt/sdcard/mtklog/mobilelog/
+[2019-02-13 14:34:55,570] (thread_19029B1234)(ProcessRun.java): skip root folder: /mnt/sdcard/mtklog/mdlog1/
+[2019-02-13 14:34:55,572] (thread_19029B1234)(ProcessRun.java): skip currentMobilelogFolder: /mnt/sdcard/mtklog/mobilelog/APLog_2019_0213_134923__3/
+[2019-02-13 14:34:55,574] (thread_19029B1234)(ProcessRun.java): skip currentNetlogFolder: /mnt/sdcard/mtklog/netlog/NTLog_2019_0213_142401/
+[2019-02-13 14:34:55,576] (thread_19029B1234)(ProcessRun.java): skip currentModemlog_1_Folder: /mnt/sdcard/mtklog/mdlog1/MDLog1_2019_0213_142405/
+[2019-02-13 14:34:55,582] (thread_19029B1234)(ProcessRun.java): current netlog: /mnt/sdcard/mtklog/netlog/NTLog_2019_0213_142401/tcpdump_NTLog_2019_0213_142401_start.cap.tmp
+[2019-02-13 14:34:55,585] (thread_19029B1234)(ProcessRun.java): current mdlog1: /mnt/sdcard/mtklog/mdlog1/MDLog1_2019_0213_142405/version_info.txt
+[2019-02-13 14:34:55,587] (thread_19029B1234)(ProcessRun.java): current mdlog1: /mnt/sdcard/mtklog/mdlog1/MDLog1_2019_0213_142405/MDLog1_2019_0213_142405.muxz.tmp
+[2019-02-13 14:34:55,601] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 pull /data/aee_exp/db_history D:\AutoTest\monkey\log\debug/MTBF-log/20190213_143446/19029B1234/mtklog_20190213_143455/data/aee_exp/db_history
+[2019-02-13 14:34:55,733] (thread_19029B1234)(AdbOP.java): SN:19029B1234/data/aee_exp/db_history: 1 file pulled.
+[2019-02-13 14:34:56,734] (thread_19029B1234)(AdbOP.java): Shell cmd will not rm ReadOnly file: /data/aee_exp/db_history
+[2019-02-13 14:34:56,754] (thread_19029B1234)(ProcessRun.java): NO logs pulled out in this check !!!
+[2019-02-13 14:34:56,756] (thread_19029B1234)(ProcessRun.java): delete dir: D:\AutoTest\monkey\log\debug/MTBF-log/20190213_143446/19029B1234/mtklog_20190213_143455/
+[2019-02-13 14:34:56,767] (thread_19029B1234)(ProcessRun.java): Sleep 292s
+[2019-02-13 14:39:49,124] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell am broadcast -a com.mediatek.mtklogger.ADB_CMD -e cmd_name switch_taglog --ei cmd_target 0
+[2019-02-13 14:39:49,474] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell ls -R -l /data/aee_exp/ /data/core/ /data/tombstones/ /data/mdlog/bootupLog/ /mnt/sdcard0/mtklog/ /mnt/m_external_sd/mtklog/ /mnt/sdcard/mtklog/ /mnt/sdcard/sdcard2/mtklog/ /mnt/sdcard2/mtklog/ /mnt/sdcard1/mtklog/
+[2019-02-13 14:39:49,755] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell id
+[2019-02-13 14:39:49,954] (thread_19029B1234)(DataFolderCache.java): filter out repeat data file. sn:19029B1234 path:/data/aee_exp/db_history raw:-rw-r--r-- 1 root root 0 2019-02-12 15:23 db_history
+[2019-02-13 14:39:49,956] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell am broadcast -a com.mediatek.mtklogger.ADB_CMD -e cmd_name start --ei cmd_target 1
+[2019-02-13 14:39:55,288] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell date +%Y-%m-%d-%H:%M:%S
+[2019-02-13 14:39:55,566] (thread_19029B1234)(ProcessRun.java): get devices time success!!
+[2019-02-13 14:39:55,568] (thread_19029B1234)(ProcessRun.java): skip root folder: /mnt/sdcard/mtklog/netlog/
+[2019-02-13 14:39:55,570] (thread_19029B1234)(ProcessRun.java): skip root folder: /mnt/sdcard/mtklog/mobilelog/
+[2019-02-13 14:39:55,572] (thread_19029B1234)(ProcessRun.java): skip root folder: /mnt/sdcard/mtklog/mdlog1/
+[2019-02-13 14:39:55,574] (thread_19029B1234)(ProcessRun.java): skip currentMobilelogFolder: /mnt/sdcard/mtklog/mobilelog/APLog_2019_0213_134923__3/
+[2019-02-13 14:39:55,577] (thread_19029B1234)(ProcessRun.java): skip currentNetlogFolder: /mnt/sdcard/mtklog/netlog/NTLog_2019_0213_142401/
+[2019-02-13 14:39:55,579] (thread_19029B1234)(ProcessRun.java): skip currentModemlog_1_Folder: /mnt/sdcard/mtklog/mdlog1/MDLog1_2019_0213_142405/
+[2019-02-13 14:39:55,581] (thread_19029B1234)(ProcessRun.java): current netlog: /mnt/sdcard/mtklog/netlog/NTLog_2019_0213_142401/tcpdump_NTLog_2019_0213_142401_start.cap.tmp
+[2019-02-13 14:39:55,583] (thread_19029B1234)(ProcessRun.java): current mdlog1: /mnt/sdcard/mtklog/mdlog1/MDLog1_2019_0213_142405/version_info.txt
+[2019-02-13 14:39:55,586] (thread_19029B1234)(ProcessRun.java): current mdlog1: /mnt/sdcard/mtklog/mdlog1/MDLog1_2019_0213_142405/MDLog1_2019_0213_142405.muxz.tmp
+[2019-02-13 14:39:55,593] (thread_19029B1234)(ProcessRun.java): NO logs pulled out in this check !!!
+[2019-02-13 14:39:55,594] (thread_19029B1234)(ProcessRun.java): delete dir: D:\AutoTest\monkey\log\debug/MTBF-log/20190213_143446/19029B1234/mtklog_20190213_143955/
+[2019-02-13 14:39:55,598] (thread_19029B1234)(ProcessRun.java): Sleep 293s
+[2019-02-13 14:40:49,122] (main)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb devices
+[2019-02-13 14:40:49,240] (main)(AdbOP.java): device SN: 19029B1234
+[2019-02-13 14:40:49,241] (main)(Main.java): current thread:thread_19029B123416

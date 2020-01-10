@@ -1,0 +1,3 @@
+Summary:
+        type              source              package           info                                                       time                                                                                                         file_path
+0  Java (JE)  /data/vendor/core/  system_server_crash  system_server  Mon Jan 11 02:21:54 CST 2010 @ 2010-01-11 02:21:54.726673  20200109_155351\S19F00013\mtklog_20191222_145049_netlog_exception\data\aee_exp\db.fatal.00.JE\db.fatal.00.JE.dbg

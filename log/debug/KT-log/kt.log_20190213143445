@@ -1,0 +1,18 @@
+[2019-02-13 14:21:02,131] (main)(Configuration.java): ConfigDescriptor [sleep=5, logPath=/data/aee_exp/,/data/core/,/data/tombstones/,/data/mdlog/bootupLog/,/mnt/sdcard0/mtklog/,/mnt/sdcard/mtklog/,/mnt/sdcard/sdcard2/mtklog/,/mnt/sdcard2/mtklog/,/mnt/sdcard1/mtklog/,/mnt/m_external_sd/mtklog,, pcStoragePath=D:\AutoTest\monkey\log\debug, pull_modem_log=true]
+[2019-02-13 14:21:02,134] (main)(Main.java): LoNg version: v2.1710.5
+[2019-02-13 14:21:02,139] (main)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb devices
+[2019-02-13 14:21:02,199] (main)(AdbOP.java): device SN: 19029B1234
+[2019-02-13 14:21:02,203] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell am broadcast -a com.mediatek.mtklogger.ADB_CMD -e cmd_name switch_taglog --ei cmd_target 0
+[2019-02-13 14:21:02,502] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell ls -R -l /data/aee_exp/ /data/core/ /data/tombstones/ /data/mdlog/bootupLog/ /mnt/sdcard0/mtklog/ /mnt/m_external_sd/mtklog/ /mnt/sdcard/mtklog/ /mnt/sdcard/sdcard2/mtklog/ /mnt/sdcard2/mtklog/ /mnt/sdcard1/mtklog/
+[2019-02-13 14:21:02,769] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell id
+[2019-02-13 14:21:02,992] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell am broadcast -a com.mediatek.mtklogger.ADB_CMD -e cmd_name start --ei cmd_target 1
+[2019-02-13 14:21:08,334] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 shell date +%Y-%m-%d-%H:%M:%S
+[2019-02-13 14:21:08,554] (thread_19029B1234)(ProcessRun.java): get devices time success!!
+[2019-02-13 14:21:08,556] (thread_19029B1234)(ProcessRun.java): skip root folder: /mnt/sdcard/mtklog/mobilelog/
+[2019-02-13 14:21:08,558] (thread_19029B1234)(ProcessRun.java): skip currentMobilelogFolder: /mnt/sdcard/mtklog/mobilelog/APLog_2019_0213_134923__3/
+[2019-02-13 14:21:08,615] (thread_19029B1234)(AdbAdapter.java): shell cmd:  D:\AutoTest\monkey\log\debug\adb -s 19029B1234 pull /data/aee_exp/db_history D:\AutoTest\monkey\log\debug/MTBF-log/20190213_142102/19029B1234/mtklog_20190213_142108/data/aee_exp/db_history
+[2019-02-13 14:21:08,739] (thread_19029B1234)(AdbOP.java): SN:19029B1234/data/aee_exp/db_history: 1 file pulled.
+[2019-02-13 14:21:09,740] (thread_19029B1234)(AdbOP.java): Shell cmd will not rm ReadOnly file: /data/aee_exp/db_history
+[2019-02-13 14:21:09,769] (thread_19029B1234)(ProcessRun.java): NO logs pulled out in this check !!!
+[2019-02-13 14:21:09,786] (thread_19029B1234)(ProcessRun.java): delete dir: D:\AutoTest\monkey\log\debug/MTBF-log/20190213_142102/19029B1234/mtklog_20190213_142108/
+[2019-02-13 14:21:09,810] (thread_19029B1234)(ProcessRun.java): Sleep 292s
