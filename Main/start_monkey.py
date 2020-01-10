@@ -20,7 +20,7 @@ test_time = re.findall(r'\d+', config.get('monkey', 'test time'))
 
 def start_monkey():
     """ Start Monkey"""
-   
+
     devices = get_devices()
 
     if not devices:
@@ -32,12 +32,11 @@ def start_monkey():
                        value=start_time.strftime("%Y%m%d_%H%M%S"))
             config.write(f)
         print("Find devices:\n{}".format(devices))
-        for no in devices:
-            assert_monkey_ps(True)
-            # push_blacklist(no)
-            # run_monkey(no)
-        #thread_pull = pull_mtklog()
-        thread_pull=threading.Thread(target=pull_mtklog)
+        assert_monkey_ps(True)
+        # push_blacklist(no)
+        # run_monkey(no)
+        # thread_pull = pull_mtklog()
+        thread_pull = threading.Thread(target=pull_mtklog)
         thread_pull.setDaemon(True)
         thread_pull.start()
         os.chdir(str(run_path))
@@ -60,10 +59,9 @@ def start_monkey():
             print('Monkey test finished!')
             for _ in range(100):
                 print('Process will exit after {} seconds!'.format(100 - _))
-                #print(thread_pull.is_alive())
+                # print(thread_pull.is_alive())
                 sleep(1)
             print('Exit!')
-
 
 
 def get_devices():
@@ -83,15 +81,13 @@ def run_monkey(serial_no):
     subprocess.Popen('adb -s {0} push "blacklist.txt /sdcard/"'.format(serial_no))
     monkey_command = config.get('monkey', 'command')
     print('adb -s {0} shell {1} '.format(serial_no, monkey_command))
-    run_cmd='start /b adb -s {0} shell "{1}" > {2}/monkey-{0}-{3}.txt'
+    run_cmd = 'start /b adb -s {0} shell "{1}" > {2}/monkey-{0}-{3}.txt'
     if platform.system().__eq__('Linux'):
-        run_cmd='adb -s {0} shell "{1}" > {2}/monkey-{0}-{3}.txt &'
+        run_cmd = 'adb -s {0} shell "{1}" > {2}/monkey-{0}-{3}.txt &'
     subprocess.Popen(
         run_cmd.format(
             serial_no, monkey_command, log_path / 'Monkey-log', datetime.now().strftime("%Y%m%d%H%M%S")),
         shell=True)
-
-
 
 
 def assert_monkey_ps(do_next=True):
@@ -99,9 +95,9 @@ def assert_monkey_ps(do_next=True):
     if not devices:
         print('No devices found!')
         return
-    assert_cmd="adb -s {0} shell ps | findstr monkey"
+    assert_cmd = "adb -s {0} shell ps | findstr monkey"
     if platform.system().__eq__('Linux'):
-        assert_cmd='adb -s {0} shell ps | grep monkey'
+        assert_cmd = 'adb -s {0} shell ps | grep monkey'
 
     for serial_no in devices:
 
