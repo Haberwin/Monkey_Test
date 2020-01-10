@@ -78,7 +78,7 @@ def get_devices():
 
 def run_monkey(serial_no):
     print("Push blacklist...")
-    subprocess.Popen('adb -s {0} push "blacklist.txt /sdcard/"'.format(serial_no))
+    subprocess.Popen('adb -s {0} push blacklist.txt /sdcard/'.format(serial_no),shell=True)
     monkey_command = config.get('monkey', 'command')
     print('adb -s {0} shell {1} '.format(serial_no, monkey_command))
     run_cmd = 'start /b adb -s {0} shell "{1}" > {2}/monkey-{0}-{3}.txt'
