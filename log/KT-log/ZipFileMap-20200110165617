@@ -1,0 +1,11 @@
+mtklog_20200110_165255:
+  -- S19F00013; main_log.boot;	startTime: 01-10 14:12:01.623385
+  -- S19F00013; kernel_log_3__2020_0110_164818.LoNg.LoNg;	startTime: 4377.669024
+  -- S19F00013; kernel_log_1__2020_0110_154635.LoNg.LoNg;	startTime: 13.132818
+  -- S19F00013; kernel_log.boot;	startTime: 0.000000
+  -- S19F00013; sys_log_4__2020_0110_141143.LoNg.LoNg;	startTime: 01-10 13:51:27.257383
+  -- S19F00013; radio_log_2__2020_0110_141143.LoNg.LoNg;	startTime: 01-10 13:51:27.634825
+  -- S19F00013; main_log_1__2020_0110_141143.LoNg.LoNg;	startTime: 01-10 13:51:42.343718
+  -- S19F00013; kernel_log_6__2020_0110_141143.LoNg.LoNg;	startTime: 12.961408
+  -- S19F00013; events_log_3__2020_0110_141143.LoNg.LoNg;	startTime: 01-10 13:51:22.601409
+  -- S19F00013; crash_log_5__2020_0110_141143.LoNg.LoNg;	startTime: 01-10 14:01:04.006980

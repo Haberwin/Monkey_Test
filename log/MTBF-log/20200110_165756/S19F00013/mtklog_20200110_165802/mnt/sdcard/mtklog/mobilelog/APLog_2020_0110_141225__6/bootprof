@@ -1,0 +1,131 @@
+<< /proc/bootprof >>:
+----------------------------------------
+0	    BOOT PROF (unit:msec)
+----------------------------------------
+      4711        : preloader
+      7366        : lk (Start->Show logo: 1225)
+----------------------------------------
+       188.826768 : ON
+       324.764999 :    1-swapper/0       : probe: probe=platform_drv_probe drv=ramoops(ffffff800961f198)    45.009308ms
+       326.302769 :    1-swapper/0       : initcall: ramoops_init    47.391539ms
+       373.733384 :    1-swapper/0       : initcall: init_menu    42.025769ms
+       491.342769 :    1-swapper/0       : initcall: arm64_device_init    75.876462ms
+       566.429538 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mtk_cmdq(ffffff80096727d0)    21.361000ms
+       568.791538 :    1-swapper/0       : initcall: cmdq_init    25.566616ms
+       618.524692 :    1-swapper/0       : initcall: ccci_util_init    46.839924ms
+       657.999077 :    1-swapper/0       : initcall: cfg80211_init    20.953231ms
+       682.750385 :    1-swapper/0       : initcall: event_trace_init    19.338000ms
+       711.844385 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mt-pmic(ffffff8009660df0)    23.618462ms
+       713.405462 :    1-swapper/0       : initcall: pmic_mt_init    25.576923ms
+       743.158154 :    1-swapper/0       : initcall: ion_init    15.677000ms
+       798.775077 :    1-swapper/0       : initcall: populate_rootfs    39.017616ms
+       884.839693 :    1-swapper/0       : initcall: musb_init    15.205154ms
+      1054.382078 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mtkfb(ffffff800967b6d8)   164.551693ms
+      1055.469386 :    1-swapper/0       : initcall: mtkfb_init   165.972001ms
+      1104.095232 :    1-swapper/0       : initcall: modem_cd_init    15.883923ms
+      1170.348925 :    1-swapper/0       : probe: probe=i2c_device_probe drv=aw9523_led(ffffff80096a4758)    15.751923ms
+      1170.390078 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mt-i2c(ffffff80096c01d0)    17.645538ms
+      1354.936310 :    1-swapper/0       : probe: probe=i2c_device_probe drv=fg_27542(ffffff800965f240)   184.106154ms
+      1468.369848 :    1-swapper/0       : probe: probe=i2c_device_probe drv=mcp_6442(ffffff800965fc88)   113.308769ms
+      1470.509694 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mt-i2c(ffffff80096c01d0)   300.055462ms
+      1505.355771 :    1-swapper/0       : probe: probe=i2c_device_probe drv=mt6370_pmu(ffffff800966cb08)    34.314308ms
+      1512.262464 :    1-swapper/0       : probe: probe=platform_drv_probe drv=mt-i2c(ffffff80096c01d0)    41.685231ms
+      1518.539618 :    1-swapper/0       : initcall: mt_i2c_init   367.371386ms
+      1658.064233 :    1-swapper/0       : initcall: mt_spm_init    47.118077ms
+      1669.273464 :    4-kworker/0:0     : probe: probe=mmc_bus_probe drv=mmcblk(ffffff80096ccf70)    23.391924ms
+      1691.421618 :    1-swapper/0       : probe: probe=i2c_device_probe drv=stk3x1x(ffffff800965ac98)    32.417616ms
+      1691.541772 :    1-swapper/0       : initcall: alsps_init    32.693615ms
+      2048.414388 :    1-swapper/0       : probe: probe=i2c_device_probe drv=bmi160_acc(ffffff800965bdf0)   355.607847ms
+      2048.655234 :    1-swapper/0       : initcall: acc_init   357.049078ms
+      2209.028542 :    1-swapper/0       : probe: probe=i2c_device_probe drv=bmi160_gyro(ffffff800965c280)   157.975232ms
+      2209.267465 :    1-swapper/0       : initcall: gyro_init   160.573846ms
+      2245.958466 :    1-swapper/0       : probe: probe=i2c_device_probe drv=mmc3630x(ffffff800965c7b8)    36.073231ms
+      2246.183235 :    1-swapper/0       : initcall: mag_init    36.870308ms
+      2393.128927 :   68-kworker/u16:1   : probe: probe=i2c_device_probe drv=gt1x(ffffff80096be420)   119.427077ms
+      2394.522543 :   68-kworker/u16:1   : probe: probe=platform_drv_probe drv=mtk-tpd(ffffff80096bdc50)   121.777616ms
+      2396.317004 :    1-swapper/0       : initcall: mtk_charger_init   123.190770ms
+      2423.493466 :    1-swapper/0       : initcall: clk_debug_init    25.444384ms
+      2767.989313 :    1-swapper/0       : Kernel_init_done
+      3871.760239 :    1-init            : INIT:early-init
+      4616.337010 :    1-init            : INIT:late-init
+      4619.872394 :    1-init            : INIT:Mount_START
+      5003.251780 :    1-init            : INIT:Mount_END
+      5245.276396 :    1-init            : INIT:post-fs
+      5277.986704 :    1-init            : tkcore: prep SYSTA
+      5579.716781 :    1-init            : INIT:post-fs-data
+      5616.556551 :    1-init            : post-fs-data: on modem start
+      5625.220474 :    1-init            : tkcore: prep SFS
+      5625.816243 :    1-init            : tkcore: prep PP
+      5628.144781 :    1-init            : tkcore: prep SPTA
+      5784.859859 :    1-init            : INIT:boot
+      5883.245628 :  403-ccci_mdinit     : ccci_md1: md_init srv start
+      5898.940859 :  403-ccci_mdinit     : ccci_md1: init
+      5879.551936 :  404-ccci_mdinit     : ccci_md3: md_init srv start
+      6106.546936 :    1-init            : USB ready
+      6237.851937 :  427-vold            : vold:decrypt_master_key:START
+      6239.131783 :  427-vold            : vold:scrypt_keymaster:START
+      6808.982938 :   71-kworker/4:1     : USB configured
+      6993.908169 :  481-SurfaceFlinger: : BOOT_Animation:START
+      7146.073323 :  427-vold            : vold:scrypt_keymaster:END
+      7147.175400 :  427-vold            : vold:decrypt_master_key:END
+      7571.741863 :  427-vold            : vold:cryptfs_restart_internal:START
+      7654.398709 :    1-init            : INIT:vold.decrypt=trigger_post_fs_data
+      7813.453325 :    1-init            : INIT:post-fs-data
+      7885.187787 :    1-init            : post-fs-data: on modem start
+      7952.730018 :    1-init            : tkcore: prep SFS
+      7955.400402 :    1-init            : tkcore: prep PP
+      7956.948633 :    1-init            : tkcore: prep SPTA
+      8616.663481 :    1-init            : INIT:vold.decrypt=trigger_restart_framework
+      8892.449020 :  427-vold            : vold:cryptfs_restart_internal:END
+      9090.175251 :  521-zygote64        : boot_progress_start
+      9434.716944 :  403-ccci_mdinit     : ccci_md1: decpyt ready
+      9462.164944 :  403-ccci_mdinit     : ccci_md1: reset
+      9724.047560 :  403-ccci_mdinit     : ccci_md1: bootup
+     10617.606870 :  521-main            : Zygote:Preload Start
+     10617.095101 :  403-ccci_mdinit     : ccci_md1: ready
+     11249.818410 :  522-main            : Zygote:Preload End
+     11735.576642 :    1-init            : tkcore: prep log
+     11869.587873 :  521-main            : Zygote:Preload 4715 classes in 1098ms
+     12134.661412 :  521-main            : Zygote:Preload 64 obtain resources in 59ms
+     12142.378643 :  521-main            : Zygote:Preload 41 resources in 6ms
+     12299.871413 :  521-main            : Zygote:Preload End
+     12606.973183 :  943-system_server   : Android:SysServerInit_START
+     13581.376569 :  943-system_server   : Android:PackageManagerService_Start
+     13786.634878 :  943-system_server   : Android:PMS_scan_START
+     13842.153493 :  943-system_server   : Android:PMS_scan_data:/vendor/overlay
+     13861.478262 :  943-system_server   : Android:PMS_scan_data:/system/framework
+     13940.821032 :  943-system_server   : Android:PMS_scan_data:/vendor/framework
+     13943.103878 :  943-system_server   : Android:PMS_scan_data:/system/priv-app
+     14078.666032 :  943-system_server   : Android:PMS_scan_data:/system/app
+     14214.792033 :  943-system_server   : Android:PMS_scan_data:/vendor/app
+     14238.742802 :  943-system_server   : Android:PMS_scan_data:/vendor/operator/app
+     14255.289956 :  943-system_server   : Android:PMS_scan_data:/system/plugin
+     14266.692340 :  943-system_server   : Android:PMS_scan_data:/data/app
+     14282.146571 :  943-system_server   : Android:PMS_scan_END
+     14291.901110 :  943-system_server   : PMS:reconcileAppsDataLI
+     14868.860803 :  943-system_server   : Android:PMS_READY
+     15859.247190 :  522-main            : Zygote:Preload 4715 classes in 654ms
+     16041.833960 :  522-main            : Zygote:Preload 64 obtain resources in 82ms
+     16051.457345 :  522-main            : Zygote:Preload 41 resources in 8ms
+     16711.314192 :  943-system_server   : AMS:systemReady
+     16720.404654 :  943-system_server   : AMS:AMS_READY
+     16910.207193 :  943-system_server   : AP_Init:[service]:[com.android.inputmethod.latin]:[com.android.inputmethod.latin/.LatinIME]:pid:1117
+     16947.660347 :  943-system_server   : AP_Init:[service]:[com.android.systemui]:[com.android.systemui/.ImageWallpaper]:pid:1130:(PersistAP)
+     17078.759193 : 1061-system-server-i : AP_Init:[]:[WebViewLoader-armeabi-v7a]:pid:1176
+     17098.565962 : 1061-system-server-i : AP_Init:[]:[WebViewLoader-arm64-v8a]:pid:1189
+     17112.287193 :  943-system_server   : SystemServer:NetworkStatsService systemReady
+     17170.319040 :  943-system_server   : SystemServer:ConnectivityService systemReady
+     17185.132424 :  943-system_server   : SystemServer:NetworkPolicyManagerServ systemReady
+     17519.397348 :  943-system_server   : SystemServer:PhaseThirdPartyAppsCanStart
+     17540.375271 :  943-system_server   : AP_Init:[added application]:[com.mediatek.ims]:[com.mediatek.ims]:pid:1299:(PersistAP)
+     17563.744117 :  943-system_server   : AP_Init:[added application]:[com.android.phone]:[com.android.phone]:pid:1311:(PersistAP)
+     17678.557195 :  943-system_server   : AP_Init:[activity]:[com.android.settings]:[com.android.settings/.FallbackHome]:pid:1349
+     17710.162195 :  943-system_server   : Android:SysServerInit_END
+     18000.117349 : 1001-ActivityManager : AMS:ENABLE_SCREEN
+     18000.747734 : 1008-android.display : AP_Launch: com.android.settings/.FallbackHome 328ms
+     18711.637505 :  943-system_server   : AP_Init:[broadcast]:[com.mediatek.ppl]:[com.mediatek.ppl/.PplReceiver]:pid:1550
+     20602.102740 : 1416-Binder:398_4    : BOOT_Animation:END
+     20603.080125 : OFF
+----------------------------------------
+================ END of FILE ===============
+

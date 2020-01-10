@@ -1,0 +1,165 @@
+----- timezone:GMT
+[ATF](0)[5.102657]INFO:    ATF log service is registered (0xeff00000, aee:0xeff3c000)
+[ATF](0)[5.103580]NOTICE:  BL31: v1.3(debug):e5599d8
+[ATF](0)[5.104162]NOTICE:  BL31: Built : 10:21:58, Dec 27 2019
+[ATF](0)[5.104851]NOTICE:  BL31: v1.3(debug):e5599d8
+[ATF](0)[5.105432]NOTICE:  BL31: Built : 10:21:58, Dec 27 2019
+[ATF](0)[5.106123]INFO:    platform_setup_cpu()
+[ATF](0)[5.106650]INFO:    addr of cci_adb400_dcm_config: 0x0
+[ATF](0)[5.107328]INFO:    addr of sync_dcm_config: 0x0
+[ATF](0)[5.107942]INFO:    mp0_spmc: 0x3a2f37bb
+[ATF](0)[5.108469]INFO:    mp1_spmc: 0x640c043
+[ATF](0)[5.109016]INFO:    #@# spm_load_pcm_firmware(143) use spmfw partition for pcm_suspend_lp4_2ch.bin - suspend_v1p30_20170728
+[ATF](0)[5.110425]INFO:    #@# spm_load_pcm_firmware(143) use spmfw partition for pcm_suspend_lp4_1ch.bin - suspend_v1p30_20170728
+[ATF](0)[5.111847]INFO:    #@# spm_load_pcm_firmware(143) use spmfw partition for pcm_suspend_lp3_1ch.bin - suspend_v1p30_20170728
+[ATF](0)[5.113268]INFO:    BL31: Initializing runtime services
+[ATF](0)[5.113976]INFO:    BL31: Initializing BL32
+[ATF](0)[5.114523]TKCore Entry 00000000eeb00000
+[ATF](0)[5.255277]TKCore Exit
+[ATF](0)[5.255600]INFO:    BL31: Preparing for EL3 exit to normal world
+[ATF](0)[5.256384]INFO:    Entry point address = 0x56000000
+[ATF](0)[5.257041]INFO:    SPSR = 0x1d3
+[ATF](0)[5.257486]NOTICE:  NS-SCR_EL3_EFIN=0x4
+[ATF](0)[5.257999]NOTICE:  S-SCR_EL3_EFIN=0x0
+[ATF](0)[5.271579]NOTICE:  MTK_SIP_LK_WDT : 0x56025aed 
+[ATF](0)[5.665608]INFO:    Get ATF log buffer info. for AEE dump in LK.
+[ATF](0)[5.666382]INFO:    Buf addr:0xeff14000, buf size:131072, flag addr:0xeff00040, flag value:0x41544641
+[ATF](0)[12.049120]INFO:    ROT: 0xb2e64153, 0xa7796964, 0x3065570e, 0x10f3a107
+[ATF](0)[12.049217]INFO:    ROT: 0xec219416, 0x1a9fdd9b, 0x5af74856, 0xf15a00de
+[ATF](0)[12.049309]INFO:    ROT: 0x0, 0x1, 0x10040141, 0x0
+[ATF](0)[12.055543]INFO:    Online CPU is 0, suspend FW ver. is suspend_v1p30_20170728
+[ATF](0)[12.055643]INFO:    sec = 0, wakesrc = 0xe87c5e7 (1)(1)
+[ATF](0)[12.055720]INFO:    md_settle = 99, settle = 99
+[ATF](0)[12.678356]INFO:    [DAPC] Walk TEE
+[ATF](0)[12.679106]INFO:    [DAPC] (INFRA)D0_APC_0 = 0x10100000, (INFRA)D1_APC_0 = 0x30ffe333, (INFRA)D7_APC_0 = 0xffffffff
+[ATF](0)[12.679246]INFO:    [DAPC] (INFRA)D0_APC_1 = 0x1043000, (INFRA)D1_APC_1 = 0xfffc8ecf, (INFRA)D7_APC_1 = 0xffffffff
+[ATF](0)[12.679384]INFO:    [DAPC] (INFRA)D0_APC_2 = 0x5000000, (INFRA)D1_APC_2 = 0xfff03fff, (INFRA)D7_APC_2 = 0xffffffff
+[ATF](0)[12.679521]INFO:    [DAPC] (INFRA)D0_APC_3 = 0x0, (INFRA)D1_APC_3 = 0xfff2cfff, (INFRA)D7_APC_3 = 0xffffffff
+[ATF](0)[12.679652]INFO:    [DAPC] (INFRA)D0_APC_4 = 0x1c00000, (INFRA)D1_APC_4 = 0xffffffff, (INFRA)D7_APC_4 = 0xffffffff
+[ATF](0)[12.679789]INFO:    [DAPC] (INFRA)D0_APC_5 = 0x4000003c, (INFRA)D1_APC_5 = 0xffffcfff, (INFRA)D7_APC_5 = 0xffffffff
+[ATF](0)[12.679928]INFO:    [DAPC] (INFRA)D0_APC_6 = 0x0, (INFRA)D1_APC_6 = 0x3ffffffc, (INFRA)D7_APC_6 = 0xffffffff
+[ATF](0)[12.680059]INFO:    [DAPC] (INFRA)D0_APC_7 = 0x3, (INFRA)D1_APC_7 = 0x3ff3fffc, (INFRA)D7_APC_7 = 0xffffffff
+[ATF](0)[12.680190]INFO:    [DAPC] (INFRA)D0_APC_8 = 0x0, (INFRA)D1_APC_8 = 0xf0ffffff, (INFRA)D7_APC_8 = 0xffffffff
+[ATF](0)[12.680318]INFO:    [DAPC] (INFRA)D0_APC_9 = 0x0, (INFRA)D1_APC_9 = 0xffffffff, (INFRA)D7_APC_9 = 0xffffffff
+[ATF](0)[12.680446]INFO:    [DAPC] (INFRA)D0_APC_10 = 0x800000, (INFRA)D1_APC_10 = 0xc0bfff03, (INFRA)D7_APC_10 = 0xffffffff
+[ATF](0)[12.680585]INFO:    [DAPC] (INFRA)D0_APC_11 = 0x0, (INFRA)D1_APC_11 = 0x3cfffff, (INFRA)D7_APC_11 = 0x3ffffff
+[ATF](0)[12.680713]INFO:    [DAPC] (MM)D0_APC_0 = 0x0, (MM)D3_APC_0 = 0xffffffff
+[ATF](0)[12.680804]INFO:    [DAPC] (MM)D0_APC_1 = 0x0, (MM)D3_APC_1 = 0xffffffff
+[ATF](0)[12.680894]INFO:    [DAPC] (MM)D0_APC_2 = 0x0, (MM)D3_APC_2 = 0xffffffff
+[ATF](0)[12.680985]INFO:    [DAPC] (MM)D0_APC_3 = 0x0, (MM)D3_APC_3 = 0xffffffff
+[ATF](0)[12.681078]INFO:    [DAPC] (MM)D0_APC_4 = 0x0, (MM)D3_APC_4 = 0xffffffff
+[ATF](0)[12.681171]INFO:    [DAPC] (MM)D0_APC_5 = 0x0, (MM)D3_APC_5 = 0xfff
+[ATF](0)[12.681259]INFO:    [DAPC] (MD)D0_APC_0 = 0xfffff800, (MD)D3_APC_0 = 0xffffffff
+[ATF](0)[12.681360]INFO:    [DAPC] (MD)D0_APC_1 = 0xffffffff, (MD)D3_APC_1 = 0xffffffff
+[ATF](0)[12.681461]INFO:    [DAPC] (INFRA)MAS_SEC_0 = 0x8000000
+[ATF](0)[12.681536]INFO:    [DAPC] (INFRA)VIO_STA_0=0x0
+[ATF](0)[12.681602]INFO:    [DAPC] (INFRA)VIO_STA_1=0x0
+[ATF](0)[12.681668]INFO:    [DAPC] (INFRA)VIO_STA_2=0x0
+[ATF](0)[12.681734]INFO:    [DAPC] (INFRA)VIO_STA_3=0x0
+[ATF](0)[12.681800]INFO:    [DAPC] (INFRA)VIO_STA_4=0x0
+[ATF](0)[12.681866]INFO:    [DAPC] (INFRA)VIO_STA_5=0x0
+[ATF](0)[12.681932]INFO:    [DAPC] (INFRA)VIO_STA_6=0x0
+[ATF](0)[12.681998]INFO:    [DAPC] (INFRA)VIO_STA_7=0x0
+[ATF](0)[12.682065]INFO:    [DAPC] (INFRA)VIO_STA_8=0x0
+[ATF](0)[12.682131]INFO:    [DAPC] (INFRA)VIO_STA_9=0x100
+[ATF](0)[12.682200]INFO:    
+[DAPC] MM_SEC_EN_0: 0x0, MM_SEC_EN_1: 0x0
+[ATF](0)[12.682285]INFO:    [DAPC] INFRA_AO_SEC_CON = 0x10200
+[ATF](0)[12.682358]INFO:    [DAPC] INFRA_AO_SEC_CG_CON 0: 0x20, 1: 0x18100200, 2: 0x20000000, 3: 0x0
+[ATF](0)[12.682472]INFO:    [DAPC] Init Done
+[ATF](0)[12.682527]INFO:    [DAPC] INFRA_APC_CON = 0x1, MM_APC_CON = 0x1, MD_APC_CON = 0x1
+[ATF](0)[12.704747]INFO:    save kernel info
+[ATF](0)[12.705229]INFO:    Kernel_EL 2
+[ATF](0)[12.705670]NOTICE:  Kernel is 64Bit
+[ATF](0)[12.706155]NOTICE:  pc=0x40080000, r0=0x54000000, r1=0x0
+[ATF](0)[12.706866]INFO:    BL3-1: Preparing for EL3 exit to normal world, Kernel
+[ATF](0)[12.707759]INFO:    BL3-1: Next image address = 0x40080000
+[ATF](0)[12.708491]INFO:    BL3-1: Next image spsr = 0x3c9
+[ATF](0)[12.709144]INFO:    [spmc_init]change to SPMC mode !!!
+[ATF](0)[12.709847]INFO:    el3_exit
+[ATF](0)[13.110785]INFO:    plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x1015bc, afflvl = 1, state = 1
+[ATF](0)[13.110912]INFO:    plat_affinst_on() mpidr = 0x1, sec_entrypoint = 0x1015bc, afflvl = 0, state = 1
+[ATF](0)[13.111036]INFO:    [ATF]: mt_on[0:1:1]
+[ATF](0)[13.111095]INFO:    mt_on[0:1], entry 1015bc
+[ATF](0)[13.111158]INFO:    >>>>>>>> spmc_cpu_corex_onoff >>>>>>>>linear_id=1 state=1 mode=0
+[ATF](0)[13.111266]INFO:    PWR_STATUS_0x10006180=0xfbe0637c
+[ATF](0)[13.111339]INFO:    MPx_CPUx_PWR_CON_0x1000620c=0x110001b7
+[ATF](1)[13.111415]INFO:    psci: core 0:1 ON
+[ATF](0)[13.111514]INFO:    PWR_STATUS_0x10006180=0xfbe0677c
+[ATF](0)[13.111585]INFO:    cpu_bitmask=0x3
+[ATF](0)[13.112297]INFO:    plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x1015bc, afflvl = 1, state = 1
+[ATF](0)[13.112421]INFO:    plat_affinst_on() mpidr = 0x2, sec_entrypoint = 0x1015bc, afflvl = 0, state = 1
+[ATF](0)[13.112544]INFO:    [ATF]: mt_on[0:2:2]
+[ATF](0)[13.112602]INFO:    mt_on[0:2], entry 1015bc
+[ATF](0)[13.112665]INFO:    >>>>>>>> spmc_cpu_corex_onoff >>>>>>>>linear_id=2 state=1 mode=0
+[ATF](0)[13.112771]INFO:    PWR_STATUS_0x10006180=0xfbe0677c
+[ATF](0)[13.112844]INFO:    MPx_CPUx_PWR_CON_0x10006210=0x110001b7
+[ATF](2)[13.112919]INFO:    psci: core 0:2 ON
+[ATF](0)[13.113017]INFO:    PWR_STATUS_0x10006180=0xfbe06f7c
+[ATF](0)[13.113088]INFO:    cpu_bitmask=0x7
+[ATF](0)[13.113716]INFO:    plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x1015bc, afflvl = 1, state = 1
+[ATF](0)[13.113839]INFO:    plat_affinst_on() mpidr = 0x3, sec_entrypoint = 0x1015bc, afflvl = 0, state = 1
+[ATF](0)[13.113960]INFO:    [ATF]: mt_on[0:3:3]
+[ATF](0)[13.114017]INFO:    mt_on[0:3], entry 1015bc
+[ATF](0)[13.114078]INFO:    >>>>>>>> spmc_cpu_corex_onoff >>>>>>>>linear_id=3 state=1 mode=0
+[ATF](0)[13.114182]INFO:    PWR_STATUS_0x10006180=0xfbe06f7c
+[ATF](0)[13.114255]INFO:    MPx_CPUx_PWR_CON_0x10006214=0x110001b7
+[ATF](3)[13.114328]INFO:    psci: core 0:3 ON
+[ATF](0)[13.114426]INFO:    PWR_STATUS_0x10006180=0xfbe07f7c
+[ATF](0)[13.114496]INFO:    cpu_bitmask=0xf
+[ATF](0)[13.115126]INFO:    >>>>>>>> spmc_cputop_mpx_onoff cputop_mpx=1 state=1 mode=0
+[ATF](0)[13.115227]INFO:    PWR_STATUS_0x10006180=0xfbe07f7c
+[ATF](0)[13.115300]INFO:    MPx_CPUTOP_PWR_CON_0x10006218=0x110011a7
+[ATF](0)[13.115381]INFO:    PWR_STATUS_0x10006180=0xfbe0ff7c
+[ATF](0)[13.115453]INFO:    INFRA_TOPAXI_PROTECTEN_1_0x10001250=0x40
+[ATF](0)[13.115534]INFO:    INFRA_TOPAXI_PROTECTSTA1_1_0x10001258=0xf1c40040
+[ATF](0)[13.115872]INFO:    plat_affinst_on() mpidr = 0x100, sec_entrypoint = 0x1015bc, afflvl = 1, state = 1
+[ATF](0)[13.115998]INFO:    plat_affinst_on() mpidr = 0x100, sec_entrypoint = 0x1015bc, afflvl = 0, state = 1
+[ATF](0)[13.116122]INFO:    [ATF]: mt_on[256:0:4]
+[ATF](0)[13.116183]INFO:    mt_on[256:0], entry 1015bc
+[ATF](0)[13.116248]INFO:    >>>>>>>> spmc_cpu_corex_onoff >>>>>>>>linear_id=4 state=1 mode=0
+[ATF](0)[13.116355]INFO:    PWR_STATUS_0x10006180=0xfbe0ff7c
+[ATF](0)[13.116428]INFO:    MPx_CPUx_PWR_CON_0x1000621c=0x110001b7
+[ATF](4)[13.116503]INFO:    psci: cluster 1 ON
+[ATF](0)[13.116596]INFO:    PWR_STATUS_0x10006180=0xfbe1ff7c
+[ATF](4)[13.116666]INFO:    psci: core 1:0 ON
+[ATF](0)[13.116756]INFO:    cpu_bitmask=0x1f
+[ATF](0)[13.117436]INFO:    plat_affinst_on() mpidr = 0x101, sec_entrypoint = 0x1015bc, afflvl = 1, state = 1
+[ATF](0)[13.117561]INFO:    plat_affinst_on() mpidr = 0x101, sec_entrypoint = 0x1015bc, afflvl = 0, state = 1
+[ATF](0)[13.117687]INFO:    [ATF]: mt_on[256:1:5]
+[ATF](0)[13.117747]INFO:    mt_on[256:1], entry 1015bc
+[ATF](0)[13.117812]INFO:    >>>>>>>> spmc_cpu_corex_onoff >>>>>>>>linear_id=5 state=1 mode=0
+[ATF](0)[13.117919]INFO:    PWR_STATUS_0x10006180=0xfbe1ff7c
+[ATF](0)[13.117992]INFO:    MPx_CPUx_PWR_CON_0x10006220=0x110001b7
+[ATF](5)[13.118067]INFO:    psci: core 1:1 ON
+[ATF](0)[13.118159]INFO:    PWR_STATUS_0x10006180=0xfbe3ff7c
+[ATF](0)[13.118231]INFO:    cpu_bitmask=0x3f
+[ATF](0)[13.118923]INFO:    plat_affinst_on() mpidr = 0x102, sec_entrypoint = 0x1015bc, afflvl = 1, state = 1
+[ATF](0)[13.119049]INFO:    plat_affinst_on() mpidr = 0x102, sec_entrypoint = 0x1015bc, afflvl = 0, state = 1
+[ATF](0)[13.119174]INFO:    [ATF]: mt_on[256:2:6]
+[ATF](0)[13.119234]INFO:    mt_on[256:2], entry 1015bc
+[ATF](0)[13.119300]INFO:    >>>>>>>> spmc_cpu_corex_onoff >>>>>>>>linear_id=6 state=1 mode=0
+[ATF](0)[13.119406]INFO:    PWR_STATUS_0x10006180=0xfbe3ff7c
+[ATF](0)[13.119479]INFO:    MPx_CPUx_PWR_CON_0x10006224=0x110001b7
+[ATF](6)[13.119554]INFO:    psci: core 1:2 ON
+[ATF](0)[13.119647]INFO:    PWR_STATUS_0x10006180=0xfbe7ff7c
+[ATF](0)[13.119718]INFO:    cpu_bitmask=0x7f
+[ATF](0)[13.120413]INFO:    plat_affinst_on() mpidr = 0x103, sec_entrypoint = 0x1015bc, afflvl = 1, state = 1
+[ATF](0)[13.120539]INFO:    plat_affinst_on() mpidr = 0x103, sec_entrypoint = 0x1015bc, afflvl = 0, state = 1
+[ATF](0)[13.120665]INFO:    [ATF]: mt_on[256:3:7]
+[ATF](0)[13.120726]INFO:    mt_on[256:3], entry 1015bc
+[ATF](0)[13.120791]INFO:    >>>>>>>> spmc_cpu_corex_onoff >>>>>>>>linear_id=7 state=1 mode=0
+[ATF](0)[13.120896]INFO:    PWR_STATUS_0x10006180=0xfbe7ff7c
+[ATF](0)[13.120969]INFO:    MPx_CPUx_PWR_CON_0x10006228=0x110001b7
+[ATF](7)[13.121044]INFO:    psci: core 1:3 ON
+[ATF](0)[13.121135]INFO:    PWR_STATUS_0x10006180=0xfbefff7c
+[ATF](0)[13.121207]INFO:    cpu_bitmask=0xff
+[ATF](4)[13.328121]NOTICE:  MTK_SIP_KERNEL_WDT : 0xffffff80087d9d70 
+[ATF](4)[13.328197]NOTICE:  teearg->atf_aee_debug_buf_start : 0xeff3c000 
+[ATF](2)[14.052375]INFO:    SIP_KTIME: 0x44b0ed98 0x0 atf: 0x345962650
+[ATF](4)[25.312138]INFO:    cfd[4] is invalid (func = 0x54603740, lock = 0)
+[ATF](5)[162.337214]INFO:    cfd[5] is invalid (func = 0x54603740, lock = 0)
+[ATF](6)[487.218770]INFO:    cfd[6] is invalid (func = 0x54603740, lock = 0)
+[ATF](4)[487.256822]INFO:    cfd[4] is invalid (func = 0x54603740, lock = 0)
+[ATF](5)[487.997131]INFO:    cfd[5] is invalid (func = 0x54603740, lock = 0)
+[ATF](6)[602.293097]INFO:    cfd[6] is invalid (func = 0x54603740, lock = 0)

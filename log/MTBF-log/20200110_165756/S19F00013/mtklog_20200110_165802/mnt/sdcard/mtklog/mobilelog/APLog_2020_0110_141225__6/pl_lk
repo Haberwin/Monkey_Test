@@ -1,0 +1,3569 @@
+<< /proc/pl_lk >>:
+show buff sig 0xcdab3412, size 0x40000,pl size 0x31a9, lk size 0x27063!
+Pll init start...
+mtcmos Start..
+mtcmos Done!
+Pll init Done!
+[PWRAP] si_en_sel = 0, si_ck_sel = 0, *PMIC_WRAP_SI_SAMPLE_CTRL = 0, rdata = 16A9
+[PWRAP] InitSiStrobe (6, 0, 7BF7) Data Boundary Is Found !!
+[PWRAP] InitSiStrobe (6, 6, 7BF7) Data Boundary Is Found !!
+Current RTC time:[2020/1/10 6:11:48]
+DATE_CODE_YY:0, DATE_CODE_WW:0
+[SegCode] Segment Code:0x11, PROJECT_CODE:0x0, FAB_CODE:0x0, RW_STA:0x0, CTL:0x0, DCM:0x4
+[PMIC]Preloader Start
+[PMIC]MT6356 CHIP Code = 0x5640
+[PMIC]POWER_HOLD ON
+[PMIC]PowerHold = 0x1
+[PMIC]TOP_RST_STATUS[0x15C]=0x4F
+[PMIC]PONSTS[0xA]=0x0
+[PMIC]POFFSTS[0xC]=0x400
+[PMIC]PGSTATUS0[0x14]=0xFFFF
+[PMIC]PGSTATUS1[0x16]=0xE000
+[PMIC]PSOCSTATUS[0x18]=0x0
+[PMIC]BUCK_OC_SDN_STATUS[0xB3A]=0x0
+[PMIC]BUCK_OC_SDN_EN[0xB4A]=0x11F
+[PMIC]THERMALSTATUS[0x1A]=0x0
+[PMIC]STRUP_CON4[0x374]=0x0
+[PMIC]TOP_RST_MISC[0x156]=0x204
+[PMIC]TOP_CLK_TRIM[0x20C]=0x6CC0
+[pmic_check_rst] AP Watchdog
+[PMIC]just_rst = 0
+[PMIC] pmic_auxadc_init_setting_v1
+battery exists
+[PMIC]disable usbdl wo battery
+[PMIC]pmic_wdt_set
+[PMIC]pmic_wdt_set Reg[0x156]=0x225
+[PMIC] pmic_smps_testmode_b
+[I2C] 359: id=6,addr: 6B, transfer error
+[I2C] 365: I2C_ACKERR
+[I2C] 232: I2C structure:
+[I2C] Clk=13650,Id=6,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 235: base address 0x11005000
+[I2C] 257: I2C register:
+[I2C] SLAVE_ADDR=D6,INTR_MASK=F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1101
+[I2C] IO_CONFIG=1A0,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 905: write_read 0x10001 bytes fails,ret=-121.
+mt6311_read_byte: i2c_read: ret_code: -1
+[I2C] 359: id=6,addr: 6B, transfer error
+[I2C] 365: I2C_ACKERR
+[I2C] 232: I2C structure:
+[I2C] Clk=13650,Id=6,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 235: base address 0x11005000
+[I2C] 257: I2C register:
+[I2C] SLAVE_ADDR=D6,INTR_MASK=F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1101
+[I2C] IO_CONFIG=1A0,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 905: write_read 0x10001 bytes fails,ret=-121.
+mt6311_read_byte: i2c_read: ret_code: -1
+[update_mt6311_chip_id] proj_id=0x0, swcid=0x1, g_mt6311_cid=0x1
+[6311_prb] PL g_mt6311_hw_exist=0, g_mt6311_driver_ready=1
+[6311_prb] PL No I2C_EXT_BUCK_CHANNEL (6)
+[6311_prb] PL No GPIO_EXT_BUCK_VSEL_PIN (0x0)
+[rt5738_driver_probe]
+[I2C] 359: id=1,addr: 57, transfer error
+[I2C] 365: I2C_ACKERR
+[I2C] 232: I2C structure:
+[I2C] Clk=13650,Id=1,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 235: base address 0x11008000
+[I2C] 257: I2C register:
+[I2C] SLAVE_ADDR=AE,INTR_MASK=F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1101
+[I2C] IO_CONFIG=1F3,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 905: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 359: id=1,addr: 57, transfer error
+[I2C] 365: I2C_ACKERR
+[I2C] 232: I2C structure:
+[I2C] Clk=13650,Id=1,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 235: base address 0x11008000
+[I2C] 257: I2C register:
+[I2C] SLAVE_ADDR=AE,INTR_MASK=F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1101
+[I2C] IO_CONFIG=1F3,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 905: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 359: id=1,addr: 57, transfer error
+[I2C] 365: I2C_ACKERR
+[I2C] 232: I2C structure:
+[I2C] Clk=13650,Id=1,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 235: base address 0x11008000
+[I2C] 257: I2C register:
+[I2C] SLAVE_ADDR=AE,INTR_MASK=F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1101
+[I2C] IO_CONFIG=1F3,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 905: write_read 0x10001 bytes fails,ret=-121.
+[rt5738_hw_component_detect] exist = 0, Chip ID = 304
+[rt5738_driver_probe] PL rt5738_vdd2 is not exist
+[I2C] 359: id=1,addr: 50, transfer error
+[I2C] 365: I2C_ACKERR
+[I2C] 232: I2C structure:
+[I2C] Clk=13650,Id=1,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 235: base address 0x11008000
+[I2C] 257: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1101
+[I2C] IO_CONFIG=1F3,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 905: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 359: id=1,addr: 50, transfer error
+[I2C] 365: I2C_ACKERR
+[I2C] 232: I2C structure:
+[I2C] Clk=13650,Id=1,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 235: base address 0x11008000
+[I2C] 257: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1101
+[I2C] IO_CONFIG=1F3,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 905: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 359: id=1,addr: 50, transfer error
+[I2C] 365: I2C_ACKERR
+[I2C] 232: I2C structure:
+[I2C] Clk=13650,Id=1,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 235: base address 0x11008000
+[I2C] 257: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1101
+[I2C] IO_CONFIG=1F3,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 905: write_read 0x10001 bytes fails,ret=-121.
+[rt5738_hw_component_detect] exist = 0, Chip ID = 304
+[rt5738_driver_probe] PL rt5738_vddq is not exist
+[I2C] 359: id=1,addr: 50, transfer error
+[I2C] 365: I2C_ACKERR
+[I2C] 232: I2C structure:
+[I2C] Clk=13650,Id=1,Mode=1,St_rs=0,Dma_en=0,Op=3,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=1,Trans_num=2,Trans_auxlen=1,Data_size=FFFF,speed=100
+[I2C] 235: base address 0x11008000
+[I2C] 257: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=F8,INTR_STAT=3,CONTROL=38,TRANSFER_LEN=1
+[I2C] TRANSAC_LEN=2,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1101
+[I2C] IO_CONFIG=1F3,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=1,CLOCK_DIV=4
+[I2C] 905: write_read 0x10001 bytes fails,ret=-121.
+[I2C] 359: id=1,addr: 50, transfer error
+[I2C] 365: I2C_ACKERR
+[I2C] 232: I2C structure:
+[I2C] Clk=13650,Id=1,Mode=1,St_rs=0,Dma_en=0,Op=1,Poll_en=1,Irq_stat=2
+[I2C] Trans_len=2,Trans_num=1,Trans_auxlen=0,Data_size=FFFF,speed=100
+[I2C] 235: base address 0x11008000
+[I2C] 257: I2C register:
+[I2C] SLAVE_ADDR=A0,INTR_MASK=F8,INTR_STAT=3,CONTROL=28,TRANSFER_LEN=2
+[I2C] TRANSAC_LEN=1,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1210
+[I2C] IO_CONFIG=1F3,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=0,CLOCK_DIV=4
+[I2C] 866: Write 2 bytes fails,ret=-121.
+[rt5738_driver_probe] PL No I2C_EXT_BUCK_CHANNEL (1)
+register vs1 OK
+register vmodem OK
+register vcore OK
+register vsram_others OK
+register vsram_gpu OK
+register vproc OK
+register vs2 OK
+register vsram_proc OK
+register vpa OK
+register vdram OK
+register vsim1 OK
+register vsim2 OK
+register vmc OK
+[MT6356] 1 7,80
+[MT6356] 1 5,48
+[MT6356] 1 7,64
+[MT6356] 1 4,64
+[MT6356] 1 3,64
+[MT6356] 1 2,48
+[MT6356] 1 1,44
+[MT6356] get volt 7, 64, 900000
+vsram_proc = 900000 uV
+[MT6356] get volt 4, 64, 900000
+vsram_gpu = 900000 uV
+[MT6356] get volt 3, 64, 900000
+vsram_others = 900000 uV
+[MT6356] get volt 5, 48, 800000
+vproc = 800000 uV
+[MT6356] get volt 2, 48, 800000
+vcore = 800000 uV
+[MT6356] get volt 1, 44, 775000
+vmodem = 775000 uV
+[MT6356] 2 7,1
+[MT6356] 2 4,0
+[MT6356] 2 3,1
+[MT6356] 2 5,1
+[MT6356] 2 2,1
+[MT6356] 2 1,1
+[pmic_init]Done
+vproc/vsram run as hw default
+[PLFM] Init PWRAP: OK(0)
+[PLFM] Init PMIC: OK(0)
+[PLFM] chip_hw_ver[CA01], chip_sw_ver[1]
+
+[BLDR] Build Time: 20191227-093813
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_STATUS=2 1 1 2 0 0 1
+clk_buf_dump_dts_log: PMIC_CLK_BUF?_DRV_CURR=-1 -1 -1 -1 -1 -1 -1
+clk_buf_dump_clkbuf_log DCXO_CW00=0x4E1D, CW02=0x3AEE, CW11=0x9800, CW14=0xA2B5, CW16=0x9455, CW20=0x811, top_spi_con1=0x1
+clk_buf_dump_clkbuf_log DCXO_CW00=0x4E1D, CW02=0x3AEE, CW11=0xB800, CW14=0xA2B5, CW16=0x9455, CW20=0x811, top_spi_con1=0x0
+clk_buf_init_pmic_wrap: DCXO_CONN_ADR0/WDATA0/ADR1/WDATA1=0x2AC/0/2AC/1
+clk_buf_init_pmic_wrap: DCXO_NFC_ADR0/WDATA0/ADR1/WDATA1/EN=0x9CA/100/9C8/100/3
+[RGU] EMI_DCS_SUCCESS 0
+[RGU] DVFSRC_SUCCESS 0
+[DDR Reserve] ddr reserve mode not be enabled yet
+[RGU] ==== Dump RGU Reg ========
+[RGU] RGU MODE:      0x14
+[RGU] RGU LENGTH:    0xFFE0
+[RGU] RGU STA:       0x40000000
+[RGU] RGU INTERVAL:  0xFFF
+[RGU] RGU SWSYSRST:  0x8000
+[RGU] RGU DEBUG_CTL: 0x200F1
+[RGU] RGU LATCH_CTL: 0x1F71
+[RGU] ==== Dump RGU Reg End ====
+[RGU] g_rgu_status: 2 (0x2)
+[RGU] mtk_wdt_mode_config mode value=10, tmp:22000010
+[RGU] PL RGU RST: Unknown
+SW reset with bypass power key flag
+[RGU] Bypass pwrkey info: Bypass powerkey flag found
+[RGU] mtk_wdt_mode_config mode value=5D, tmp:2200005D
+[RGU] mtk_wdt_reset_deglitch_enable: MTK_WDT_RSTDEG_EN1(8000A357), MTK_WDT_RSTDEG_EN2(800067D2)
+[RGU] rgu_update_reg: 0, bits: 0xC000, addr: 0x10007040, val: 0x200F1
+[RGU] rgu_update_reg: 0, bits: 0x300, addr: 0x100070A0, val: 0xFF
+[RGU] mtk_wdt_init: MTK_WDT_DEBUG_CTL(0x200F1)
+[RGU] mtk_wdt_init: MTK_WDT_DEBUG_CTL2(0xFF)
+[RGU] mtk_wdt_init: MTK_WDT_LATCH_CTL(0x1F71)
+[RGU] mtk_wdt_init: MTK_WDT_REQ_MODE(3E0013), MTK_WDT_REQ_IRQ_EN(3A0010)
+Enter mtk_kpd_gpio_set! 
+after set KP enable: KP_SEL = 0x1C70 !
+[RTC] enable_dcxo first con = 0x487, osc32con = 0xDAED, sec = 0x2400
+[RTC] get_frequency_meter: input=0x0, ouput=5
+[RTC] get_frequency_meter: input=0x0, ouput=0
+[RTC] get_frequency_meter: input=0x0, ouput=0
+[RTC] get_frequency_meter: input=0x0, ouput=5
+[RTC] get_frequency_meter: input=0x0, ouput=3984
+[RTC] rtc_boot_check1 powerkey1 = 0xA357, powerkey2 = 0x67D2, without LPD
+[RTC] bbpu = 0x1, con = 0x487, osc32con = 0xDAED, sec = 0x2400, yea = 0xC534
+[RTC] rtc_boot_check2 powerkey1 = 0xA357, powerkey2 = 0x67D2
+[RTC] rtc_boot_check Writeif_unlock
+[RTC] EOSC_Cali: RG_FQMTR_CKSEL=0x42
+[RTC] get_frequency_meter: input=0xF, ouput=825
+[RTC] EOSC_Cali: val=0x339
+[RTC] get_frequency_meter: input=0x7, ouput=707
+[RTC] EOSC_Cali: val=0x2C3
+[RTC] get_frequency_meter: input=0xB, ouput=766
+[RTC] EOSC_Cali: val=0x2FE
+[RTC] get_frequency_meter: input=0xD, ouput=797
+[RTC] EOSC_Cali: val=0x31D
+[RTC] get_frequency_meter: input=0xC, ouput=781
+[RTC] EOSC_Cali: val=0x30D
+[RTC] get_frequency_meter: input=0xC, ouput=781
+[RTC] get_frequency_meter: input=0xD, ouput=796
+[RTC] EOSC cali val = 0xDACD
+[RTC] RTC_SPAR0=0x0 
+[RTC] XO_XMODE_M = 1 , XO_EN32K_M = 1
+[RTC] 32k-less mode
+[RTC] rtc_2sec_reboot_check 0x2400, without 2sec reboot, type 0x2
+[RTC] rtc 2sec reboot is not enabled
+[RTC] rtc_lpd_init RTC_CON=0x487
+[RTC] irqsta = 0x0, pdn1 = 0x200, pdn2 = 0x201, spar0 = 0x80, spar1 = 0x800
+[RTC] new_spare0 = 0x6001, new_spare1 = 0x500A, new_spare2 = 0x1, new_spare3 = 0xE401
+[RTC] bbpu = 0x1, con = 0x487, cali = 0x2400, osc32con = 0xDAED
+SW reset with bypass power key flag
+SW reset with bypass power key flag
+[PLFM] WDT reboot bypass power key!
+[PMIC]POWER_HOLD ON
+[PMIC]PowerHold = 0x1
+[RTC] rtc_bbpu_power_on done
+[PMIC]init_setting
+[PMIC] init setting date: 2017-05-10, Done
+battery exists
+[pl_battery_init] is_fg_init:0 , force_init:0 bat:1
+[fg_get_time] low:0x835 high:0x0 rtime:0xx 0x41A p1=1050 p2=16!
+[fg_init] fg_reset_status 1 do_init_fgadc_reset 0 fg_curr_time 1050 fg_soff_valid:0 		shutdown_pmic_time 1050 hw_id 0x5640 sw_id 0x5640, 4311 0 0x1 0x2329 0 1
+battery exists
+[pl_check_bat_protect_status]: check VBAT=4313 mV with 0 mV, VCHR 4730 mV ,VCHR_HV=12500  start charging... 
+[pl_check_bat_protect_status]: check VBAT=4313 mV with 0 mV, stop charging... 
+mtk_kpd_gpio_set Already! 
+mtk detect key function pmic_detect_homekey MTK_PMIC_RST_KEY = 17
+Log Turned Off.
+
+Current RTC time:[2020/1/10 6:11:53]
+[8] bootarg_addr: 0x4489da80, bootarg_size: 0x1697
+[8] [WDT]  mtk_wdt_mode LK config  mode value=5d
+[8] [WDT]  mtk_wdt_mode_config LK  mode value=10, tmp:22000010
+[8] [WDT] wdt init
+[8] [WDT]  mtk_wdt_mode LK config  mode value=10
+[8] [WDT]  mtk_wdt_mode_config LK  mode value=5d, tmp:2200005d
+[8] [PWRAP] pwrap_init_lk
+[8] [PWRAP] is_pwrap_init_done 1
+[8] [PWRAP] [PMIC_WRAP]wrap_init already init, do nothing
+[8] [pmic_init] LK Start..................
+[8] [pmic_init] MT6356 CHIP Code = 0x5640
+[8] [pmic_init] Done
+[8] welcome to lk
+
+[8] calling constructors
+[8] initializing heap
+[8] heap base 0x560c0b54 size 3404972 bytes
+[8] initializing threads
+[8] initializing dpc
+[8] initializing timers
+[8] creating bootstrap completion thread
+[8] iothread starts.
+[8] Wait for bootstrap2...
+[8] top of bootstrap2()
+[8] thread: bootstrap2, bottom(stack) = 0x560c4c4c, limit(stack) = 0x560c2c4c
+[9] initializing platform
+[9] platform_init()
+[9] [SD0] Host controller intialization start
+[9] [SD0] SET_CLK(260kHz): SCLK(260kHz) MODE(0) DDR(0) DIV(350) DS(0) RS(0)
+[9] [SD0] Host controller intialization done
+[9] [mmc_init]: msdc0 start mmc_init_card()
+[9] [mmc_init_card]: start
+[40] [SD0] EXT_CSD_ERASE_GRP_DEF is Off, wp_size = 8192KB
+[SD0] csd.write_prot_grpsz = 15, csd.erase_sctsz = 1024
+[41] [SD0] Switch to High-Speed mode!
+[42] [SD0] Switch to DDR buswidth
+[42] [SD0] SET_CLK(260kHz): SCLK(260kHz) MODE(2) DDR(1) DIV(175) DS(0) RS(0)
+[43] [SD0] Size: 29820 MB, Max.Speed: 52000 kHz, blklen(512), nblks(61071360)
+[43] [SD0] Initialized, eMMC50
+[43] [SD0] SET_CLK(52000kHz): SCLK(45500kHz) MODE(2) DDR(1) DIV(1) DS(0) RS(0)
+[43] [mmc_init_card]: finish successfully
+[43] [mt_part_register_device]
+[43] [partition init]
+[43] [GPT_LK]Parsing Primary GPT now...
+[43] [GPT_LK][0]name=boot_para, part_id=8, start_sect=0x40, nr_sects=0x800
+[44] [GPT_LK][1]name=recovery, part_id=8, start_sect=0x840, nr_sects=0x10000
+[44] [GPT_LK][2]name=para, part_id=8, start_sect=0x10840, nr_sects=0x400
+[44] [GPT_LK][3]name=splash, part_id=8, start_sect=0x10c40, nr_sects=0x4000
+[44] [GPT_LK][4]name=dlconfig, part_id=8, start_sect=0x14c40, nr_sects=0x2800
+[44] [GPT_LK][5]name=factory, part_id=8, start_sect=0x17440, nr_sects=0x8
+[44] [GPT_LK][6]name=enterprise, part_id=8, start_sect=0x17448, nr_sects=0x20000
+[44] [GPT_LK][7]name=expdb, part_id=8, start_sect=0x37448, nr_sects=0xa000
+[44] [GPT_LK][8]name=frp, part_id=8, start_sect=0x41448, nr_sects=0x800
+[44] [GPT_LK][9]name=nvcfg, part_id=8, start_sect=0x41c48, nr_sects=0x10000
+[44] [GPT_LK][10]name=nvdata, part_id=8, start_sect=0x51c48, nr_sects=0x20000
+[44] [GPT_LK][11]name=metadata, part_id=8, start_sect=0x71c48, nr_sects=0x10000
+[44] [GPT_LK][12]name=protect1, part_id=8, start_sect=0x81c48, nr_sects=0x4000
+[44] [GPT_LK][13]name=protect2, part_id=8, start_sect=0x85c48, nr_sects=0x63b8
+[44] [GPT_LK][14]name=seccfg, part_id=8, start_sect=0x8c000, nr_sects=0x4000
+[45] [GPT_LK][15]name=sec1, part_id=8, start_sect=0x90000, nr_sects=0x1000
+[45] [GPT_LK][16]name=proinfo, part_id=8, start_sect=0x91000, nr_sects=0x1800
+[45] [GPT_LK][17]name=md1img, part_id=8, start_sect=0x92800, nr_sects=0x20000
+[45] [GPT_LK][18]name=md1dsp, part_id=8, start_sect=0xb2800, nr_sects=0x8000
+[45] [GPT_LK][19]name=spmfw, part_id=8, start_sect=0xba800, nr_sects=0x800
+[45] [GPT_LK][20]name=sspm_1, part_id=8, start_sect=0xbb000, nr_sects=0x800
+[45] [GPT_LK][21]name=sspm_2, part_id=8, start_sect=0xbb800, nr_sects=0x800
+[45] [GPT_LK][22]name=gz1, part_id=8, start_sect=0xbc000, nr_sects=0x8000
+[45] [GPT_LK][23]name=gz2, part_id=8, start_sect=0xc4000, nr_sects=0x8000
+[45] [GPT_LK][24]name=nvram, part_id=8, start_sect=0xcc000, nr_sects=0x20000
+[45] [GPT_LK][25]name=lk, part_id=8, start_sect=0xec000, nr_sects=0x800
+[45] [GPT_LK][26]name=lk2, part_id=8, start_sect=0xec800, nr_sects=0x800
+[45] [GPT_LK][27]name=boot, part_id=8, start_sect=0xed000, nr_sects=0x10000
+[45] [GPT_LK][28]name=logo, part_id=8, start_sect=0xfd000, nr_sects=0x4000
+[45] [GPT_LK][29]name=odmdtbo, part_id=8, start_sect=0x101000, nr_sects=0x8000
+[46] [GPT_LK][30]name=tee1, part_id=8, start_sect=0x109000, nr_sects=0x2800
+[46] [GPT_LK][31]name=tee2, part_id=8, start_sect=0x10b800, nr_sects=0x4800
+[46] [GPT_LK][32]name=vendor, part_id=8, start_sect=0x110000, nr_sects=0x148000
+[46] [GPT_LK][33]name=system, part_id=8, start_sect=0x258000, nr_sects=0x600000
+[46] [GPT_LK][34]name=cache, part_id=8, start_sect=0x858000, nr_sects=0xd8000
+[46] [GPT_LK][35]name=userdata, part_id=8, start_sect=0x930000, nr_sects=0x30f9fdf
+[46] [GPT_LK][36]name=sdrpmb, part_id=8, start_sect=0x3a29fdf, nr_sects=0xc000
+[46] [GPT_LK][37]name=flashinfo, part_id=8, start_sect=0x3a35fdf, nr_sects=0x8000
+[46] [GPT_LK]Success to find valid GPT.
+[46] [SD0] boot device found
+[46] [mboot_recovery_load_misc]: size is 6144
+[46] [mboot_recovery_load_misc]: misc_addr is 0x560c7d88
+[46] [PART_LK][get_part] para
+[46] [partition_get_index]find para index 3
+[47] [LK_BOOT] Load 'para' partition to 0x560C7D88 (6144 bytes in 1 ms)
+[47] [PART_LK][get_part] boot
+[47] [partition_get_index]find boot index 28
+[47] [LK_BOOT] Load 'boot' partition to 0x560CD064 (2656 bytes in 0 ms)
+[47] mblock[0].start: 0x40000000, sz: 0x3feb0000, limit: 0x54080000, max_addr: 0x0, target: -1, reserved_addr: 0x54000000,reserved_size: 0x80000
+[48] mblock_reserve dbg[0]: 1, 1, 1, 1
+[48] mblock[1].start: 0x80000000, sz: 0x40000000, limit: 0x54080000, max_addr: 0x7feb0000, target: 0, reserved_addr: 0x54000000,reserved_size: 0x80000
+[48] mblock_reserve dbg[1]: 1, 0, 1, 1
+[48] mblock[2].start: 0xc0000000, sz: 0x2eb00000, limit: 0x54080000, max_addr: 0x7feb0000, target: 0, reserved_addr: 0x54000000,reserved_size: 0x80000
+[48] mblock_reserve dbg[2]: 1, 0, 1, 1
+[48] mblock[3].start: 0xeff40000, sz: 0x100c0000, limit: 0x54080000, max_addr: 0x7feb0000, target: 0, reserved_addr: 0x54000000,reserved_size: 0x80000
+[48] mblock_reserve dbg[3]: 1, 0, 1, 1
+[48] mblock[0]: 40000000, 14000000 from mblock
+mblock[1]: 54080000, 2be30000 from mblock
+[48] mblock_reserve: 54000000 - 54080000 from mblock 0
+[48] mblock_reserve [0].start: 0x40000000, sz: 0x14000000
+[48] mblock_reserve [1].start: 0x54080000, sz: 0x2be30000
+[48] mblock_reserve [2].start: 0x80000000, sz: 0x40000000
+[48] mblock_reserve [3].start: 0xc0000000, sz: 0x2eb00000
+[48] mblock_reserve [4].start: 0xeff40000, sz: 0x100c0000
+[49] mblock_reserve-R[0].start: 0x7ff80000, sz: 0x80000 map:1 name:log_store
+[49] mblock_reserve-R[1].start: 0x7fec0000, sz: 0xc0000 map:0 name:SSPM-reserved
+[49] mblock_reserve-R[2].start: 0x7feb0000, sz: 0x10000 map:0 name:SPM-reserved
+[49] mblock_reserve-R[3].start: 0xeeb00000, sz: 0x1440000 map:0 name:tee-reserved
+[49] mblock_reserve-R[4].start: 0x54000000, sz: 0x80000 map:0 name:dtb_kernel_addr_mb
+[49] mblock[0].start: 0x40000000, sz: 0x14000000, limit: 0x4c880000, max_addr: 0x0, target: -1, reserved_addr: 0x40080000,reserved_size: 0xc800000
+[49] mblock_reserve dbg[0]: 1, 1, 1, 1
+[49] mblock[1].start: 0x54080000, sz: 0x2be30000, limit: 0x4c880000, max_addr: 0x54000000, target: 0, reserved_addr: 0x40080000,reserved_size: 0xc800000
+[49] mblock_reserve dbg[1]: 1, 0, 1, 1
+[49] mblock[2].start: 0x80000000, sz: 0x40000000, limit: 0x4c880000, max_addr: 0x54000000, target: 0, reserved_addr: 0x40080000,reserved_size: 0xc800000
+[49] mblock_reserve dbg[2]: 1, 0, 1, 1
+[49] mblock[3].start: 0xc0000000, sz: 0x2eb00000, limit: 0x4c880000, max_addr: 0x54000000, target: 0, reserved_addr: 0x40080000,reserved_size: 0xc800000
+[50] mblock_reserve dbg[3]: 1, 0, 1, 1
+[50] mblock[4].start: 0xeff40000, sz: 0x100c0000, limit: 0x4c880000, max_addr: 0x54000000, target: 0, reserved_addr: 0x40080000,reserved_size: 0xc800000
+[50] mblock_reserve dbg[4]: 1, 0, 1, 1
+[50] mblock[0]: 40000000, 80000 from mblock
+mblock[1]: 4c880000, 7780000 from mblock
+[50] mblock_reserve: 40080000 - 4c880000 from mblock 0
+[50] mblock_reserve [0].start: 0x40000000, sz: 0x80000
+[50] mblock_reserve [1].start: 0x4c880000, sz: 0x7780000
+[50] mblock_reserve [2].start: 0x54080000, sz: 0x2be30000
+[50] mblock_reserve [3].start: 0x80000000, sz: 0x40000000
+[50] mblock_reserve [4].start: 0xc0000000, sz: 0x2eb00000
+[50] mblock_reserve [5].start: 0xeff40000, sz: 0x100c0000
+[50] mblock_reserve-R[0].start: 0x7ff80000, sz: 0x80000 map:1 name:log_store
+[51] mblock_reserve-R[1].start: 0x7fec0000, sz: 0xc0000 map:0 name:SSPM-reserved
+[51] mblock_reserve-R[2].start: 0x7feb0000, sz: 0x10000 map:0 name:SPM-reserved
+[51] mblock_reserve-R[3].start: 0xeeb00000, sz: 0x1440000 map:0 name:tee-reserved
+[51] mblock_reserve-R[4].start: 0x54000000, sz: 0x80000 map:0 name:dtb_kernel_addr_mb
+[51] mblock_reserve-R[5].start: 0x40080000, sz: 0xc800000 map:0 name:kernel_addr_mb
+[51] mblock[0].start: 0x40000000, sz: 0x80000, limit: 0x55115000, max_addr: 0x0, target: -1, reserved_addr: 0x3ff6b000,reserved_size: 0x115000
+[51] mblock_reserve dbg[0]: 1, 0, 1, 1
+[51] mblock[1].start: 0x4c880000, sz: 0x7780000, limit: 0x55115000, max_addr: 0x0, target: -1, reserved_addr: 0x53eeb000,reserved_size: 0x115000
+[51] mblock_reserve dbg[1]: 1, 1, 1, 1
+[51] mblock[2].start: 0x54080000, sz: 0x2be30000, limit: 0x55115000, max_addr: 0x54000000, target: 1, reserved_addr: 0x55000000,reserved_size: 0x115000
+[51] mblock_reserve dbg[2]: 1, 1, 1, 1
+[51] mblock[3].start: 0x80000000, sz: 0x40000000, limit: 0x55115000, max_addr: 0x7feb0000, target: 2, reserved_addr: 0x55000000,reserved_size: 0x115000
+[52] mblock_reserve dbg[3]: 1, 0, 1, 1
+[52] mblock[4].start: 0xc0000000, sz: 0x2eb00000, limit: 0x55115000, max_addr: 0x7feb0000, target: 2, reserved_addr: 0x55000000,reserved_size: 0x115000
+[52] mblock_reserve dbg[4]: 1, 0, 1, 1
+[52] mblock[5].start: 0xeff40000, sz: 0x100c0000, limit: 0x55115000, max_addr: 0x7feb0000, target: 2, reserved_addr: 0x55000000,reserved_size: 0x115000
+[52] mblock_reserve dbg[5]: 1, 0, 1, 1
+[52] mblock[2]: 54080000, f80000 from mblock
+mblock[3]: 55115000, 2ad9b000 from mblock
+[52] mblock_reserve: 55000000 - 55115000 from mblock 2
+[52] mblock_reserve [0].start: 0x40000000, sz: 0x80000
+[52] mblock_reserve [1].start: 0x4c880000, sz: 0x7780000
+[52] mblock_reserve [2].start: 0x54080000, sz: 0xf80000
+[52] mblock_reserve [3].start: 0x55115000, sz: 0x2ad9b000
+[52] mblock_reserve [4].start: 0x80000000, sz: 0x40000000
+[52] mblock_reserve [5].start: 0xc0000000, sz: 0x2eb00000
+[52] mblock_reserve [6].start: 0xeff40000, sz: 0x100c0000
+[52] mblock_reserve-R[0].start: 0x7ff80000, sz: 0x80000 map:1 name:log_store
+[53] mblock_reserve-R[1].start: 0x7fec0000, sz: 0xc0000 map:0 name:SSPM-reserved
+[53] mblock_reserve-R[2].start: 0x7feb0000, sz: 0x10000 map:0 name:SPM-reserved
+[53] mblock_reserve-R[3].start: 0xeeb00000, sz: 0x1440000 map:0 name:tee-reserved
+[53] mblock_reserve-R[4].start: 0x54000000, sz: 0x80000 map:0 name:dtb_kernel_addr_mb
+[53] mblock_reserve-R[5].start: 0x40080000, sz: 0xc800000 map:0 name:kernel_addr_mb
+[53] mblock_reserve-R[6].start: 0x55000000, sz: 0x115000 map:0 name:ramdisk_addr_mb
+[53] [partition_get_index]find boot index 28
+[60] Kernel(1) zimage_size:0x892e1d,dtb_addr:0x56133428(dtb_size:0x19a59)
+[61] Copy DTB from 0x56133428 to 0x54000000(size: 0x19a59)
+[61] [LK] fdt setup addr:0x54000000 status:1!!!
+[61] [PART_LK][get_part] odmdtbo
+[61] [partition_get_index]find odmdtbo index 30
+[61] Multiple ODM DTBO.
+[61] ODM mdtbo_index: 0, dtbo_offset: 1024, dtbo_size: 45724
+[61] [partition_get_index]find odmdtbo index 30
+[62] blob_len: 0x80000, overlay_len: 0xb29c
+[77] [PROFILE] ::: lvl(1) Overlay takes 15 ms
+[77] fdt merged_size: 135317
+[77] [GPIO] Found /gpio@10005000at offset 12396
+[77] [GPIO] Found perperty at 0x5400311c, len 4592
+[78] [LEDS]LK: mt6370_init_bled
+[81] [LEDS] mt,ext_en_pin val = 0
+[81] [LEDS] mt,chan_en val = 12
+[81] [LEDS] mt,map_linear = 1
+[81] [LEDS] mt,bl_ovp_level = 3
+[81] [LEDS] mt,bl_ocp_level = 2
+[81] [LEDS] mt,use_pwm = 1
+[81] [LEDS] mt,pwm_fsample = 2
+[81] [LEDS] mt,pwm_deglitch = 1
+[81] [LEDS] mt,bled_ramptime = 3
+[81] [LEDS] mt,bled_flash_ramp = 1
+[81] [LEDS] mt,max_bled_brightness = 1770
+[81] mt6370_i2c_write_byte: I2CW[0xA1] = 0xED
+[81] mt6370_i2c_write_byte: I2CW[0xA2] = 0xB4
+[82] mt6370_i2c_write_byte: I2CW[0xA3] = 0x30
+[82] mt6370_i2c_write_byte: I2CW[0xA4] = 0x03
+[82] mt6370_i2c_write_byte: I2CW[0xA5] = 0xDC
+[82] mt6370_i2c_write_byte: I2CW[0xA6] = 0x00
+[82] mt6370_i2c_write_byte: I2CW[0xA7] = 0x08
+[82] mt6370_i2c_write_byte: I2CW[0xA0] = 0x72
+[82] [LEDS]LK: leds_init: mt65xx_backlight_off 
+[82] [LEDS]LK: mt65xx_backlight_off 
+[85] [LEDS]LK:led[0] offset is 103260,mode is 1,data is 2 .
+[88] [LEDS]LK:led[1] offset is 103404,mode is 1,data is 3 .
+[91] [LEDS]LK:led[2] offset is 103548,mode is 0,data is 1 .
+[94] [LEDS]LK:led[3] offset is 103688,mode is 0,data is 1 .
+[97] [LEDS]LK:led[4] offset is 103840,mode is 1,data is 1 .
+[100] [LEDS]LK:led[5] offset is 103992,mode is 0,data is 1 .
+[102] [LEDS]LK:The backlight hw mode is BLS.
+[102] [LEDS]LK:led[6] offset is 104144,mode is 5,data is 1442965369 .
+[103] [LEDS]LK: lcd-backlight level is 0 
+[103] [LK_DDP/INFO]ddp_enable_module_clock: pwm0 
+[103] [LK_DDP/INFO]error:enable module clock unknow module 35 
+[103] [DISP][PWM] disp_pwm_ulposc_power_on : unlock ulposc control reg, ULPOSC_CON_LOCK	  0x3
+[103] [DISP][PWM] disp_pwm_ulposc_power_on : before OSC_REG_SET 0x1, ULPOSC_CON	  0x0
+[103] [DISP][PWM] disp_pwm_ulposc_power_on : after OSC_REG_SET 0x1, ULPOSC_CON	  0x1
+[103] [DISP][PWM] disp_pwm_ulposc_power_on : before OSC_REG_SET 0x5, ULPOSC_CON	  0x1
+[103] [DISP][PWM] disp_pwm_ulposc_power_on : after OSC_REG_SET 0x5, ULPOSC_CON	  0x5
+[103] [DISP][PWM] get_cali_val 0x2b 0x494d
+
+[103] [DISP][PWM] final cali_val: 0x494d
+
+[103] [DISP][PWM] set reg[0x100000b8] = 0x00000003
+[103] [DISP][PWM] set reg[0x100000b4] = 0x00000000
+[103] [DISP][PWM] disp_pwm_init : CLK_CFG_7 0x1000000 => 0x1000000
+[103] [DISP][PWM] disp_pwm_init : PWM config data (0,0)
+[104] [DISP][PWM] set reg[0x10000004] = 0x08000000
+[104] [DISP][PWM] set reg[0x1100e018] = 0x00000000
+[104] [DISP][PWM] set reg[0x1100e01c] = 0x000003ff
+[104] [DISP][PWM] disp_pwm_set_backlight(id = 0x1, level_1024 = 0)
+[104] [DISP][PWM] set reg[0x1100e00c] = 0x00000000
+[104] [DISP][PWM] set reg[0x1100e01c] = 0x000003ff
+[104] [DISP][PWM] set reg[0x1100e000] = 0x00000000
+[104] [DISP][PWM] set reg[0x1100e00c] = 0x00000001
+[104] [DISP][PWM] set reg[0x1100e00c] = 0x00000000
+[104] [DISP][PWM] reg[0x1100e000] = 0x00000000
+[104] [DISP][PWM] reg[0x1100e004] = 0x00000001
+[104] [DISP][PWM] reg[0x1100e008] = 0x00000000
+[104] [DISP][PWM] reg[0x1100e00c] = 0x00000000
+[104] [DISP][PWM] reg[0x1100e010] = 0x00000000
+[104] [DISP][PWM] reg[0x1100e014] = 0x00000000
+[104] [DISP][PWM] reg[0x1100e018] = 0x00000000
+[104] [DISP][PWM] reg[0x1100e01c] = 0x00000000
+[104] [DISP][PWM] reg[0x1100e020] = 0x00000000
+[104] [DISP][PWM] reg[0x1100e024] = 0x00000000
+[104] [DISP][PWM] reg[0x1100e028] = 0x00000000
+[104] [PART_LK][get_part] para
+[105] [partition_get_index]find para index 3
+[105] [LK_ENV]ENV of area 0 initialize sucess
+[105] [PART_LK][get_part] para
+[105] [partition_get_index]find para index 3
+[106] [LK_ENV]ENV SIG of area 1 is wrong
+[106] [LK_ENV]env area: 0
+[106] [LK_ENV]env:
+[106] [LK_ENV]off-mode-charge=1
+[106] [LK_ENV]unlock_erase=pass
+[106] [LK_ENV]env area: 1
+[106] [LK_ENV]no valid env
+[106] [DISP]func|disp_lcm_probe
+[106] [DISPCHECK]******** dump lcm driver information ********
+[106] [DISPCHECK][LCM], name: ili9881c_dsi_hd720_vdo
+[106] [DISPCHECK][LCM] resolution: 720 x 1280
+[106] [DISPCHECK][LCM] physical size: 62 x 110
+[106] [DISPCHECK][LCM] physical size: 62 x 110
+[106] [DISPCHECK][LCM] lcm_if:0, cmd_if:0
+[106] [DISPCHECK][LCM] interface: unknown
+[106] [DISPCHECK][LCM] Type: DSI
+[106] [DISPCHECK][LCM] DSI Mode: SYNC_PULSE_VDO_MODE
+[106] [DISPCHECK][LCM] LANE_NUM: 4,data_format:(0,2,0,0)
+[106] [DISPCHECK][LCM] vact: 8, vbp: 18, vfp: 20, vact_line: 1280, hact: 10, hbp: 110, hfp: 80, hblank: 0, hactive: 720
+[106] [DISPCHECK][LCM] pll_select: 0, pll_div1: 0, pll_div2: 0, fbk_div: 0,fbk_sel: 0, rg_bir: 0
+[106] [DISPCHECK][LCM] rg_bic: 0, rg_bp: 0,	PLL_CLOCK: 200, dsi_clock: 0, ssc_range: 0,	ssc_disable: 1, compatibility_for_nvk: 0, cont_clock: 0
+[107] [DISPCHECK][LCM] lcm_ext_te_enable: 0, noncont_clock: 0, noncont_clock_period: 0
+[107] [DISP]lcm handle is null, after probe:0x0x560a3758
+[107] [DISP]^^ DISP_GetFBRamSize: 11304960 bytes
+[107] [DISP]^^ DAL_GetLayerSize: 1847296 bytes
+[107] [DISP]^^ DISP_GetVRamSize: 13172736 bytes
+[107] mblock[0].start: 0x40000000, sz: 0x80000, limit: 0x80000000, max_addr: 0x0, target: -1, reserved_addr: 0x3f3f0000,reserved_size: 0xc90000
+[107] mblock_reserve dbg[0]: 1, 0, 1, 1
+[107] mblock[1].start: 0x4c880000, sz: 0x7780000, limit: 0x80000000, max_addr: 0x0, target: -1, reserved_addr: 0x53370000,reserved_size: 0xc90000
+[107] mblock_reserve dbg[1]: 1, 1, 1, 1
+[107] mblock[2].start: 0x54080000, sz: 0xf80000, limit: 0x80000000, max_addr: 0x54000000, target: 1, reserved_addr: 0x54370000,reserved_size: 0xc90000
+[107] mblock_reserve dbg[2]: 1, 1, 1, 1
+[107] mblock[3].start: 0x55115000, sz: 0x2ad9b000, limit: 0x80000000, max_addr: 0x55000000, target: 2, reserved_addr: 0x7f220000,reserved_size: 0xc90000
+[108] mblock_reserve dbg[3]: 1, 1, 1, 1
+[108] mblock[4].start: 0x80000000, sz: 0x40000000, limit: 0x80000000, max_addr: 0x7feb0000, target: 3, reserved_addr: 0x7f370000,reserved_size: 0xc90000
+[108] mblock_reserve dbg[4]: 1, 0, 1, 1
+[108] mblock[5].start: 0xc0000000, sz: 0x2eb00000, limit: 0x80000000, max_addr: 0x7feb0000, target: 3, reserved_addr: 0x7f370000,reserved_size: 0xc90000
+[108] mblock_reserve dbg[5]: 1, 0, 1, 1
+[108] mblock[6].start: 0xeff40000, sz: 0x100c0000, limit: 0x80000000, max_addr: 0x7feb0000, target: 3, reserved_addr: 0x7f370000,reserved_size: 0xc90000
+[108] mblock_reserve dbg[6]: 1, 0, 1, 1
+[108] mblock_reserve: 7f220000 - 7feb0000 from mblock 3
+[108] mblock_reserve [0].start: 0x40000000, sz: 0x80000
+[108] mblock_reserve [1].start: 0x4c880000, sz: 0x7780000
+[108] mblock_reserve [2].start: 0x54080000, sz: 0xf80000
+[109] mblock_reserve [3].start: 0x55115000, sz: 0x2a10b000
+[109] mblock_reserve [4].start: 0x80000000, sz: 0x40000000
+[109] mblock_reserve [5].start: 0xc0000000, sz: 0x2eb00000
+[109] mblock_reserve [6].start: 0xeff40000, sz: 0x100c0000
+[109] mblock_reserve-R[0].start: 0x7ff80000, sz: 0x80000 map:1 name:log_store
+[109] mblock_reserve-R[1].start: 0x7fec0000, sz: 0xc0000 map:0 name:SSPM-reserved
+[109] mblock_reserve-R[2].start: 0x7feb0000, sz: 0x10000 map:0 name:SPM-reserved
+[109] mblock_reserve-R[3].start: 0xeeb00000, sz: 0x1440000 map:0 name:tee-reserved
+[109] mblock_reserve-R[4].start: 0x54000000, sz: 0x80000 map:0 name:dtb_kernel_addr_mb
+[109] mblock_reserve-R[5].start: 0x40080000, sz: 0xc800000 map:0 name:kernel_addr_mb
+[109] mblock_reserve-R[6].start: 0x55000000, sz: 0x115000 map:0 name:ramdisk_addr_mb
+[109] mblock_reserve-R[7].start: 0x7f220000, sz: 0xc90000 map:0 name:framebuffer
+[109] FB base = 0x7f220000, FB size = 0xc90000 (13172736)
+[110] fg_i2c_read_byte: I2CR[0x08] = 0xE6
+[111] fg_i2c_read_byte: I2CR[0x09] = 0x10
+[111] bat_vol_fg = 4326
+[111] fb_va: 0x7f220000, fb_pa: 0x7f220000, fb_pa_k: 0x7f220000
+[111] [DISP]func|primary_display_init
+[111] [LK_DDP/ddp_manager]ddp manager init
+[111] [DISPCHECK]disp_lcm_probe SUCCESS
+[111] [DISP]func|disp_lcm_get_params
+[111] [DISP]func|_build_path_direct_link
+[111] [LK_DDP/ddp_manager]scenario primary_disp acquire mutex 0 , left mutex 0xe!
+[111] [LK_DDP/ddp_manager]assign default irqs table index 0
+[111] [LK_DDP/ddp_manager]create handle 0x0x560a2ae8 on scenario primary_disp
+[111] [DISPCHECK]dpmgr create path SUCCESS(0x0x560a2ae8)
+[111] [LK_DDP/ddp_manager]set dst module on scenario primary_disp, module dsi0 
+[111] [LK_DDP/ddp_path]ddp_set_dst_module, scenario=primary_disp, dst_module=dsi0 
+[112] [LK_DDP/ddp_path]dsi0  is already on path
+[112] [DISPCHECK]dpmgr set dst module FINISHED(dsi0 )
+[112] [LK_DDP/ddp_manager]path set lcm drv handle 0x0x560a2ae8
+[112] [LK_DDP/ddp_manager]dsi0  set lcm utils
+[112] [DISPCHECK]primary display is DIRECT LINK MODE
+[112] [DISPCHECK]primary display BUILD cmdq trigger loop finished
+[112] [DISPCHECK]primary display START cmdq trigger loop finished
+[112] [DISP]func|disp_lcm_is_video_mode
+[112] [LK_DDP/ddp_manager]set scenario primary_disp mode Video Mode
+[112] [LK_DDP/ddp_manager]path init on scenario primary_disp
+[112] [LK_DDP/ddp_path]ddp path top clock on
+[112] [LK_DDP/INFO]ddp_enable_module_clock: smi_common
+[112] [LK_DDP/INFO]ddp_enable_module_clock: smi_larb0
+[112] [LK_DDP/INFO]ddp_enable_module_clock: smi_larb1
+[112] [LK_DDP/ddp_path]ddp CG0:ffffffe0 CG1:3ffff
+[112] [LK_DDP/ddp_path]module ovl0  added to mutex 0
+[112] [LK_DDP/ddp_path]module ovl0_2l  added to mutex 0
+[112] [LK_DDP/ddp_path]module rdma0  added to mutex 0
+[112] [LK_DDP/ddp_path]module color0  added to mutex 0
+[113] [LK_DDP/ddp_path]module ccorr0  added to mutex 0
+[113] [LK_DDP/ddp_path]module aal0  added to mutex 0
+[113] [LK_DDP/ddp_path]module gamma0  added to mutex 0
+[113] [LK_DDP/ddp_path]module dither0  added to mutex 0
+[113] [LK_DDP/ddp_path]module pwm0  added to mutex 0
+[113] [LK_DDP/ddp_path]module dsi0  added to mutex 0
+[113] [LK_DDP/ddp_path]mutex 0 value=0xfe601, sof=dsi0, eof=dsi0
+[113] [LK_DDP/ddp_path]path connect on scenario primary_disp
+[113] [LK_DDP/ddp_path]connect_path: ovl0  to dsi0 
+[113] [LK_DDP/ddp_path]connect mout ovl0  to ovl0_2l   bits 0x10
+[113] [LK_DDP/ddp_path]connect mout ovl0_2l  to rdma0   bits 0x1
+[113] [LK_DDP/ddp_path]connect mout dither0  to dsi0   bits 0x1
+[113] [LK_DDP/ddp_path]connect out_s rdma0  to color0 , value=1
+[113] [LK_DDP/ddp_path]connect in_s ovl0_2l  to rdma0 , value=1
+[113] [LK_DDP/ddp_path]connect in_s color0  to ccorr0 , value=0
+[113] [LK_DDP/ddp_path]connect in_s dither0  to dsi0 , value=0
+[113] [LK_DDP/INFO]ddp_enable_module_clock: ovl0 
+[113] [LK_DDP/INFO]ddp_enable_module_clock: ovl0_2l 
+[114] [LK_DDP/INFO]ddp_enable_module_clock: rdma0 
+[114] [LK_DDP/INFO]ddp_enable_module_clock: color0 
+[114] [LK_DDP/INFO]ddp_enable_module_clock: ccorr0 
+[114] [LK_DDP/INFO]ddp_enable_module_clock: aal0 
+[114] [LK_DDP/INFO]ddp_enable_module_clock: gamma0 
+[114] [LK_DDP/INFO]ddp_enable_module_clock: dither0 
+[114] [DISP]func|ddp_dsi_init
+[114] [LK_DDP/INFO]ddp_enable_module_clock: dsi0 
+[114] [DISPCHECK]dsi0 init finished
+[114] [LK_DDP/ddp_manager]path config ovl 0, rdma 0, wdma 0, dst 1 on handle 0x0x560a2ae8 scenario primary_disp 
+[114] [LK_DDP/MISC]config color dirty = 1
+[114] [LK_DDP/MISC]bypass color
+[114] [LK_DDP/MISC]config ccorr dirty = 1
+[114] [LK_DDP/MISC]bypass ccorr
+[114] [LK_DDP/MISC]config aal dirty = 1
+[114] [LK_DDP/MISC]bypass aal
+[114] [LK_DDP/MISC]config gamma dirty = 1
+[114] [LK_DDP/MISC]bypass gamma
+[114] config dither dirty = 1
+[114] disp_dither_bypass(bypass = 1)[114] [DISP]func|ddp_dsi_config
+[114] [DISPCHECK][DDPDSI] DSI Mode: SYNC_PULSE_VDO_MODE
+[114] [DISPCHECK][DDPDSI] LANE_NUM: 4,data_format:(0,2,0,0)
+[115] [DISPCHECK][DDPDSI] vact: 8, vbp: 18, vfp: 20, vact_line: 1280, hact: 10, hbp: 110, hfp: 80, hblank: 0
+[115] [DISPCHECK][DDPDSI] pll_select: 0, pll_div1: 0, pll_div2: 0, fbk_div: 0,fbk_sel: 0, rg_bir: 0
+[115] [DISPCHECK][DDPDSI] rg_bic: 0, rg_bp: 0, PLL_CLOCK: 200, dsi_clock: 0, ssc_range: 0,	ssc_disable: 1, compatibility_for_nvk: 0, cont_clock: 0
+[115] [DISPCHECK][DDPDSI] lcm_ext_te_enable: 0, noncont_clock: 0, noncont_clock_period: 0
+[115] [DISP]func|DSI_PHY_clk_setting
+[119] [DISP]func|DSI_PS_Control
+[119] [DISPCHECK][DISP] - LK - DSI_PHY_TIMCONFIG, pll=200, Cycle Time = 21(ns), Unit Interval = 3(ns). , lane# = 4
+[119] DISP/[DISP] - LK - DSI_PHY_TIMCONFIG, HS_TRAIL = 5, HS_ZERO = 7, HS_PRPR = 3, LPX = 3, TA_GET = 15, TA_SURE = 4, TA_GO = 12, CLK_TRAIL = 5, CLK_ZERO = 19, CLK_HS_PRPR = 3 
+[119] DISP/CLK_HS_POST=12,CLK_HS_EXIT=6,CLK_TRAIL=5
+[119] DSI_PHY_TIMCONFIG, 0x05070303,0x060f040c,0x05130100,0x00060c03
+[119] [DISP]func|DSI_Config_VDO_Timing
+[119] [DISP]func|disp_lcm_init
+[120] [DISPCHECK]lcm init 
+[120] [I2C-LK] 385: id=0,addr: 3e, transfer error
+[120] [I2C-LK] 391: I2C_ACKERR
+[120] [I2C-LK] 265: I2C structure:
+[I2C-LK] Clk=13650,Id=0,Mode=1,St_rs=0,Dma_en=0,Op=1,Poll_en=1,Irq_stat=2
+[I2C-LK] Trans_len=2,Trans_num=1,Trans_auxlen=0,Data_size=ffff,speed=100
+[120] [I2C-LK] 268: base address 0x11007000
+[120] [I2C-LK] 290: I2C register:
+[I2C-LK] SLAVE_ADDR=7c,INTR_MASK=f8,INTR_STAT=3,CONTROL=28,TRANSFER_LEN=2
+[I2C-LK] TRANSAC_LEN=1,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1210
+[I2C-LK] IO_CONFIG=3,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=0,CLOCK_DIV=4
+[120] [I2C-LK] 869: Write 2 bytes fails,ret=-121.
+[120] [LK]r69338----KTD2151----cmd=0--i2c write error----
+[120] [I2C-LK] 385: id=0,addr: 3e, transfer error
+[120] [I2C-LK] 391: I2C_ACKERR
+[121] [I2C-LK] 265: I2C structure:
+[I2C-LK] Clk=13650,Id=0,Mode=1,St_rs=0,Dma_en=0,Op=1,Poll_en=1,Irq_stat=2
+[I2C-LK] Trans_len=2,Trans_num=1,Trans_auxlen=0,Data_size=ffff,speed=100
+[121] [I2C-LK] 268: base address 0x11007000
+[121] [I2C-LK] 290: I2C register:
+[I2C-LK] SLAVE_ADDR=7c,INTR_MASK=f8,INTR_STAT=3,CONTROL=28,TRANSFER_LEN=2
+[I2C-LK] TRANSAC_LEN=1,DELAY_LEN=2,TIMING=216,LTIMING=96,START=0,FIFO_STAT=1210
+[I2C-LK] IO_CONFIG=3,HS=0,DCM_EN=6,DEBUGSTAT=300,EXT_CONF=8001,TRANSFER_LEN_AUX=0,CLOCK_DIV=4
+[121] [I2C-LK] 869: Write 2 bytes fails,ret=-121.
+[121] [LK]r69338----KTD2151----cmd=1--i2c write error----
+[394] [DISP]func|DSI_dcs_read_lcm_reg_v2
+[394] [DISPCHECK]Last DSI Read Why not clear irq???
+[394] [DISPCHECK]DSI_CMDQ_SIZE  : 1
+[394] [DISPCHECK]DSI_CMDQ_DATA0 : 0x00291500
+[394] [DISPCHECK]DSI_RX_DATA0   : 0x00000000
+[394] [DISPCHECK]DSI_RX_DATA1   : 0x00000000
+[394] [DISPCHECK]DSI_RX_DATA2   : 0x00000000
+[394] [DISPCHECK]DSI_RX_DATA3   : 0x00000000
+[394] DISP/ Start polling DSI read ready!!!
+[394] DISP/ End polling DSI read ready!!!
+[394] [DISPCHECK]DSI read begin i = 1 --------------------
+[394] [DISPCHECK]DSI_RX_STA     : 0x00000440
+[394] [DISPCHECK]DSI_CMDQ_SIZE  : 2
+[394] [DISPCHECK]DSI_CMDQ_DATA0 : 0x00013700
+[394] [DISPCHECK]DSI_CMDQ_DATA1 : 0x000a0604
+[394] [DISPCHECK]DSI_RX_DATA0   : 0x1e009c21
+[394] [DISPCHECK]DSI_RX_DATA1   : 0x00000000
+[395] [DISPCHECK]DSI_RX_DATA2   : 0x00000000
+[395] [DISPCHECK]DSI_RX_DATA3   : 0x00000000
+[395] [DISPCHECK]DSI read end ----------------------------
+[395] [DISPCHECK]DSI read packet_type is 0x21
+[395] [DISP]read from lcm 0x0A: 156
+[395] [DISP]lcm is connected
+[395] [DISP]func|disp_lcm_is_video_mode
+[395] [LK_DDP/ddp_manager]map event 7 to irq 0x70004 on scenario primary_disp
+[395] [LK_DDP/ddp_manager]enable event on scenario primary_disp, event 7, irtbit 0x70004
+[395] [LK_DDP/ddp_manager]enable event on scenario primary_disp, event 1, irtbit 0x70004
+[399] [DISP]func|primary_display_config_input
+[399] [LK_DDP/ddp_manager]path check busy on scenario primary_disp
+[399] [DISP]func|ddp_dsi_is_busy
+[399] [LK_DDP/ddp_manager]path config ovl 1, rdma 0, wdma 0, dst 0 on handle 0x0x560a2ae8 scenario primary_disp 
+[399] [LK_DDP/OVL]module 0, layer=3, en=1, src=0, fmt=16785410, addr=0x7f5b8000, x=0, y=0, pitch=2880, dst(0, 0, 720, 1280),keyEn=0, key=0, aen=1, alpha=255
+[399] [LK_DDP/OVL]ovl0, layer=3, source=memory, off(x=0, y=0), dst(0, 0, 720, 1280),pitch=2880,fmt=eBGRA8888, addr=7f5b8000, keyEn=0, key=0, aen=1, alpha=255 
+[399] [LK_DDP/MISC]config color dirty = 0
+[399] [LK_DDP/MISC]config ccorr dirty = 0
+[400] [LK_DDP/MISC]config aal dirty = 0
+[400] [LK_DDP/MISC]config gamma dirty = 0
+[400] config dither dirty = 0
+[400] disp_dither_bypass(bypass = 1)[400] [DISP]func|ddp_dsi_config
+[400] [DISP]func|primary_display_config_input
+[400] [LK_DDP/ddp_manager]path check busy on scenario primary_disp
+[400] [DISP]func|ddp_dsi_is_busy
+[400] [LK_DDP/ddp_manager]path config ovl 1, rdma 0, wdma 0, dst 0 on handle 0x0x560a2ae8 scenario primary_disp 
+[400] [LK_DDP/OVL]module 0, layer=0, en=1, src=0, fmt=16785410, addr=0x7f220000, x=0, y=0, pitch=2944, dst(0, 0, 720, 1280),keyEn=0, key=0, aen=1, alpha=255
+[400] [LK_DDP/OVL]ovl0, layer=0, source=memory, off(x=0, y=0), dst(0, 0, 720, 1280),pitch=2944,fmt=eBGRA8888, addr=7f220000, keyEn=0, key=0, aen=1, alpha=255 
+[400] [LK_DDP/OVL]module 0, layer=3, en=1, src=0, fmt=16785410, addr=0x7f5b8000, x=0, y=0, pitch=2880, dst(0, 0, 720, 1280),keyEn=0, key=0, aen=1, alpha=255
+[400] [LK_DDP/OVL]ovl0, layer=3, source=memory, off(x=0, y=0), dst(0, 0, 720, 1280),pitch=2880,fmt=eBGRA8888, addr=7f5b8000, keyEn=0, key=0, aen=1, alpha=255 
+[401] [LK_DDP/MISC]config color dirty = 0
+[401] [LK_DDP/MISC]config ccorr dirty = 0
+[401] [LK_DDP/MISC]config aal dirty = 0
+[401] [LK_DDP/MISC]config gamma dirty = 0
+[401] config dither dirty = 0
+[401] disp_dither_bypass(bypass = 1)[401] [DISP]func|ddp_dsi_config
+[401] [DISP]mt_disp_init() done
+[401] s_mt65xx_gd.gdfIndex=3SMART RESET: FALSE
+kedump mini start
+[403] ATF: LAST BUFF
+[403] atf_log_buf_addr:0xeff14000, atf_log_buf_size:131072, atf_crash_flag addr:0xeff00040, atf_log_type:0x41544641
+[403] plat_atf_log_get:0x5602e555, plat_atf_crash_get:0x0
+RAM_CONSOLE. wdt_status 0x2, fiq_step 0x0, exp_type 0x0
+[403] mrdump_write_log: Enter
+[403] [partition_get_index]find expdb index 8
+[403] mrdump_write_log: offset 133746688 size 20971520
+kedump: lkdump debug init ok
+kedump: boot_reason(4)
+RAM_CONSOLE. start: 0x11d000, size: 0x800
+RAM_CONSOLE. lk last status: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 
+RAM_CONSOLE. wdt_status 0x2, fiq_step 0x0, exp_type 0x0
+kedump: last is not full pmic reset!
+[404] [META] Check meta info from pre-loader: 0, 504c504c, 0
+[404] [LK_ENV]get_env reboot_meta_flag from area 0
+[404] detecting pmic just reset
+[404] [mboot_recovery_load_misc]: size is 6144
+[404] [mboot_recovery_load_misc]: misc_addr is 0x560d7088
+[404] [PART_LK][get_part] para
+[404] [partition_get_index]find para index 3
+[405] [LK_BOOT] Load 'para' partition to 0x560D7088 (6144 bytes in 1 ms)
+[405] eng build
+[405] mtk detect key function key = 1
+[406] kpd_sw_pwrkey = 116, kpd_hw_pwrkey = 8, kpd_sw_rstkey = 115, kpd_hw_rstkey = 17
+[406] kpd_use_extend_type = 0, kpd_hw_recovery_key = 17, kpd_hw_factory_key = 1
+[406] MT65XX_FACTORY_KEY 0x1
+[406] MT65XX_BOOT_MENU_KEY 0x0
+[406] mtk detect key function key = 0
+[406] mtk detect key function key = 1
+[406] mtk detect key function key = 0
+[406] mtk detect key function key = 1
+[406] mtk detect key function key = 0
+[406] mtk detect key function key = 1
+[406] mtk detect key function key = 0
+[406] mtk detect key function key = 1
+[406] mtk detect key function key = 0
+[406] mtk detect key function key = 1
+[406] mtk detect key function key = 0
+[406] mtk detect key function key = 1
+[406] mtk detect key function key = 0
+[406] mtk detect key function key = 1
+[406] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[407] mtk detect key function key = 0
+[407] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[408] mtk detect key function key = 1
+[408] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[409] mtk detect key function key = 1
+[409] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[410] mtk detect key function key = 0
+[410] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[411] mtk detect key function key = 1
+[411] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[412] mtk detect key function key = 0
+[412] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[413] mtk detect key function key = 1
+[413] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[414] mtk detect key function key = 1
+[414] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[415] mtk detect key function key = 0
+[415] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[416] mtk detect key function key = 1
+[416] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[417] mtk detect key function key = 0
+[417] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[418] mtk detect key function key = 0
+[418] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[419] mtk detect key function key = 1
+[419] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[420] mtk detect key function key = 0
+[420] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[421] mtk detect key function key = 1
+[421] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[422] mtk detect key function key = 1
+[422] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[423] mtk detect key function key = 0
+[423] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[424] mtk detect key function key = 1
+[424] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[425] mtk detect key function key = 0
+[425] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[426] mtk detect key function key = 0
+[426] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[427] mtk detect key function key = 1
+[427] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[428] mtk detect key function key = 0
+[428] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[429] mtk detect key function key = 1
+[429] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[430] mtk detect key function key = 0
+[430] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[431] mtk detect key function key = 0
+[431] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[432] mtk detect key function key = 1
+[432] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[433] mtk detect key function key = 0
+[433] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[434] mtk detect key function key = 1
+[434] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[435] mtk detect key function key = 1
+[435] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[436] mtk detect key function key = 0
+[436] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[437] mtk detect key function key = 1
+[437] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[438] mtk detect key function key = 0
+[438] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[439] mtk detect key function key = 0
+[439] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[440] mtk detect key function key = 1
+[440] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[441] mtk detect key function key = 0
+[441] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[442] mtk detect key function key = 1
+[442] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[443] mtk detect key function key = 0
+[443] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[444] mtk detect key function key = 0
+[444] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[445] mtk detect key function key = 1
+[445] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[446] mtk detect key function key = 0
+[446] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[447] mtk detect key function key = 1
+[447] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[448] mtk detect key function key = 1
+[448] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[449] mtk detect key function key = 0
+[449] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[450] mtk detect key function key = 1
+[450] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[451] mtk detect key function key = 0
+[451] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[452] mtk detect key function key = 0
+[452] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[453] mtk detect key function key = 1
+[453] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[454] mtk detect key function key = 0
+[454] mtk detect key function key = 1
+[455] mtk detect key function key = 0
+[455] [WDT] WDT get boot reason is 4 from pre-loader
+[455] [is_force_boot] Bypass Kernel Power off charging mode and enter Normal Boot
+[455] [kernel_power_off_charging_detection] Turn off HW Led
+[455] < Kernel Enter Normal Boot > 
+[535] [LK_ENV]get_env usb2jtag from area 0
+[535] [USB2JTAG] current setting is 0.
+[535] mt_get_logo_db_addr_pa: 0x5e900000
+[535] mt_get_tempfb_addr: 0x7f950000 ,fb_addr 0x7f220000
+[535] read the data of splash
+[535] [partition_get_index]find splash index 4
+[581] hhh byte[0]=0 
+[581] hhh byte[1]=0 
+[581] hhh byte[2]=0 
+[581] hhh byte[3]=0 
+[581] hhh byte[4]=0 
+[581] hhh byte[5]=0 
+[581] hhh byte[6]=0 
+[581] hhh byte[7]=0 
+[581] hhh byte[8]=0 
+[581] hhh byte[9]=0 
+[581] hhh byte[10]=0 
+[581] hhh byte[11]=0 
+[581] hhh byte[12]=0 
+[581] hhh byte[13]=0 
+[581] hhh byte[14]=0 
+[581] hhh byte[15]=0 
+[581] hhh byte[16]=0 
+[581] hhh byte[17]=0 
+[581] hhh byte[18]=0 
+[581] hhh byte[19]=0 
+[581] hhh byte[20]=0 
+[581] hhh byte[21]=0 
+[581] hhh byte[22]=0 
+[581] hhh byte[23]=0 
+[581] hhh byte[24]=0 
+[581] hhh byte[25]=0 
+[581] hhh byte[26]=0 
+[581] hhh byte[27]=0 
+[582] hhh byte[28]=0 
+[582] hhh byte[29]=0 
+[582] hhh byte[30]=0 
+[582] hhh byte[31]=0 
+[582] hhh byte[32]=0 
+[582] hhh byte[33]=0 
+[582] hhh byte[34]=0 
+[582] hhh byte[35]=0 
+[582] hhh byte[36]=0 
+[582] hhh byte[37]=0 
+[582] hhh byte[38]=0 
+[582] hhh byte[39]=0 
+[582] hhh byte[40]=0 
+[582] hhh byte[41]=0 
+[582] hhh byte[42]=0 
+[582] hhh byte[43]=0 
+[582] hhh byte[44]=0 
+[582] hhh byte[45]=0 
+[582] hhh byte[46]=0 
+[582] hhh byte[47]=0 
+[582] hhh byte[48]=0 
+[582] hhh byte[49]=0 
+[582] hhh byte[50]=0 
+[582] hhh byte[51]=0 
+[582] hhh byte[52]=0 
+[582] hhh byte[53]=0 
+[582] hhh byte[54]=0 
+[582] hhh byte[55]=0 
+[582] hhh byte[56]=0 
+[582] hhh byte[57]=0 
+[582] hhh byte[58]=0 
+[582] hhh byte[59]=0 
+[582] hhh byte[60]=0 
+[582] hhh byte[61]=0 
+[582] hhh byte[62]=0 
+[582] hhh byte[63]=0 
+[582] hhh byte[64]=0 
+[582] hhh byte[65]=0 
+[582] hhh byte[66]=0 
+[582] hhh byte[67]=0 
+[582] hhh byte[68]=0 
+[582] hhh byte[69]=0 
+[582] hhh byte[70]=0 
+[582] hhh byte[71]=0 
+[583] hhh byte[72]=0 
+[583] hhh byte[73]=0 
+[583] hhh byte[74]=0 
+[583] hhh byte[75]=0 
+[583] hhh byte[76]=0 
+[583] hhh byte[77]=0 
+[583] hhh byte[78]=0 
+[583] hhh byte[79]=0 
+[583] hhh byte[80]=0 
+[583] hhh byte[81]=0 
+[583] hhh byte[82]=0 
+[583] hhh byte[83]=0 
+[583] hhh byte[84]=0 
+[583] hhh byte[85]=0 
+[583] hhh byte[86]=0 
+[583] hhh byte[87]=0 
+[583] hhh byte[88]=0 
+[583] hhh byte[89]=0 
+[583] hhh byte[90]=0 
+[583] hhh byte[91]=0 
+[583] hhh byte[92]=0 
+[583] hhh byte[93]=0 
+[583] hhh byte[94]=0 
+[583] hhh byte[95]=0 
+[583] hhh byte[96]=0 
+[583] hhh byte[97]=0 
+[583] hhh byte[98]=0 
+[583] hhh byte[99]=0 
+[583] hhh byte[100]=0 
+[583] hhh byte[101]=0 
+[583] hhh byte[102]=0 
+[583] hhh byte[103]=0 
+[583] hhh byte[104]=0 
+[583] hhh byte[105]=0 
+[583] hhh byte[106]=0 
+[583] hhh byte[107]=0 
+[583] hhh byte[108]=0 
+[583] hhh byte[109]=0 
+[583] hhh byte[110]=0 
+[583] hhh byte[111]=0 
+[583] hhh byte[112]=0 
+[583] hhh byte[113]=0 
+[584] hhh byte[114]=0 
+[584] hhh byte[115]=0 
+[584] hhh byte[116]=0 
+[584] hhh byte[117]=0 
+[584] hhh byte[118]=0 
+[584] hhh byte[119]=0 
+[584] hhh byte[120]=0 
+[584] hhh byte[121]=0 
+[584] hhh byte[122]=0 
+[584] hhh byte[123]=0 
+[584] hhh byte[124]=0 
+[584] hhh byte[125]=0 
+[584] hhh byte[126]=0 
+[584] hhh byte[127]=0 
+[584] hhh byte[128]=0 
+[584] hhh byte[129]=0 
+[584] hhh byte[130]=0 
+[584] hhh byte[131]=0 
+[584] hhh byte[132]=0 
+[584] hhh byte[133]=0 
+[584] hhh byte[134]=0 
+[584] hhh byte[135]=0 
+[584] hhh byte[136]=0 
+[584] hhh byte[137]=0 
+[584] hhh byte[138]=0 
+[584] hhh byte[139]=0 
+[584] hhh byte[140]=0 
+[584] hhh byte[141]=0 
+[584] hhh byte[142]=0 
+[584] hhh byte[143]=0 
+[584] hhh byte[144]=0 
+[584] hhh byte[145]=0 
+[584] hhh byte[146]=0 
+[584] hhh byte[147]=0 
+[584] hhh byte[148]=0 
+[584] hhh byte[149]=0 
+[584] hhh byte[150]=0 
+[584] hhh byte[151]=0 
+[584] hhh byte[152]=0 
+[584] hhh byte[153]=0 
+[584] hhh byte[154]=0 
+[584] hhh byte[155]=0 
+[585] hhh byte[156]=0 
+[585] hhh byte[157]=0 
+[585] hhh byte[158]=0 
+[585] hhh byte[159]=0 
+[585] hhh byte[160]=0 
+[585] hhh byte[161]=0 
+[585] hhh byte[162]=0 
+[585] hhh byte[163]=0 
+[585] hhh byte[164]=0 
+[585] hhh byte[165]=0 
+[585] hhh byte[166]=0 
+[585] hhh byte[167]=0 
+[585] hhh byte[168]=0 
+[585] hhh byte[169]=0 
+[585] hhh byte[170]=0 
+[585] hhh byte[171]=0 
+[585] hhh byte[172]=0 
+[585] hhh byte[173]=0 
+[585] hhh byte[174]=0 
+[585] hhh byte[175]=0 
+[585] hhh byte[176]=0 
+[585] hhh byte[177]=0 
+[585] hhh byte[178]=0 
+[585] hhh byte[179]=0 
+[585] hhh byte[180]=0 
+[585] hhh byte[181]=0 
+[585] hhh byte[182]=0 
+[585] hhh byte[183]=0 
+[585] hhh byte[184]=0 
+[585] hhh byte[185]=0 
+[585] hhh byte[186]=0 
+[585] hhh byte[187]=0 
+[585] hhh byte[188]=0 
+[585] hhh byte[189]=0 
+[585] hhh byte[190]=0 
+[585] hhh byte[191]=0 
+[585] hhh byte[192]=0 
+[585] hhh byte[193]=0 
+[585] hhh byte[194]=0 
+[585] hhh byte[195]=0 
+[585] hhh byte[196]=0 
+[586] hhh byte[197]=0 
+[586] hhh byte[198]=0 
+[586] hhh byte[199]=0 
+[586] hhh byte[200]=0 
+[586] hhh byte[201]=0 
+[586] hhh byte[202]=0 
+[586] hhh byte[203]=0 
+[586] hhh byte[204]=0 
+[586] hhh byte[205]=0 
+[586] hhh byte[206]=0 
+[586] hhh byte[207]=0 
+[586] hhh byte[208]=0 
+[586] hhh byte[209]=0 
+[586] hhh byte[210]=0 
+[586] hhh byte[211]=0 
+[586] hhh byte[212]=0 
+[586] hhh byte[213]=0 
+[586] hhh byte[214]=0 
+[586] hhh byte[215]=0 
+[586] hhh byte[216]=0 
+[586] hhh byte[217]=0 
+[586] hhh byte[218]=0 
+[586] hhh byte[219]=0 
+[586] hhh byte[220]=0 
+[586] hhh byte[221]=0 
+[586] hhh byte[222]=0 
+[586] hhh byte[223]=0 
+[586] hhh byte[224]=0 
+[586] hhh byte[225]=0 
+[586] hhh byte[226]=0 
+[586] hhh byte[227]=0 
+[586] hhh byte[228]=0 
+[586] hhh byte[229]=0 
+[586] hhh byte[230]=0 
+[586] hhh byte[231]=0 
+[586] hhh byte[232]=0 
+[586] hhh byte[233]=0 
+[586] hhh byte[234]=0 
+[586] hhh byte[235]=0 
+[586] hhh byte[236]=0 
+[586] hhh byte[237]=0 
+[587] hhh byte[238]=0 
+[587] hhh byte[239]=0 
+[587] hhh byte[240]=0 
+[587] hhh byte[241]=0 
+[587] hhh byte[242]=0 
+[587] hhh byte[243]=0 
+[587] hhh byte[244]=0 
+[587] hhh byte[245]=0 
+[587] hhh byte[246]=0 
+[587] hhh byte[247]=0 
+[587] hhh byte[248]=0 
+[587] hhh byte[249]=0 
+[587] hhh byte[250]=0 
+[587] hhh byte[251]=0 
+[587] hhh byte[252]=0 
+[587] hhh byte[253]=0 
+[587] hhh byte[254]=0 
+[587] read the data of proinfo
+[587] [partition_get_index]find proinfo index 17
+[587] read the data length: 1024
+[587] raw address charging_profile_preferences=0x560c48c7 
+[587] dlconfig_cp_index =0 dlconfig_charge_current = 0 dlconfig_charge_termination_current = 0 dlconfig_charge_voltage = 0 dlconfig_recharge_threshold =0 dlconfig_precharge_current = 0 dlconfig_pid_target_temperature = 0 dlconfig_battery_profile_id = 0
+[588] hehai 111 dlconfig_tof_offset =0 ,dlconfig_tof_x_talk = 0
+ dlconfig_tof_offset_cali_flag = 0 ,dlconfig_tof_x_talk_cali_flag = 0 
+[588] proinfo_audio_check_test: 0
+[588] proinfo_offset_cali_auxiliary: 0
+[588] proinfo_xtalk_cali_auxiliary: 0
+[588] pos_or_neg_num: 0
+[588] proinfo_stress_test_enable=0
+[588] proinfo_glove_mode: 0
+[589] fg_i2c_read_byte: I2CR[0x2C] = 0x64
+[589] fg_i2c_read_byte: I2CR[0x2D] = 0x00
+[590] fg_i2c_read_byte: I2CR[0x08] = 0xE6
+[591] fg_i2c_read_byte: I2CR[0x09] = 0x10
+[591] hehuan   power_on_flag = 0 g_boot_mode = 0 power_on_threshold = 101 battery_soc = 100 battery_val = 4326
+[591] [PART_LK][get_part] logo
+[591] [PART_LK][get_part] logo
+[591] [partition_get_index]find logo index 29
+[592] 
+=========================================
+[592] [LK_BOOT] logo magic number : 0x58881688
+[592] [LK_BOOT] logo name         : logo
+[592] [LK_BOOT] logo size         : 2240810
+[592] =========================================
+[592] [LK_BOOT] logo image name found
+[592] read the data of logo
+[592] [partition_get_index]find logo index 29
+[620] [partition_get_index]find factory index 6
+[620] facsn read_sn_from_factory sn_array[len=9]:[620] S[620] 1[620] 9[620] F[620] 0[620] 0[620] 0[620] 1[620] 3[620] 
+[SBC] sec_func_init 
+[620] [partition_get_index]find preloader index 0
+[620] [SD0] EXT_CSD_ERASE_GRP_DEF is Off, wp_size = 8192KB
+[SD0] csd.write_prot_grpsz = 15, csd.erase_sctsz = 1024
+m_rom_info_ver = 2
+[622] [partition_get_index]find seccfg index 15
+[622] [SD0] EXT_CSD_ERASE_GRP_DEF is Off, wp_size = 8192KB
+[SD0] csd.write_prot_grpsz = 15, csd.erase_sctsz = 1024
+[622] [partition_get_index]find logo index 29
+[SBC] NS-CHIP
+[622] [SEC_POLICY] sboot_state = 0x0
+[622] [SEC_POLICY] lock_state = 0x3
+[622] [partition_get_index]find odmdtbo index 30
+[622] [SEC_POLICY] reached the end, use default policy
+[SBC] NS-CHIP
+[622] [SEC_POLICY] sboot_state = 0x0
+[622] [SEC_POLICY] lock_state = 0x3
+[625] [pmic_get_auxadc_value] reg_val = 0x6606, adc_result = 4304
+[625] mt_get_tempfb_addr: 0x7f950000 ,fb_addr 0x7f220000
+[625] [lk logo: mt_disp_show_boot_logo 142]
+[625] [lk logo: init_fb_screen 62]
+[625] mt_get_logo_db_addr: 0x5e900000
+[625] [lk logo: init_fb_screen 80]MTK_LCM_PHYSICAL_ROTATION = 0
+[625] [lk logo: sync_anim_version 45]
+[625] [lk logo: init_fb_screen 101]pinfo[0]=0x00000039, pinfo[1]=0x0022312a, pinfo[2]=236
+[625] [lk logo: init_fb_screen 103]define ANIMATION_NEW:show new animation with capacity num
+[626] [lk logo: init_fb_screen 104]CAPACITY_LEFT =278, CAPACITY_TOP =556 
+[626] [lk logo: init_fb_screen 105]LCM_HEIGHT=441, LCM_WIDTH=817 
+[mt_disp_show_boot_logo]src_logo=
+[mt_disp_show_boot_logo]available=0
+[626] mt_get_tempfb_addr: 0x7f950000 ,fb_addr 0x7f220000
+[626] [show_animation_common: check_logo_index_valid 71]logonum =57, index =0
+[626] show_animation_common, in_addr=0x5e9000ec,  logolen=64775
+[626] [decompress_logo decompress_logo 48]in=0x5e9000ec, out=0x7f950000, inlen=64775, logolen=3768320
+[653] [decompress_logo decompress_logo 97]have=3686400
+[653] [show_animation_common: fill_animation_logo 124]bits = 32
+[653] [show_logo_common: fill_rect_with_content 427]
+[653] [show_logo_common: fill_rect_with_content_by_32bit_argb8888 128]
+[653] [show_logo_common]dst_addr= 0xffffffff, color_addr= 0xffffffff, i= 0, j=0
+[653] [show_logo_common]dst_addr= 0xffffffff, color_addr= 0xffffffff, i= 0, j=719
+[721] [show_logo_common]dst_addr= 0xffffffff, color_addr= 0xffffffff, i= 1279, j=0
+[721] [show_logo_common]dst_addr= 0xffffffff, color_addr= 0xffffffff, i= 1279, j=719
+[722] [DISP]func|primary_display_trigger
+[722] [LK_DDP/ddp_manager]path check busy on scenario primary_disp
+[722] [DISP]func|ddp_dsi_is_busy
+[722] [DISPCHECK]trigger mode: DIRECT_LINK
+[722] [DISPCHECK](x=0,y=0),(w=720,h=1280)
+[722] [DISP]func|disp_lcm_is_video_mode
+[722] [LK_DDP/ddp_manager]path start on scenario primary_disp
+[722] [DISP]func|ddp_dsi_start
+[722] [LK_DDP/ddp_manager]dpmgr_path_trigger on scenario primary_disp
+[722] [LK_DDP/ddp_path]mutex 0 enable
+[1222] [LEDS]LK: mt65xx_backlight_on:level =  255
+[1222] [LEDS]LK: lcd-backlight level is 200 
+[1222] [DISP][PWM] disp_pwm_set_backlight(id = 0x1, level_1024 = 802)
+[1223] [DISP][PWM] set reg[0x1100e00c] = 0x00000000
+[1223] [DISP][PWM] set reg[0x1100e01c] = 0x032203ff
+[1223] [DISP][PWM] set reg[0x1100e000] = 0x00000001
+[1223] [DISP][PWM] disp_pwm_set_enabled: PWN_EN = 0x1
+[1223] [DISP][PWM] set reg[0x1100e00c] = 0x00000001
+[1223] [DISP][PWM] set reg[0x1100e00c] = 0x00000000
+[1223] [DISP][PWM] reg[0x1100e000] = 0x00000001
+[1223] [DISP][PWM] reg[0x1100e004] = 0x00000001
+[1223] [DISP][PWM] reg[0x1100e008] = 0x00000000
+[1223] [DISP][PWM] reg[0x1100e00c] = 0x00000250
+[1223] [DISP][PWM] reg[0x1100e010] = 0x00000000
+[1223] [DISP][PWM] reg[0x1100e014] = 0x00000000
+[1223] [DISP][PWM] reg[0x1100e018] = 0x00000000
+[1223] [DISP][PWM] reg[0x1100e01c] = 0x00000000
+[1223] [DISP][PWM] reg[0x1100e020] = 0x00000000
+[1223] [DISP][PWM] reg[0x1100e024] = 0x00000000
+[1223] [DISP][PWM] reg[0x1100e028] = 0x00000000
+[1224] [DISP]func|primary_display_trigger
+[1224] [LK_DDP/ddp_manager]path check busy on scenario primary_disp
+[1224] [DISP]func|ddp_dsi_is_busy
+[1224] [LK_DDP/ddp_manager]dsi0  is busy
+[1225] [DISP]func|disp_lcm_is_video_mode
+[1225] backlight enabled before battery init
+[1225] [dcm_set_default]type:0xB87, init_dcm_type=0xB87
+[1225] [ARMCORE_DCM 0x1] current state:1 (0)
+[1225] [MCUSYS_DCM 0x2] current state:1 (0)
+[1225] [INFRA_DCM 0x4] current state:1 (0)
+[1225] [STALL_DCM 0x80] current state:1 (0)
+[1225] [BIG_CORE_DCM 0x100] current state:1 (0)
+[1225] [GIC_SYNC_DCM 0x200] current state:1 (0)
+[1225] [RGU_CORE_DCM 0x800] current state:1 (0)
+[1225] 
+******** dcm dump register *********
+[1225] MP0_CPUCFG_MP0_RGU_DCM_CONFIG (0x0c530088): 0x00000001
+[1225] MP1_CPUCFG_MP1_RGU_DCM_CONFIG (0x0c530288): 0x00000001
+[1225] L2C_SRAM_CTRL                 (0x0c530648): 0x000c0081
+[1225] CCI_CLK_CTRL                  (0x0c530660): 0x00000117
+[1225] BUS_FABRIC_DCM_CTRL           (0x0c530668): 0x00cd1ff3
+[1225] MCU_MISC_DCM_CTRL             (0x0c53066c): 0x00000003
+[1225] CCI_ADB400_DCM_CONFIG         (0x0c530740): 0x00000067
+[1225] SYNC_DCM_CONFIG               (0x0c530744): 0x00010201
+[1226] SYNC_DCM_CLUSTER_CONFIG       (0x0c53074c): 0x063f8f8f
+[1226] MP_GIC_RGU_SYNC_DCM           (0x0c530758): 0x00000003
+[1226] MP0_PLL_DIVIDER_CFG           (0x0c5307a0): 0x03110aff
+[1226] MP1_PLL_DIVIDER_CFG           (0x0c5307a4): 0x03110aff
+[1226] BUS_PLL_DIVIDER_CFG           (0x0c5307c0): 0x03150aff
+[1226] MCSIA_DCM_EN                  (0x0c530b60): 0xffff0000
+[1226] INFRA_BUS_DCM_CTRL            (0x10001070): 0x40ff0603
+[1226] PERI_BUS_DCM_CTRL             (0x10001074): 0x747f83e3
+[1226] MEM_DCM_CTRL                  (0x10001078): 0x09af07c0
+[1226] P2P_RX_CLK_ON                 (0x100010a0): 0x00000000
+[1226] EMI_CONM                      (0x10219060): 0x000005ff
+[1226] EMI_CONN                      (0x10219068): 0x00000000
+[1226] CHN0_EMI_CHN_EMI_CONB         (0x1022d008): 0x00ff2048
+[1226] CHN1_EMI_CHN_EMI_CONB         (0x10235008): 0x00ff2048
+[1226] DRAMC_CH0_TOP1_DRAMC_PD_CTRL  (0x1022a038): 0xc0000107
+[1226] DRAMC_CH0_TOP1_CLKAR          (0x1022a03c): 0x02040000
+[1227] DRAMC_CH1_TOP1_DRAMC_PD_CTRL  (0x10232038): 0xc0000007
+[1227] DRAMC_CH1_TOP1_CLKAR          (0x1023203c): 0x02040000
+[1227] DRAMC_CH0_TOP0_MISC_CG_CTRL0  (0x10228284): 0x00000110
+[1227] DRAMC_CH0_TOP0_MISC_CG_CTRL2  (0x1022828c): 0x806003be
+[1227] DRAMC_CH0_TOP0_MISC_CTRL3     (0x102282a8): 0x11351135
+[1227] DRAMC_CH0_TOP0_SHU1_B0_DQ8    (0x10228c20): 0x00007fff
+[1227] DRAMC_CH0_TOP0_SHU1_B1_DQ8    (0x10228ca0): 0x00207fff
+[1227] DRAMC_CH0_TOP0_SHU1_CA_CMD8   (0x10228d20): 0x00007fff
+[1227] DRAMC_CH0_TOP0_SHU2_B0_DQ8    (0x10229120): 0x00007fff
+[1227] DRAMC_CH0_TOP0_SHU2_B1_DQ8    (0x102291a0): 0x00207fff
+[1227] DRAMC_CH0_TOP0_SHU2_CA_CMD8   (0x10229220): 0x00007fff
+[1227] DRAMC_CH0_TOP0_SHU3_B0_DQ8    (0x10229620): 0x00007fff
+[1227] DRAMC_CH0_TOP0_SHU3_B1_DQ8    (0x102296a0): 0x00207fff
+[1227] DRAMC_CH0_TOP0_SHU3_CA_CMD8   (0x10229720): 0x00007fff
+[1227] DRAMC_CH0_TOP0_SHU4_B0_DQ8    (0x10229b20): 0x00000000
+[1227] DRAMC_CH0_TOP0_SHU4_B1_DQ8    (0x10229ba0): 0x00000000
+[1228] DRAMC_CH0_TOP0_SHU4_CA_CMD8   (0x10229c20): 0x00000000
+[1228] DRAMC_CH1_TOP0_MISC_CG_CTRL0  (0x10230284): 0x00100010
+[1228] DRAMC_CH1_TOP0_MISC_CG_CTRL2  (0x1023028c): 0x806003be
+[1228] DRAMC_CH1_TOP0_MISC_CTRL3     (0x102302a8): 0x11351135
+[1228] DRAMC_CH1_TOP0_SHU1_B0_DQ8    (0x10230c20): 0x00207fff
+[1228] DRAMC_CH1_TOP0_SHU1_B1_DQ8    (0x10230ca0): 0x00207fff
+[1228] DRAMC_CH1_TOP0_SHU1_CA_CMD8   (0x10230d20): 0x00207fff
+[1228] DRAMC_CH1_TOP0_SHU2_B0_DQ8    (0x10231120): 0x00207fff
+[1228] DRAMC_CH1_TOP0_SHU2_B1_DQ8    (0x102311a0): 0x00207fff
+[1228] DRAMC_CH1_TOP0_SHU2_CA_CMD8   (0x10231220): 0x00207fff
+[1228] DRAMC_CH1_TOP0_SHU3_B0_DQ8    (0x10231620): 0x00207fff
+[1228] DRAMC_CH1_TOP0_SHU3_B1_DQ8    (0x102316a0): 0x00207fff
+[1228] DRAMC_CH1_TOP0_SHU3_CA_CMD8   (0x10231720): 0x00207fff
+[1228] DRAMC_CH1_TOP0_SHU4_B0_DQ8    (0x10231b20): 0x00000000
+[1228] DRAMC_CH1_TOP0_SHU4_B1_DQ8    (0x10231ba0): 0x00000000
+[1228] DRAMC_CH1_TOP0_SHU4_CA_CMD8   (0x10231c20): 0x00000000
+[1229] mt6370_i2c_read_byte: I2CR[0x00] = 0xE6
+[1229] mt6370_is_hw_exist: E6(0x06)
+[1229] mt6370_chg_probe: 1.0.5_MTK
+[1229] mt6370_chg_init_setting: starts
+[1229] mt6370_enable_wdt: en = 1
+[1229] mt6370_i2c_read_byte: I2CR[0x1D] = 0x52
+[1229] mt6370_i2c_write_byte: I2CW[0x1D] = 0xD2
+[1229] mt6370_select_input_current_limit: select input current limit = 2
+[1229] mt6370_i2c_read_byte: I2CR[0x12] = 0x03
+[1229] mt6370_i2c_write_byte: I2CW[0x12] = 0x0B
+[1234] mt6370_enable_ilim: enable ilim = 0
+[1234] mt6370_i2c_read_byte: I2CR[0x13] = 0x23
+[1234] mt6370_i2c_write_byte: I2CW[0x13] = 0x22
+[1234] ====== mt6370_disable_warm_cool_jeita
+[1235] mt6370_i2c_read_byte: I2CR[0x20] = 0x10
+[1235] mt6370_i2c_write_byte: I2CW[0x20] = 0x1F
+[1235] [GPIO]   457: Pin 24 decrypt warning! 
+[1235] mt6370_chg_init_setting:gpio_value=1
+[1235] mt_charger_set_ichg: ichg = 500
+[1235] mt6370_i2c_read_byte: I2CR[0x17] = 0x4C
+[1235] mt6370_i2c_write_byte: I2CW[0x17] = 0x10
+[1235] mt_charger_set_aicr: aicr = 500
+[1235] mt6370_i2c_read_byte: I2CR[0x13] = 0x22
+[1235] mt6370_i2c_write_byte: I2CW[0x13] = 0x22
+[1235] mt_charger_set_mivr: mivr = 4500
+[1235] mt6370_i2c_read_byte: I2CR[0x16] = 0x0B
+[1235] mt6370_i2c_write_byte: I2CW[0x16] = 0x0D
+[1236] mt6370_set_battery_voreg: bat voreg = 4350
+[1236] mt6370_i2c_read_byte: I2CR[0x14] = 0x3C
+[1236] mt6370_i2c_write_byte: I2CW[0x14] = 0x5A
+[1236] ====== mt6370_set_precharge_current_100ma
+[1236] mt6370_i2c_read_byte: I2CR[0x18] = 0xC1
+[1236] mt6370_i2c_write_byte: I2CW[0x18] = 0xC0
+[1236] [upmu_is_chr_det] 1
+[1239] [pmic_get_auxadc_value] reg_val = 0x6684, adc_result = 4324
+[1239] fg_i2c_read_byte: I2CR[0x08] = 0xE6
+[1240] fg_i2c_read_byte: I2CR[0x09] = 0x10
+[1240] mt6370_i2c_read_byte: I2CR[0x12] = 0x0B
+[1240] mt6370_i2c_write_byte: I2CW[0x12] = 0x0A
+[1241] mt6370_i2c_read_byte: I2CR[0x4A] = 0x20
+[1241] mt6370_i2c_read_byte: I2CR[0x17] = 0x10
+[1241] mt6370_i2c_read_byte: I2CR[0x16] = 0x0D
+[1241] mt6370_i2c_read_byte: I2CR[0x13] = 0x22
+[1241] mt6370_i2c_read_byte: I2CR[0x19] = 0x3C
+[1241] mt6370_i2c_read_byte: I2CR[0x12] = 0x0A
+[1241] mt_charger_dump_register: ICHG = 500mA, AICR = 500mA, MIVR = 4500mV, IEOC = 250mA
+[1241] mt_charger_dump_register: CHG_EN = 0, CHG_STATUS = ready
+[1297] [fgauge_read_IM_current] : FG_CURRENT = 0
+[1297] [fgauge_read_IM_current] current(discharging) = 0 mA
+[1298] [fgauge_read_IM_current] ori current=0
+[1298] [fgauge_read_IM_current] final current=0 (ratio=1000)
+[1305] [fgauge_read_IM_current] : FG_CURRENT = fffa
+[1305] [fgauge_read_IM_current] current(discharging) = 15 mA
+[1305] [fgauge_read_IM_current] ori current=15
+[1305] [fgauge_read_IM_current] final current=15 (ratio=1000)
+[1312] [fgauge_read_IM_current] : FG_CURRENT = fff6
+[1312] [fgauge_read_IM_current] current(discharging) = 28 mA
+[1312] [fgauge_read_IM_current] ori current=28
+[1312] [fgauge_read_IM_current] final current=28 (ratio=1000)
+[1320] [fgauge_read_IM_current] : FG_CURRENT = fff9
+[1320] [fgauge_read_IM_current] current(discharging) = 18 mA
+[1320] [fgauge_read_IM_current] ori current=18
+[1320] [fgauge_read_IM_current] final current=18 (ratio=1000)
+[1327] [fgauge_read_IM_current] : FG_CURRENT = fffd
+[1327] [fgauge_read_IM_current] current(discharging) = 6 mA
+[1327] [fgauge_read_IM_current] ori current=6
+[1327] [fgauge_read_IM_current] final current=6 (ratio=1000)
+[1327] do_ptim_gauge, 43219(43210, 43215, 43219, 43220, 43222), 15(0, 6, 15, 18, 28)
+[1327] [check_sw_ocv]0 ptim[43219 15] fg_swocv[43219 -15] boot_vbat:4311 shutdowntime:0 vbat:4326
+[1328] mt6370_i2c_read_byte: I2CR[0x12] = 0x0A
+[1328] mt6370_i2c_write_byte: I2CW[0x12] = 0x0B
+[1328] mt6370_i2c_read_byte: I2CR[0x4A] = 0x60
+[1328] mt6370_i2c_read_byte: I2CR[0x17] = 0x10
+[1328] mt6370_i2c_read_byte: I2CR[0x16] = 0x0D
+[1328] mt6370_i2c_read_byte: I2CR[0x13] = 0x22
+[1328] mt6370_i2c_read_byte: I2CR[0x19] = 0x3C
+[1328] mt6370_i2c_read_byte: I2CR[0x12] = 0x0B
+[1328] mt_charger_dump_register: ICHG = 500mA, AICR = 500mA, MIVR = 4500mV, IEOC = 250mA
+[1328] mt_charger_dump_register: CHG_EN = 1, CHG_STATUS = progress
+[1328] [mt65xx_bat_init] check VBAT=4326 mV with 3550 mV
+[1330] [pmic_get_auxadc_value] reg_val = 0x474, adc_result = 500
+[1331] fg_i2c_read_byte: I2CR[0x2C] = 0x64
+[1331] fg_i2c_read_byte: I2CR[0x2D] = 0x00
+[1331]  !!!bat soc =100 
+[1333] [pmic_get_auxadc_value] reg_val = 0x474, adc_result = 500
+[1390] [fgauge_read_IM_current] : FG_CURRENT = 226
+[1390] [fgauge_read_IM_current] current(charging) = 1728 mA
+[1390] [fgauge_read_IM_current] ori current=1728
+[1390] [fgauge_read_IM_current] final current=1728 (ratio=1000)
+[1390] [1,Trigger ADC PTIM mode] volt1=43467, curr_1=1728
+[1390] [2,enable dummy load][1399] [fgauge_read_IM_current] : FG_CURRENT = 100
+[1399] [fgauge_read_IM_current] current(charging) = 804 mA
+[1399] [fgauge_read_IM_current] ori current=804
+[1399] [fgauge_read_IM_current] final current=804 (ratio=1000)
+[1399] [3,Trigger ADC PTIM mode again]0717 volt2=43378, curr_2=804
+[1399] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1399] [5,Calculate Rac] volt_1=43467,volt_2=43378,curr_1=1728,curr_2=804,rac_cal=0,ret=-1,retry_count=0
+[1399] [6,Calculate Rac *] 43467,43378,1728,804,0,-1,0
+[1407] [fgauge_read_IM_current] : FG_CURRENT = 1e3
+[1407] [fgauge_read_IM_current] current(charging) = 1518 mA
+[1407] [fgauge_read_IM_current] ori current=1518
+[1407] [fgauge_read_IM_current] final current=1518 (ratio=1000)
+[1407] [1,Trigger ADC PTIM mode] volt1=43469, curr_1=1518
+[1407] [2,enable dummy load][1415] [fgauge_read_IM_current] : FG_CURRENT = 12c
+[1415] [fgauge_read_IM_current] current(charging) = 942 mA
+[1415] [fgauge_read_IM_current] ori current=942
+[1415] [fgauge_read_IM_current] final current=942 (ratio=1000)
+[1415] [3,Trigger ADC PTIM mode again]0717 volt2=43387, curr_2=942
+[1416] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1416] [5,Calculate Rac] volt_1=43469,volt_2=43387,curr_1=1518,curr_2=942,rac_cal=0,ret=-1,retry_count=1
+[1416] [6,Calculate Rac *] 43469,43387,1518,942,0,-1,1
+[1423] [fgauge_read_IM_current] : FG_CURRENT = 18f
+[1423] [fgauge_read_IM_current] current(charging) = 1254 mA
+[1423] [fgauge_read_IM_current] ori current=1254
+[1423] [fgauge_read_IM_current] final current=1254 (ratio=1000)
+[1423] [1,Trigger ADC PTIM mode] volt1=43479, curr_1=1254
+[1423] [2,enable dummy load][1432] [fgauge_read_IM_current] : FG_CURRENT = fd
+[1432] [fgauge_read_IM_current] current(charging) = 795 mA
+[1432] [fgauge_read_IM_current] ori current=795
+[1432] [fgauge_read_IM_current] final current=795 (ratio=1000)
+[1432] [3,Trigger ADC PTIM mode again]0717 volt2=43395, curr_2=795
+[1432] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1432] [5,Calculate Rac] volt_1=43479,volt_2=43395,curr_1=1254,curr_2=795,rac_cal=0,ret=-1,retry_count=2
+[1432] [6,Calculate Rac *] 43479,43395,1254,795,0,-1,2
+[1441] [fgauge_read_IM_current] : FG_CURRENT = 1f4
+[1441] [fgauge_read_IM_current] current(charging) = 1571 mA
+[1441] [fgauge_read_IM_current] ori current=1571
+[1441] [fgauge_read_IM_current] final current=1571 (ratio=1000)
+[1441] [1,Trigger ADC PTIM mode] volt1=43495, curr_1=1571
+[1441] [2,enable dummy load][1449] [fgauge_read_IM_current] : FG_CURRENT = f6
+[1449] [fgauge_read_IM_current] current(charging) = 773 mA
+[1449] [fgauge_read_IM_current] ori current=773
+[1449] [fgauge_read_IM_current] final current=773 (ratio=1000)
+[1449] [3,Trigger ADC PTIM mode again]0717 volt2=43405, curr_2=773
+[1450] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1450] [5,Calculate Rac] volt_1=43495,volt_2=43405,curr_1=1571,curr_2=773,rac_cal=0,ret=-1,retry_count=0
+[1450] [6,Calculate Rac *] 43495,43405,1571,773,0,-1,0
+[1457] [fgauge_read_IM_current] : FG_CURRENT = 1e7
+[1457] [fgauge_read_IM_current] current(charging) = 1530 mA
+[1457] [fgauge_read_IM_current] ori current=1530
+[1457] [fgauge_read_IM_current] final current=1530 (ratio=1000)
+[1457] [1,Trigger ADC PTIM mode] volt1=43495, curr_1=1530
+[1457] [2,enable dummy load][1466] [fgauge_read_IM_current] : FG_CURRENT = 125
+[1466] [fgauge_read_IM_current] current(charging) = 920 mA
+[1466] [fgauge_read_IM_current] ori current=920
+[1466] [fgauge_read_IM_current] final current=920 (ratio=1000)
+[1466] [3,Trigger ADC PTIM mode again]0717 volt2=43410, curr_2=920
+[1466] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1466] [5,Calculate Rac] volt_1=43495,volt_2=43410,curr_1=1530,curr_2=920,rac_cal=0,ret=-1,retry_count=1
+[1466] [6,Calculate Rac *] 43495,43410,1530,920,0,-1,1
+[1473] [fgauge_read_IM_current] : FG_CURRENT = 1a9
+[1474] [fgauge_read_IM_current] current(charging) = 1335 mA
+[1474] [fgauge_read_IM_current] ori current=1335
+[1474] [fgauge_read_IM_current] final current=1335 (ratio=1000)
+[1474] [1,Trigger ADC PTIM mode] volt1=43499, curr_1=1335
+[1474] [2,enable dummy load][1482] [fgauge_read_IM_current] : FG_CURRENT = 14d
+[1482] [fgauge_read_IM_current] current(charging) = 1046 mA
+[1482] [fgauge_read_IM_current] ori current=1046
+[1482] [fgauge_read_IM_current] final current=1046 (ratio=1000)
+[1482] [3,Trigger ADC PTIM mode again]0717 volt2=43416, curr_2=1046
+[1483] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1483] [5,Calculate Rac] volt_1=43499,volt_2=43416,curr_1=1335,curr_2=1046,rac_cal=0,ret=-1,retry_count=2
+[1483] [6,Calculate Rac *] 43499,43416,1335,1046,0,-1,2
+[1490] [fgauge_read_IM_current] : FG_CURRENT = 14c
+[1490] [fgauge_read_IM_current] current(charging) = 1043 mA
+[1490] [fgauge_read_IM_current] ori current=1043
+[1490] [fgauge_read_IM_current] final current=1043 (ratio=1000)
+[1490] [1,Trigger ADC PTIM mode] volt1=43500, curr_1=1043
+[1490] [2,enable dummy load][1499] [fgauge_read_IM_current] : FG_CURRENT = 104
+[1499] [fgauge_read_IM_current] current(charging) = 817 mA
+[1499] [fgauge_read_IM_current] ori current=817
+[1499] [fgauge_read_IM_current] final current=817 (ratio=1000)
+[1499] [3,Trigger ADC PTIM mode again]0717 volt2=43420, curr_2=817
+[1499] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1499] [5,Calculate Rac] volt_1=43500,volt_2=43420,curr_1=1043,curr_2=817,rac_cal=0,ret=-1,retry_count=0
+[1499] [6,Calculate Rac *] 43500,43420,1043,817,0,-1,0
+[1507] [fgauge_read_IM_current] : FG_CURRENT = 1be
+[1507] [fgauge_read_IM_current] current(charging) = 1401 mA
+[1507] [fgauge_read_IM_current] ori current=1401
+[1507] [fgauge_read_IM_current] final current=1401 (ratio=1000)
+[1507] [1,Trigger ADC PTIM mode] volt1=43502, curr_1=1401
+[1507] [2,enable dummy load][1515] [fgauge_read_IM_current] : FG_CURRENT = 144
+[1515] [fgauge_read_IM_current] current(charging) = 1018 mA
+[1515] [fgauge_read_IM_current] ori current=1018
+[1515] [fgauge_read_IM_current] final current=1018 (ratio=1000)
+[1515] [3,Trigger ADC PTIM mode again]0717 volt2=43425, curr_2=1018
+[1516] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1516] [5,Calculate Rac] volt_1=43502,volt_2=43425,curr_1=1401,curr_2=1018,rac_cal=0,ret=-1,retry_count=1
+[1516] [6,Calculate Rac *] 43502,43425,1401,1018,0,-1,1
+[1523] [fgauge_read_IM_current] : FG_CURRENT = 16c
+[1523] [fgauge_read_IM_current] current(charging) = 1144 mA
+[1523] [fgauge_read_IM_current] ori current=1144
+[1523] [fgauge_read_IM_current] final current=1144 (ratio=1000)
+[1523] [1,Trigger ADC PTIM mode] volt1=43505, curr_1=1144
+[1523] [2,enable dummy load][1532] [fgauge_read_IM_current] : FG_CURRENT = fd
+[1532] [fgauge_read_IM_current] current(charging) = 795 mA
+[1532] [fgauge_read_IM_current] ori current=795
+[1532] [fgauge_read_IM_current] final current=795 (ratio=1000)
+[1532] [3,Trigger ADC PTIM mode again]0717 volt2=43425, curr_2=795
+[1532] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1532] [5,Calculate Rac] volt_1=43505,volt_2=43425,curr_1=1144,curr_2=795,rac_cal=0,ret=-1,retry_count=2
+[1532] [6,Calculate Rac *] 43505,43425,1144,795,0,-1,2
+[1540] [fgauge_read_IM_current] : FG_CURRENT = 1e6
+[1540] [fgauge_read_IM_current] current(charging) = 1527 mA
+[1540] [fgauge_read_IM_current] ori current=1527
+[1540] [fgauge_read_IM_current] final current=1527 (ratio=1000)
+[1540] [1,Trigger ADC PTIM mode] volt1=43507, curr_1=1527
+[1540] [2,enable dummy load][1548] [fgauge_read_IM_current] : FG_CURRENT = 12f
+[1548] [fgauge_read_IM_current] current(charging) = 952 mA
+[1548] [fgauge_read_IM_current] ori current=952
+[1548] [fgauge_read_IM_current] final current=952 (ratio=1000)
+[1548] [3,Trigger ADC PTIM mode again]0717 volt2=43426, curr_2=952
+[1549] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1549] [5,Calculate Rac] volt_1=43507,volt_2=43426,curr_1=1527,curr_2=952,rac_cal=0,ret=-1,retry_count=0
+[1549] [6,Calculate Rac *] 43507,43426,1527,952,0,-1,0
+[1556] [fgauge_read_IM_current] : FG_CURRENT = 177
+[1556] [fgauge_read_IM_current] current(charging) = 1178 mA
+[1556] [fgauge_read_IM_current] ori current=1178
+[1556] [fgauge_read_IM_current] final current=1178 (ratio=1000)
+[1556] [1,Trigger ADC PTIM mode] volt1=43505, curr_1=1178
+[1556] [2,enable dummy load][1565] [fgauge_read_IM_current] : FG_CURRENT = fc
+[1565] [fgauge_read_IM_current] current(charging) = 792 mA
+[1565] [fgauge_read_IM_current] ori current=792
+[1565] [fgauge_read_IM_current] final current=792 (ratio=1000)
+[1565] [3,Trigger ADC PTIM mode again]0717 volt2=43428, curr_2=792
+[1565] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1565] [5,Calculate Rac] volt_1=43505,volt_2=43428,curr_1=1178,curr_2=792,rac_cal=0,ret=-1,retry_count=1
+[1565] [6,Calculate Rac *] 43505,43428,1178,792,0,-1,1
+[1572] [fgauge_read_IM_current] : FG_CURRENT = 1dc
+[1573] [fgauge_read_IM_current] current(charging) = 1496 mA
+[1573] [fgauge_read_IM_current] ori current=1496
+[1573] [fgauge_read_IM_current] final current=1496 (ratio=1000)
+[1573] [1,Trigger ADC PTIM mode] volt1=43514, curr_1=1496
+[1573] [2,enable dummy load][1581] [fgauge_read_IM_current] : FG_CURRENT = 118
+[1581] [fgauge_read_IM_current] current(charging) = 880 mA
+[1581] [fgauge_read_IM_current] ori current=880
+[1581] [fgauge_read_IM_current] final current=880 (ratio=1000)
+[1581] [3,Trigger ADC PTIM mode again]0717 volt2=43428, curr_2=880
+[1582] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1582] [5,Calculate Rac] volt_1=43514,volt_2=43428,curr_1=1496,curr_2=880,rac_cal=0,ret=-1,retry_count=2
+[1582] [6,Calculate Rac *] 43514,43428,1496,880,0,-1,2
+[1589] [fgauge_read_IM_current] : FG_CURRENT = 185
+[1589] [fgauge_read_IM_current] current(charging) = 1222 mA
+[1589] [fgauge_read_IM_current] ori current=1222
+[1589] [fgauge_read_IM_current] final current=1222 (ratio=1000)
+[1589] [1,Trigger ADC PTIM mode] volt1=43502, curr_1=1222
+[1589] [2,enable dummy load][1598] [fgauge_read_IM_current] : FG_CURRENT = f6
+[1598] [fgauge_read_IM_current] current(charging) = 773 mA
+[1598] [fgauge_read_IM_current] ori current=773
+[1598] [fgauge_read_IM_current] final current=773 (ratio=1000)
+[1598] [3,Trigger ADC PTIM mode again]0717 volt2=43428, curr_2=773
+[1598] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1598] [5,Calculate Rac] volt_1=43502,volt_2=43428,curr_1=1222,curr_2=773,rac_cal=0,ret=-1,retry_count=0
+[1598] [6,Calculate Rac *] 43502,43428,1222,773,0,-1,0
+[1605] [fgauge_read_IM_current] : FG_CURRENT = 1d6
+[1606] [fgauge_read_IM_current] current(charging) = 1477 mA
+[1606] [fgauge_read_IM_current] ori current=1477
+[1606] [fgauge_read_IM_current] final current=1477 (ratio=1000)
+[1606] [1,Trigger ADC PTIM mode] volt1=43504, curr_1=1477
+[1606] [2,enable dummy load][1614] [fgauge_read_IM_current] : FG_CURRENT = 117
+[1614] [fgauge_read_IM_current] current(charging) = 876 mA
+[1614] [fgauge_read_IM_current] ori current=876
+[1614] [fgauge_read_IM_current] final current=876 (ratio=1000)
+[1614] [3,Trigger ADC PTIM mode again]0717 volt2=43428, curr_2=876
+[1615] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1615] [5,Calculate Rac] volt_1=43504,volt_2=43428,curr_1=1477,curr_2=876,rac_cal=0,ret=-1,retry_count=1
+[1615] [6,Calculate Rac *] 43504,43428,1477,876,0,-1,1
+[1622] [fgauge_read_IM_current] : FG_CURRENT = 191
+[1622] [fgauge_read_IM_current] current(charging) = 1260 mA
+[1622] [fgauge_read_IM_current] ori current=1260
+[1622] [fgauge_read_IM_current] final current=1260 (ratio=1000)
+[1622] [1,Trigger ADC PTIM mode] volt1=43500, curr_1=1260
+[1622] [2,enable dummy load][1631] [fgauge_read_IM_current] : FG_CURRENT = 147
+[1631] [fgauge_read_IM_current] current(charging) = 1027 mA
+[1631] [fgauge_read_IM_current] ori current=1027
+[1631] [fgauge_read_IM_current] final current=1027 (ratio=1000)
+[1631] [3,Trigger ADC PTIM mode again]0717 volt2=43430, curr_2=1027
+[1631] [4,Calculate Rac] bypass due to (curr_x-curr_y) < 40mA
+[1631] [5,Calculate Rac] volt_1=43500,volt_2=43430,curr_1=1260,curr_2=1027,rac_cal=0,ret=-1,retry_count=2
+[1631] [6,Calculate Rac *] 43500,43430,1260,1027,0,-1,2
+[1631] [dlpt_R] -1,-1,-1,-1,-1 [1000:0:0]170
+[1631] mt_charger_enable_power_path: enable = 1
+[1631] mt6370_i2c_read_byte: I2CR[0x11] = 0x10
+[1632] mt6370_i2c_write_byte: I2CW[0x11] = 0x10
+[1632] [upmu_is_chr_det] 1
+[1634] [pmic_get_auxadc_value] reg_val = 0x671c, adc_result = 4349
+[1635] fg_i2c_read_byte: I2CR[0x2C] = 0x64
+[1636] fg_i2c_read_byte: I2CR[0x2D] = 0x00
+[1636]  ~~~bat soc =100 
+[1636] fg_i2c_read_byte: I2CR[0x08] = 0xE6
+[1637] fg_i2c_read_byte: I2CR[0x09] = 0x10
+[1637]  2===bat vol =4326 
+[1637] [check_bat_protect_status]: check VBAT=4326 mV with 3550 mV, start charging... 
+[1637] [check_bat_protect_status]: check VBAT=4326 mV with 3550 mV, stop charging... 
+[1637] mt6370_enable_wdt: en = 0
+[1638] mt6370_i2c_read_byte: I2CR[0x1D] = 0xD2
+[1638] mt6370_i2c_write_byte: I2CW[0x1D] = 0x52
+[1638] [LEDS]LK: mt65xx_backlight_on:level =  255
+[1639] [DISP]func|primary_display_trigger
+[1639] [LK_DDP/ddp_manager]path check busy on scenario primary_disp
+[1639] [DISP]func|ddp_dsi_is_busy
+[1639] [LK_DDP/ddp_manager]dsi0  is busy
+[1639] [DISP]func|disp_lcm_is_video_mode
+[1639] [PART_LK][get_part] sdrpmb
+[1639] active_id: 0 status: 0
+[1639] start_sect: 8225 nr_sectors: 32768
+[1639] SDRPMB[1]: SET WP (61014016, 16384)
+[1640] [SD0] EXT_CSD_ERASE_GRP_DEF is Off, wp_size = 8192KB
+[SD0] csd.write_prot_grpsz = 15, csd.erase_sctsz = 1024
+[1640] [mmc_set_user_wp] card->ext_csd.usr_wp:1
+[1640] [mmc_set_write_protect_by_group] count_wp (1)
+[1640] [SD0] EXT_CSD_ERASE_GRP_DEF is Off, wp_size = 8192KB
+[SD0] csd.write_prot_grpsz = 15, csd.erase_sctsz = 1024
+[1640] initializing target
+[1640] calling apps_init()
+[1640] [LK_ENV]get_env MTK_DEVICE_ID from area 0
+[1640] Set serial # to default value.
+[1640] [PART_LK][get_part] proinfo
+[1640] [partition_get_index]find proinfo index 17
+[1640] [LK_BOOT] Load 'proinfo' partition to 0x560A3B74 (28 bytes in 0 ms)
+[1640] facsn read_product_info --buf[0] = 0 
+[1640] facsn read_product_info --buf[1] = 0 
+[1641] facsn read_product_info --buf[2] = 0 
+[1641] facsn read_product_info --buf[3] = 0 
+[1641] facsn read_product_info --buf[4] = 0 
+[1641] facsn read_product_info --buf[5] = 0 
+[1641] facsn read_product_info --buf[6] = 0 
+[1641] facsn read_product_info --buf[7] = 0 
+[1641] facsn read_product_info --buf[8] = 0 
+[1641] facsn read_product_info --buf[9] = 0 
+[1641] facsn read_product_info --buf[10] = 0 
+[1641] facsn read_product_info --buf[11] = 0 
+[1641] facsn read_product_info --buf[12] = 0 
+[1641] facsn read_product_info --buf[13] = 0 
+[1641] facsn read_product_info --buf[14] = 0 
+[1641] facsn read_product_info --buf[15] = 0 
+[1641] facsn read_product_info --buf[16] = 0 
+[1641] facsn read_product_info --buf[17] = 0 
+[1641] facsn read_product_info --buf[18] = 0 
+[1641] facsn read_product_info --buf[19] = S 
+[1641] facsn read_product_info --buf[20] = 1 
+[1641] facsn read_product_info --buf[21] = 9 
+[1641] facsn read_product_info --buf[22] = F 
+[1641] facsn read_product_info --buf[23] = 0 
+[1642] facsn read_product_info --buf[24] = 0 
+[1642] facsn read_product_info --buf[25] = 0 
+[1642] facsn read_product_info --buf[26] = 1 
+[1642] facsn read_product_info --buf[27] = 3 
+[1642] facsn  barcode[0] = 0
+[1642] facsn  barcode[1] = 0
+[1642] facsn  barcode[2] = 0
+[1642] facsn  barcode[3] = 0
+[1642] facsn  barcode[4] = 0
+[1642] facsn  barcode[5] = 0
+[1642] facsn  barcode[6] = 0
+[1642] facsn  barcode[7] = 0
+[1642] facsn  barcode[8] = 0
+[1642] facsn  barcode[9] = 0
+[1642] facsn  barcode[10] = 0
+[1642] facsn  barcode[11] = 0
+[1642] facsn  barcode[12] = 0
+[1642] facsn  barcode[13] = 0
+[1642] facsn  barcode[14] = 0
+[1642] facsn  barcode[15] = 0
+[1642] facsn  barcode[16] = 0
+[1642] facsn  barcode[17] = 0
+[1642] facsn  barcode[18] = 0
+[1642] facsn  barcode[19] = S
+[1642] facsn  barcode[20] = 1
+[1642] facsn  barcode[21] = 9
+[1642] facsn  barcode[22] = F
+[1642] facsn  barcode[23] = 0
+[1642] facsn  barcode[24] = 0
+[1643] facsn  barcode[25] = 0
+[1643] facsn  barcode[26] = 1
+[1643] facsn  barcode[27] = 3
+[1643] facsn 1 ok: barcode19 is S
+[1643] facsn Serial #: "0000000000000000000S19F00013"
+[1643] [PART_LK][get_part] boot
+[1643] [PART_LK][get_part] boot
+[1643] part page addr is 0x1da00000
+[1643] [partition_get_index]find boot index 28
+[1643] 
+============================================================
+[1643] [LK_BOOT] Android Partition Name                : boot
+[1643] [LK_BOOT] Android Boot IMG Hdr - Kernel Size    : 0x00892E1D
+[1644] [LK_BOOT] Android Boot IMG Hdr - Kernel Address : 0x40080000
+[1644] [LK_BOOT] Android Boot IMG Hdr - Rootfs Size    : 0x00114793
+[1644] [LK_BOOT] Android Boot IMG Hdr - Rootfs Address : 0x55000000
+[1644] [LK_BOOT] Android Boot IMG Hdr - Tags Address   : 0x54000000
+[1644] [LK_BOOT] Android Boot IMG Hdr - Page Size      : 0x00000800
+[1644] [LK_BOOT] Android Boot IMG Hdr - Command Line   : bootopt=64S3,32N2,64N2 buildvariant=user
+[1644] ============================================================
+[1644]  > page count of kernel image = 4390
+[1644]  > kernel mem offset = 0x56900000
+[1644]  > rootfs mem offset = 0x57193000
+[1644]  > boot image size = 0x9a8000
+[SBC] NS-CHIP
+[1644] [SEC_POLICY] sboot_state = 0x0
+[1644] [SEC_POLICY] lock_state = 0x3
+[1644] [SBC] (boot, boot) cert vfy disabled
+[1644] boot state: green
+[1644] [PART_LK][get_part] boot
+[1644] check mkimg header
+[1644] [partition_get_index]find boot index 28
+[1645] [LK_BOOT] KERNEL partition magic not match
+[1645] no mkimg header in kernel image
+[1645] 
+read the data of boot (size = 0x9a8000)
+[1645]  > from - 0x000000001da00800 (skip boot img hdr)
+[1645]  > to   - 0x56900000 (starts with kernel img hdr)
+[1645] [partition_get_index]find boot index 28
+[1770] [LK_BOOT] ROOTFS partition magic not match
+[1770] no mkimg header in ramdisk image
+[1770] boot state: orange
+[1773] [DISP]func|primary_display_trigger
+[1773] [LK_DDP/ddp_manager]path check busy on scenario primary_disp
+[1773] [DISP]func|ddp_dsi_is_busy
+[1773] [LK_DDP/ddp_manager]dsi0  is busy
+[1773] [DISP]func|disp_lcm_is_video_mode
+[1774] [DISP]func|primary_display_trigger
+[1774] [LK_DDP/ddp_manager]path check busy on scenario primary_disp
+[1774] [DISP]func|ddp_dsi_is_busy
+[1774] [LK_DDP/ddp_manager]dsi0  is busy
+[1774] [DISP]func|disp_lcm_is_video_mode
+[1775] [DISP]func|primary_display_trigger
+[1775] [LK_DDP/ddp_manager]path check busy on scenario primary_disp
+[1775] [DISP]func|ddp_dsi_is_busy
+[1775] [LK_DDP/ddp_manager]dsi0  is busy
+[1775] [DISP]func|disp_lcm_is_video_mode
+[1777] [DISP]func|primary_display_trigger
+[1777] [LK_DDP/ddp_manager]path check busy on scenario primary_disp
+[1777] [DISP]func|ddp_dsi_is_busy
+[1777] [LK_DDP/ddp_manager]dsi0  is busy
+[1777] [DISP]func|disp_lcm_is_video_mode
+[6777] [PROFILE] ::: lvl(1) load boot.img takes 5134 ms
+[6778] [partition_get_index]find proinfo index 17
+[6778] get atoi(b_buf) = 0
+[6778] get flag = 10785445
+[6778] [partition_get_index]find proinfo index 17
+[6778] get atoi(b_buf) = 0
+[6778] get flag = 10785445
+[6779] [set_write_protect] Lock boot region 
+[6779] [SD0] EXT_CSD_ERASE_GRP_DEF is Off, wp_size = 8192KB
+[SD0] csd.write_prot_grpsz = 15, csd.erase_sctsz = 1024
+[6779] [SD0] EXT_CSD_ERASE_GRP_DEF is Off, wp_size = 8192KB
+[SD0] csd.write_prot_grpsz = 15, csd.erase_sctsz = 1024
+[6779] [Part_WP]WP(preloader->preloader): Region(1), start_sect(0x0), nr_blk(0x200), type(1)
+[6779] [SD0] EXT_CSD_ERASE_GRP_DEF is Off, wp_size = 8192KB
+[SD0] csd.write_prot_grpsz = 15, csd.erase_sctsz = 1024
+[SBC] NS-CHIP
+[6779] [set_write_protect]: Lock sec1->tee2
+[6779] [PART_LK][get_part] sec1
+[6779] [PART_LK][get_part] sec1
+[6779] [Part_WP]WP(sec1->sec1): Region(8), start_sect(0x90000), nr_blk(0x1000), type(1)
+[6779] [mmc_set_write_protect] wp blk count (0x1000) is not wp_size (0x4000) aligned
+[6779] [set_write_protect]: Lock sec1->sec1 failed:4
+[6780] write protect fail! 
+[6780] write protect Done! 
+[6780] sending root of trust info...
+[6780] boot_get_os_version(10040141) (boot image header valid)
+[6780] 64 bits kernel
+[6780] g_boot_hdr=0x560d7088
+[6780] g_boot_hdr->kernel_sz=0x00892e1d
+[6781] get dtb_addr=0x571793c4, dtb_size=0x00019a59
+[6781] zimage_addr=0x56900000, zimage_size=0x008793c1
+[6781] decompress kernel image...
+[6781] Wake up iothread.
+[6787] Met bootstrap2.
+[6787] mblock[0].start: 0x40000000, sz: 0x80000, limit: 0x78000000, max_addr: 0x0, target: -1, reserved_addr: 0x40070000,reserved_size: 0x10000
+[6787] mblock_reserve dbg[0]: 1, 1, 1, 1
+[6787] mblock[1].start: 0x4c880000, sz: 0x7780000, limit: 0x78000000, max_addr: 0x40080000, target: 0, reserved_addr: 0x53ff0000,reserved_size: 0x10000
+[6787] mblock_reserve dbg[1]: 1, 1, 1, 1
+[6787] mblock[2].start: 0x54080000, sz: 0xf80000, limit: 0x78000000, max_addr: 0x54000000, target: 1, reserved_addr: 0x54ff0000,reserved_size: 0x10000
+[6787] mblock_reserve dbg[2]: 1, 1, 1, 1
+[6787] mblock[3].start: 0x55115000, sz: 0x2a10b000, limit: 0x78000000, max_addr: 0x55000000, target: 2, reserved_addr: 0x77ff0000,reserved_size: 0x10000
+[6787] mblock_reserve dbg[3]: 1, 1, 1, 1
+[6787] mblock[4].start: 0x80000000, sz: 0x40000000, limit: 0x78000000, max_addr: 0x7f220000, target: 3, reserved_addr: 0x77ff0000,reserved_size: 0x10000
+[6787] mblock_reserve dbg[4]: 1, 0, 1, 1
+[6788] mblock[5].start: 0xc0000000, sz: 0x2eb00000, limit: 0x78000000, max_addr: 0x7f220000, target: 3, reserved_addr: 0x77ff0000,reserved_size: 0x10000
+[6788] mblock_reserve dbg[5]: 1, 0, 1, 1
+[6788] mblock[6].start: 0xeff40000, sz: 0x100c0000, limit: 0x78000000, max_addr: 0x7f220000, target: 3, reserved_addr: 0x77ff0000,reserved_size: 0x10000
+[6788] mblock_reserve dbg[6]: 1, 0, 1, 1
+[6788] mblock[3]: 55115000, 22edb000 from mblock
+mblock[4]: 78000000, 7220000 from mblock
+[6788] mblock_reserve: 77ff0000 - 78000000 from mblock 3
+[6788] mblock_reserve [0].start: 0x40000000, sz: 0x80000
+[6788] mblock_reserve [1].start: 0x4c880000, sz: 0x7780000
+[6788] mblock_reserve [2].start: 0x54080000, sz: 0xf80000
+[6788] mblock_reserve [3].start: 0x55115000, sz: 0x22edb000
+[6788] mblock_reserve [4].start: 0x78000000, sz: 0x7220000
+[6788] mblock_reserve [5].start: 0x80000000, sz: 0x40000000
+[6788] mblock_reserve [6].start: 0xc0000000, sz: 0x2eb00000
+[6788] mblock_reserve [7].start: 0xeff40000, sz: 0x100c0000
+[6789] mblock_reserve-R[0].start: 0x7ff80000, sz: 0x80000 map:1 name:log_store
+[6789] mblock_reserve-R[1].start: 0x7fec0000, sz: 0xc0000 map:0 name:SSPM-reserved
+[6789] mblock_reserve-R[2].start: 0x7feb0000, sz: 0x10000 map:0 name:SPM-reserved
+[6789] mblock_reserve-R[3].start: 0xeeb00000, sz: 0x1440000 map:0 name:tee-reserved
+[6789] mblock_reserve-R[4].start: 0x54000000, sz: 0x80000 map:0 name:dtb_kernel_addr_mb
+[6789] mblock_reserve-R[5].start: 0x40080000, sz: 0xc800000 map:0 name:kernel_addr_mb
+[6789] mblock_reserve-R[6].start: 0x55000000, sz: 0x115000 map:0 name:ramdisk_addr_mb
+[6789] mblock_reserve-R[7].start: 0x7f220000, sz: 0xc90000 map:0 name:framebuffer
+[6789] mblock_reserve-R[8].start: 0x77ff0000, sz: 0x10000 map:0 name:SPM-reserved
+[6789] [spmfw] addr=0x77ff0000 size=0x10000
+[6789] [SEC_POLICY] reached the end, use default policy
+[SBC] NS-CHIP
+[6789] [SEC_POLICY] sboot_state = 0x0
+[6789] [SEC_POLICY] lock_state = 0x3
+[6789] [PART_LK][get_part] spmfw
+[6790] [PART_LK][get_part] spmfw
+[6790] [partition_get_index]find spmfw index 20
+[6790] 
+=========================================
+[6790] [LK_BOOT] spmfw magic number : 0x58881688
+[6790] [LK_BOOT] spmfw name         : spmfw
+[6790] [LK_BOOT] spmfw size         : 36047
+[6790] =========================================
+[6790] [LK_BOOT] spmfw image name found
+[6790] read the data of spmfw
+[6790] [partition_get_index]find spmfw index 20
+[6791] [spmfw] image size = 36047
+[6791] [SBC] img vfy disabled
+[6791] [spmfw] before smc call
+[6794] [spmfw] after smc call
+[6794] [PROFILE] ::: lvl(2) load spm takes 7 ms
+[6795] free_in_kernel = 1
+[6795] Enter load_modem_image v2.0
+[6795] ccci_request_mem: ret:10000000, smem_limit:90000000, align:2000000
+[6795] mblock[0].start: 0x40000000, sz: 0x80000, limit: 0x90000000, max_addr: 0x0, target: -1, reserved_addr: 0x30000000,reserved_size: 0x10000000
+[6795] mblock_reserve dbg[0]: 1, 0, 1, 1
+[6795] mblock[1].start: 0x4c880000, sz: 0x7780000, limit: 0x90000000, max_addr: 0x0, target: -1, reserved_addr: 0x44000000,reserved_size: 0x10000000
+[6795] mblock_reserve dbg[1]: 1, 0, 1, 1
+[6795] mblock[2].start: 0x54080000, sz: 0xf80000, limit: 0x90000000, max_addr: 0x0, target: -1, reserved_addr: 0x44000000,reserved_size: 0x10000000
+[6795] mblock_reserve dbg[2]: 1, 0, 1, 1
+[6795] mblock[3].start: 0x55115000, sz: 0x22edb000, limit: 0x90000000, max_addr: 0x0, target: -1, reserved_addr: 0x66000000,reserved_size: 0x10000000
+[6795] mblock_reserve dbg[3]: 1, 1, 1, 1
+[6795] mblock[4].start: 0x78000000, sz: 0x7220000, limit: 0x90000000, max_addr: 0x77ff0000, target: 3, reserved_addr: 0x6e000000,reserved_size: 0x10000000
+[6796] mblock_reserve dbg[4]: 1, 0, 1, 1
+[6796] mblock[5].start: 0x80000000, sz: 0x40000000, limit: 0x90000000, max_addr: 0x77ff0000, target: 3, reserved_addr: 0x80000000,reserved_size: 0x10000000
+[6796] mblock_reserve dbg[5]: 1, 1, 1, 1
+[6796] mblock[6].start: 0xc0000000, sz: 0x2eb00000, limit: 0x90000000, max_addr: 0xc0000000, target: 5, reserved_addr: 0x80000000,reserved_size: 0x10000000
+[6796] mblock_reserve dbg[6]: 1, 0, 1, 1
+[6796] mblock[7].start: 0xeff40000, sz: 0x100c0000, limit: 0x90000000, max_addr: 0xc0000000, target: 5, reserved_addr: 0x80000000,reserved_size: 0x10000000
+[6796] mblock_reserve dbg[7]: 1, 0, 1, 1
+[6796] mblock_reserve: 80000000 - 90000000 from mblock 5
+[6796] mblock_reserve [0].start: 0x40000000, sz: 0x80000
+[6796] mblock_reserve [1].start: 0x4c880000, sz: 0x7780000
+[6796] mblock_reserve [2].start: 0x54080000, sz: 0xf80000
+[6796] mblock_reserve [3].start: 0x55115000, sz: 0x22edb000
+[6797] mblock_reserve [4].start: 0x78000000, sz: 0x7220000
+[6797] mblock_reserve [5].start: 0x90000000, sz: 0x30000000
+[6797] mblock_reserve [6].start: 0xc0000000, sz: 0x2eb00000
+[6797] mblock_reserve [7].start: 0xeff40000, sz: 0x100c0000
+[6797] mblock_reserve-R[0].start: 0x7ff80000, sz: 0x80000 map:1 name:log_store
+[6797] mblock_reserve-R[1].start: 0x7fec0000, sz: 0xc0000 map:0 name:SSPM-reserved
+[6797] mblock_reserve-R[2].start: 0x7feb0000, sz: 0x10000 map:0 name:SPM-reserved
+[6797] mblock_reserve-R[3].start: 0xeeb00000, sz: 0x1440000 map:0 name:tee-reserved
+[6797] mblock_reserve-R[4].start: 0x54000000, sz: 0x80000 map:0 name:dtb_kernel_addr_mb
+[6797] mblock_reserve-R[5].start: 0x40080000, sz: 0xc800000 map:0 name:kernel_addr_mb
+[6797] mblock_reserve-R[6].start: 0x55000000, sz: 0x115000 map:0 name:ramdisk_addr_mb
+[6797] mblock_reserve-R[7].start: 0x7f220000, sz: 0xc90000 map:0 name:framebuffer
+[6797] mblock_reserve-R[8].start: 0x77ff0000, sz: 0x10000 map:0 name:SPM-reserved
+[6798] mblock_reserve-R[9].start: 0x80000000, sz: 0x10000000 map:0 name:ccci
+[6798] request size: 0x10000000, get start address: 0x80000000
+[6798] Using defalut RAT all in one
+[6798] cust_tel_mode_idx val:-1
+[6798] [LK_ENV]get_env opt_ps1_rat from area 1
+[6798] [LK_ENV]get_env opt_md1_support from area 1
+[6798] [LK_ENV]get_env opt_md3_support from area 1
+[6798] [LK_ENV]get_env opt_c2k_lte_mode from area 1
+[6798] [LK_ENV]get_env opt_lte_support from area 1
+[6798] [LK_ENV]get_env opt_c2k_support from area 1
+[6798] default rat:C_LF_LT_W_G[0x3d][0x0]
+[6798] -- MD1 --
+[6798] mblock[0].start: 0x40000000, sz: 0x80000, limit: 0xc0000000, max_addr: 0x0, target: -1, reserved_addr: 0x30000000,reserved_size: 0x10000000
+[6798] mblock_reserve dbg[0]: 1, 0, 1, 1
+[6798] mblock[1].start: 0x4c880000, sz: 0x7780000, limit: 0xc0000000, max_addr: 0x0, target: -1, reserved_addr: 0x44000000,reserved_size: 0x10000000
+[6798] mblock_reserve dbg[1]: 1, 0, 1, 1
+[6798] mblock[2].start: 0x54080000, sz: 0xf80000, limit: 0xc0000000, max_addr: 0x0, target: -1, reserved_addr: 0x44000000,reserved_size: 0x10000000
+[6799] mblock_reserve dbg[2]: 1, 0, 1, 1
+[6799] mblock[3].start: 0x55115000, sz: 0x22edb000, limit: 0xc0000000, max_addr: 0x0, target: -1, reserved_addr: 0x66000000,reserved_size: 0x10000000
+[6799] mblock_reserve dbg[3]: 1, 1, 1, 1
+[6799] mblock[4].start: 0x78000000, sz: 0x7220000, limit: 0xc0000000, max_addr: 0x77ff0000, target: 3, reserved_addr: 0x6e000000,reserved_size: 0x10000000
+[6799] mblock_reserve dbg[4]: 1, 0, 1, 1
+[6799] mblock[5].start: 0x90000000, sz: 0x30000000, limit: 0xc0000000, max_addr: 0x77ff0000, target: 3, reserved_addr: 0xb0000000,reserved_size: 0x10000000
+[6799] mblock_reserve dbg[5]: 1, 1, 1, 1
+[6799] mblock[6].start: 0xc0000000, sz: 0x2eb00000, limit: 0xc0000000, max_addr: 0xc0000000, target: 5, reserved_addr: 0xb0000000,reserved_size: 0x10000000
+[6799] mblock_reserve dbg[6]: 1, 0, 1, 1
+[6799] mblock[7].start: 0xeff40000, sz: 0x100c0000, limit: 0xc0000000, max_addr: 0xc0000000, target: 5, reserved_addr: 0xb0000000,reserved_size: 0x10000000
+[6800] mblock_reserve dbg[7]: 1, 0, 1, 1
+[6800] mblock_reserve: b0000000 - c0000000 from mblock 5
+[6800] mblock_reserve [0].start: 0x40000000, sz: 0x80000
+[6800] mblock_reserve [1].start: 0x4c880000, sz: 0x7780000
+[6800] mblock_reserve [2].start: 0x54080000, sz: 0xf80000
+[6800] mblock_reserve [3].start: 0x55115000, sz: 0x22edb000
+[6800] mblock_reserve [4].start: 0x78000000, sz: 0x7220000
+[6800] mblock_reserve [5].start: 0x90000000, sz: 0x20000000
+[6800] mblock_reserve [6].start: 0xc0000000, sz: 0x2eb00000
+[6800] mblock_reserve [7].start: 0xeff40000, sz: 0x100c0000
+[6800] mblock_reserve-R[0].start: 0x7ff80000, sz: 0x80000 map:1 name:log_store
+[6800] mblock_reserve-R[1].start: 0x7fec0000, sz: 0xc0000 map:0 name:SSPM-reserved
+[6800] mblock_reserve-R[2].start: 0x7feb0000, sz: 0x10000 map:0 name:SPM-reserved
+[6800] mblock_reserve-R[3].start: 0xeeb00000, sz: 0x1440000 map:0 name:tee-reserved
+[6801] mblock_reserve-R[4].start: 0x54000000, sz: 0x80000 map:0 name:dtb_kernel_addr_mb
+[6801] mblock_reserve-R[5].start: 0x40080000, sz: 0xc800000 map:0 name:kernel_addr_mb
+[6801] mblock_reserve-R[6].start: 0x55000000, sz: 0x115000 map:0 name:ramdisk_addr_mb
+[6801] mblock_reserve-R[7].start: 0x7f220000, sz: 0xc90000 map:0 name:framebuffer
+[6801] mblock_reserve-R[8].start: 0x77ff0000, sz: 0x10000 map:0 name:SPM-reserved
+[6801] mblock_reserve-R[9].start: 0x80000000, sz: 0x10000000 map:0 name:ccci
+[6801] mblock_reserve-R[10].start: 0xb0000000, sz: 0x10000000 map:1 name:ccci
+[6801] request size: 0x10000000, get start address: 0xb0000000
+[6801] [PART_LK][get_part] md1img
+[6802] ptr hdr verify:partition[md1img], image_name[md1rom]
+[6802] policy_entry_idx = 12 
+[SBC] NS-CHIP
+[6802] [SEC_POLICY] sboot_state = 0x0
+[6802] [SEC_POLICY] lock_state = 0x3
+[6802] img_auth_required = 0 
+[6802] [PART_LK][get_part] md1img
+[7082] image verify:partition[md1img], image_name[md1rom], addr[0xb0000000], size[0x15a7070]
+[7082] padding_with_additional_num:3 with mpu_num:5
+[7082] retrieve_blk_num: 5
+[7082] == Get retrieve 0x3c30000~0xe7fffff =======
+[7082] [0xb3110000~0xbf7fffff] ==>
+[7082] [0xb3110000-Reserved-0xb3c2ffff|0xb3c30000-Retrieve-00xbe7fffff|0xbe800000-Reserved-0xbf7fffff]
+[7082]   0xabd0000B retrieved by AP
+[7082] == Get retrieve 0x16a0000~0x17fffff =======
+[7082] [0xb1600000~0xb17fffff] ==>
+[7083] [0xb1600000-Reserved-0xb169ffff|0xb16a0000-Retrieve-0xb17fffff]
+[7083]   0x160000B retrieved by AP
+[7083] == Get retrieve 0x15b0000~0x15fffff =======
+[7083] [0xb0000000~0xb15fffff] ==>
+[7083] [0xb0000000-Reserved-0xb15affff|0xb15b0000-Retrieve-0xb15fffff]
+[7083]   0x50000B retrieved by AP
+[7083] == Get retrieve 0x3bd0000~0x3bdffff =======
+[7083] [0xb3110000~0xb3c2ffff] ==>
+[7083] [0xb3110000-Reserved-0xb3bcffff|0xb3bd0000-Retrieve-00xb3bdffff|0xb3be0000-Reserved-0xb3c2ffff]
+[7083]   0x10000B retrieved by AP
+[7083] == Get retrieve 0x3bf0000~0x3bfffff =======
+[7083] [0xb3be0000~0xb3c2ffff] ==>
+[7083] [0xb3be0000-Reserved-0xb3beffff|0xb3bf0000-Retrieve-00xb3bfffff|0xb3c00000-Reserved-0xb3c2ffff]
+[7083]   0x10000B retrieved by AP
+[7083] ---> Map 0x00000000 to 0xb0000000 for MD1
+[7083] BANK0_MAP0 value:0xB300B1
+[7083] BANK0_MAP1 value:0xB700B5
+[7083] BANK0_MAP2 value:0xBB00B9
+[7083] BANK0_MAP3 value:0xBF00BD
+[7084] [PART_LK][get_part] md1img
+[7084] [PART_LK][get_part] md1img
+[7084] [PART_LK][get_part] md1img
+[7084] [PART_LK][get_part] md1img
+[7085] invalid magic(0):(58881688)ref
+[7085] [PART_LK][get_part] md1dsp
+[7085] ptr hdr verify:partition[md1dsp], image_name[md1dsp]
+[7085] policy_entry_idx = 13 
+[SBC] NS-CHIP
+[7085] [SEC_POLICY] sboot_state = 0x0
+[7085] [SEC_POLICY] lock_state = 0x3
+[7085] img_auth_required = 0 
+[7085] [PART_LK][get_part] md1dsp
+[7165] image verify:partition[md1dsp], image_name[md1dsp], addr[0xbe800000], size[0x630120]
+[7189] md memory require:0xf800000, reserved:0x10000000
+[7189]   0x800000B retrieved by AP
+[7189] [LK_ENV]get_env apmd1_smem from area 0
+[7189] [LK_ENV]get_env md1md3_smem from area 0
+[7189] [LK_ENV]get_env apmd3_smem from area 0
+[7190] [LK_ENV]get_env md1_phy_cap_gear from area 0
+[7190] env[apmd1_smem]0.
+[7190] env[md1md3_smem]0.
+[7190] env[apmd3_smem]0.
+[7190] env[md1_phy_cap_gear]0.
+[7190] mblock[0].start: 0x40000000, sz: 0x80000, limit: 0x90000000, max_addr: 0x0, target: -1, reserved_addr: 0x3e000000,reserved_size: 0x1600000
+[7190] mblock_reserve dbg[0]: 1, 0, 1, 1
+[7190] mblock[1].start: 0x4c880000, sz: 0x7780000, limit: 0x90000000, max_addr: 0x0, target: -1, reserved_addr: 0x52000000,reserved_size: 0x1600000
+[7190] mblock_reserve dbg[1]: 1, 1, 1, 1
+[7190] mblock[2].start: 0x54080000, sz: 0xf80000, limit: 0x90000000, max_addr: 0x54000000, target: 1, reserved_addr: 0x52000000,reserved_size: 0x1600000
+[7190] mblock_reserve dbg[2]: 1, 0, 1, 1
+[7190] mblock[3].start: 0x55115000, sz: 0x22edb000, limit: 0x90000000, max_addr: 0x54000000, target: 1, reserved_addr: 0x76000000,reserved_size: 0x1600000
+[7190] mblock_reserve dbg[3]: 1, 1, 1, 1
+[7190] mblock[4].start: 0x78000000, sz: 0x7220000, limit: 0x90000000, max_addr: 0x77ff0000, target: 3, reserved_addr: 0x7c000000,reserved_size: 0x1600000
+[7191] mblock_reserve dbg[4]: 1, 1, 1, 1
+[7191] mblock[5].start: 0x90000000, sz: 0x20000000, limit: 0x90000000, max_addr: 0x7f220000, target: 4, reserved_addr: 0x8e000000,reserved_size: 0x1600000
+[7191] mblock_reserve dbg[5]: 1, 0, 1, 1
+[7191] mblock[6].start: 0xc0000000, sz: 0x2eb00000, limit: 0x90000000, max_addr: 0x7f220000, target: 4, reserved_addr: 0x8e000000,reserved_size: 0x1600000
+[7191] mblock_reserve dbg[6]: 1, 0, 1, 1
+[7191] mblock[7].start: 0xeff40000, sz: 0x100c0000, limit: 0x90000000, max_addr: 0x7f220000, target: 4, reserved_addr: 0x8e000000,reserved_size: 0x1600000
+[7191] mblock_reserve dbg[7]: 1, 0, 1, 1
+[7191] mblock[4]: 78000000, 4000000 from mblock
+mblock[5]: 7d600000, 1c20000 from mblock
+[7191] mblock_reserve: 7c000000 - 7d600000 from mblock 4
+[7191] mblock_reserve [0].start: 0x40000000, sz: 0x80000
+[7191] mblock_reserve [1].start: 0x4c880000, sz: 0x7780000
+[7191] mblock_reserve [2].start: 0x54080000, sz: 0xf80000
+[7192] mblock_reserve [3].start: 0x55115000, sz: 0x22edb000
+[7192] mblock_reserve [4].start: 0x78000000, sz: 0x4000000
+[7192] mblock_reserve [5].start: 0x7d600000, sz: 0x1c20000
+[7192] mblock_reserve [6].start: 0x90000000, sz: 0x20000000
+[7192] mblock_reserve [7].start: 0xc0000000, sz: 0x2eb00000
+[7192] mblock_reserve [8].start: 0xeff40000, sz: 0x100c0000
+[7192] mblock_reserve-R[0].start: 0x7ff80000, sz: 0x80000 map:1 name:log_store
+[7192] mblock_reserve-R[1].start: 0x7fec0000, sz: 0xc0000 map:0 name:SSPM-reserved
+[7192] mblock_reserve-R[2].start: 0x7feb0000, sz: 0x10000 map:0 name:SPM-reserved
+[7192] mblock_reserve-R[3].start: 0xeeb00000, sz: 0x1440000 map:0 name:tee-reserved
+[7192] mblock_reserve-R[4].start: 0x54000000, sz: 0x80000 map:0 name:dtb_kernel_addr_mb
+[7192] mblock_reserve-R[5].start: 0x40080000, sz: 0xc800000 map:0 name:kernel_addr_mb
+[7192] mblock_reserve-R[6].start: 0x55000000, sz: 0x115000 map:0 name:ramdisk_addr_mb
+[7192] mblock_reserve-R[7].start: 0x7f220000, sz: 0xc90000 map:0 name:framebuffer
+[7193] mblock_reserve-R[8].start: 0x77ff0000, sz: 0x10000 map:0 name:SPM-reserved
+[7193] mblock_reserve-R[9].start: 0x80000000, sz: 0x10000000 map:0 name:ccci
+[7193] mblock_reserve-R[10].start: 0xb0000000, sz: 0x10000000 map:1 name:ccci
+[7193] mblock_reserve-R[11].start: 0x7c000000, sz: 0x1600000 map:0 name:ccci
+[7193] request size: 0x01600000, get start address: 0x7c000000
+[7193] ccb_info.ccb_data_buffer_addr: 7c000000
+[7193] ccb_info.ccb_data_buffer_size: 1600000
+[7193] md1 phy capture size: 0
+[7193] smem_info.base_addr: 80000000
+[7193] smem_info.ap_md1_smem_offset: 0
+[7193] smem_info.ap_md1_smem_size: 100000
+[7193] smem_info.ap_md3_smem_offset: 0
+[7193] smem_info.ap_md3_smem_size: 0
+[7193] smem_info.md1_md3_smem_offset: 0
+[7193] smem_info.md1_md3_smem_size: 0
+[7193] smem_info.total_smem_size: 100000
+[7193] ap md1 share mem MPU need configure
+[7193] LK emi_mpu_set_protection start:b0000000 end=b15affff region=10 [7194] apc1=b6db6d [7194] apc0=8096db64 [7194] 
+[7194] Set MPU:S:0xb0000000 E:0xb15affff A:<10>[0~15]4-4-5-5-5-5-5-4-5-5-5-5-5-5-5-5(U)
+[7194] LK emi_mpu_set_protection start:b1600000 end=b169ffff region=12 [7194] apc1=b6db6d [7194] apc0=16db64 [7194] 
+[7194] Set MPU:S:0xb1600000 E:0xb169ffff A:<12>[0~15]4-4-5-5-5-5-5-0-5-5-5-5-5-5-5-5(U)
+[7194] LK emi_mpu_set_protection start:b1800000 end=b310ffff region=11 [7194] apc1=b6db6d [7194] apc0=8096db44 [7194] 
+[7194] Set MPU:S:0xb1800000 E:0xb310ffff A:<11>[0~15]4-0-5-5-5-5-5-4-5-5-5-5-5-5-5-5(U)
+[7194] LK emi_mpu_set_protection start:b3110000 end=b3bcffff region=9 [7194] apc1=b6db6d [7194] apc0=8016db44 [7194] 
+[7194] Set MPU:S:0xb3110000 E:0xb3bcffff A:<9>[0~15]4-0-5-5-5-5-5-0-5-5-5-5-5-5-5-5(U)
+[7194] LK emi_mpu_set_protection start:be800000 end=bf7fffff region=15 [7194] apc1=b6db6d [7194] apc0=8016db44 [7194] 
+[7194] Set MPU:S:0xbe800000 E:0xbf7fffff A:<15>[0~15]4-0-5-5-5-5-5-0-5-5-5-5-5-5-5-5(U)
+[7195] LK emi_mpu_set_protection start:b3be0000 end=b3beffff region=16 [7195] apc1=b6db6d [7195] apc0=8016db44 [7195] 
+[7195] Set MPU:S:0xb3be0000 E:0xb3beffff A:<16>[0~15]4-0-5-5-5-5-5-0-5-5-5-5-5-5-5-5(U)
+[7195] LK emi_mpu_set_protection start:b3c00000 end=b3c2ffff region=17 [7195] apc1=b6db6d [7195] apc0=8016db44 [7195] 
+[7195] Set MPU:S:0xb3c00000 E:0xb3c2ffff A:<17>[0~15]4-0-5-5-5-5-5-0-5-5-5-5-5-5-5-5(U)
+[7195] LK emi_mpu_set_protection start:b0000000 end=bfffffff region=20 [7195] apc1=b6db6d [7195] apc0=80ba8b60 [7195] 
+[7195] Set MPU:S:0xb0000000 E:0xbfffffff A:<20>[0~15]0-4-5-5-0-5-6-5-5-5-5-5-5-5-5-5(U)
+[7195] LK emi_mpu_set_protection start:be800000 end=beefffff region=13 [7195] apc1=b6db6d [7195] apc0=8096db64 [7195] 
+[7195] Set MPU:S:0xbe800000 E:0xbeefffff A:<13>[0~15]4-4-5-5-5-5-5-4-5-5-5-5-5-5-5-5(U)
+[7195] LK emi_mpu_set_protection start:bef00000 end=bf7bffff region=14 [7195] apc1=b6db6d [7196] apc0=8016db44 [7196] 
+[7196] Set MPU:S:0xbef00000 E:0xbf7bffff A:<14>[0~15]4-0-5-5-5-5-5-0-5-5-5-5-5-5-5-5(U)
+[7196] LK emi_mpu_set_protection start:80000000 end=800fffff region=22 [7196] apc1=b6db6d [7196] apc0=16db40 [7196] 
+[7196] Set MPU:S:0x80000000 E:0x800fffff A:<22>[0~15]0-0-5-5-5-5-5-0-5-5-5-5-5-5-5-5(U)
+[7196] LK emi_mpu_set_protection start:7c000000 end=7d5fffff region=21 [7196] apc1=b6db6d [7196] apc0=16db40 [7196] 
+[7196] Set MPU:S:0x7c000000 E:0x7d5fffff A:<21>[0~15]0-0-5-5-5-5-5-0-5-5-5-5-5-5-5-5(U)
+[7196] ---> Map 0x40000000 to 0x80000000 for MD1
+[7196] BANK4_MAP0 value:0x81
+[7196] BANK4_MAP0 value:0x830081
+[7196] BANK4_MAP1 value:0x85
+[7196] BANK4_MAP1 value:0x870085
+[7196] BANK4_MAP2 value:0x89
+[7196] BANK4_MAP2 value:0x8B0089
+[7196] BANK4_MAP3 value:0x8D
+[7196] BANK4_MAP3 value:0x8F008D
+[7196] BANK4_MAP3 value:0x7D008D
+[7196] before hw remap lock: MD1[0]
+[7196] before hw remap lock: MD1[1]
+[7196] re-size share memory form 10000000 to 100000
+[7197] mblock_resize  start: 7ff80000, size: 80000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: 7fec0000, size: c0000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: 7feb0000, size: 10000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: eeb00000, size: 1440000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: 54000000, size: 80000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: 40080000, size: c800000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: 55000000, size: 115000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: 7f220000, size: c90000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: 77ff0000, size: 10000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: 80000000, size: 10000000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: b0000000, size: 10000000 addr = 80000000 oldsize = 10000000
+[7197] mblock_resize  start: 7c000000, size: 1600000 addr = 80000000 oldsize = 10000000
+[7198] mblock_resize putback mblock 80100000 size: ff00000
+[7198] mblock_resize-debug[0].start: 0x40000000, sz: 0x80000
+[7198] mblock_resize-debug[1].start: 0x4c880000, sz: 0x7780000
+[7198] mblock_resize-debug[2].start: 0x54080000, sz: 0xf80000
+[7198] mblock_resize-debug[3].start: 0x55115000, sz: 0x22edb000
+[7198] mblock_resize-debug[4].start: 0x78000000, sz: 0x4000000
+[7198] mblock_resize-debug[5].start: 0x7d600000, sz: 0x1c20000
+[7198] mblock_resize-debug[6].start: 0x80100000, sz: 0x2ff00000
+[7198] mblock_resize-debug[7].start: 0xc0000000, sz: 0x2eb00000
+[7198] mblock_resize-debug[8].start: 0xeff40000, sz: 0x100c0000
+[7198] mblock_resize-debug-R[0].start: 0x7ff80000, sz: 0x80000 map: 1 name: log_store
+[7198] mblock_resize-debug-R[1].start: 0x7fec0000, sz: 0xc0000 map: 0 name: SSPM-reserved
+[7198] mblock_resize-debug-R[2].start: 0x7feb0000, sz: 0x10000 map: 0 name: SPM-reserved
+[7198] mblock_resize-debug-R[3].start: 0xeeb00000, sz: 0x1440000 map: 0 name: tee-reserved
+[7199] mblock_resize-debug-R[4].start: 0x54000000, sz: 0x80000 map: 0 name: dtb_kernel_addr_mb
+[7199] mblock_resize-debug-R[5].start: 0x40080000, sz: 0xc800000 map: 0 name: kernel_addr_mb
+[7199] mblock_resize-debug-R[6].start: 0x55000000, sz: 0x115000 map: 0 name: ramdisk_addr_mb
+[7199] mblock_resize-debug-R[7].start: 0x7f220000, sz: 0xc90000 map: 0 name: framebuffer
+[7199] mblock_resize-debug-R[8].start: 0x77ff0000, sz: 0x10000 map: 0 name: SPM-reserved
+[7199] mblock_resize-debug-R[9].start: 0x80000000, sz: 0x100000 map: 0 name: ccci
+[7199] mblock_resize-debug-R[10].start: 0xb0000000, sz: 0x10000000 map: 1 name: ccci
+[7199] mblock_resize-debug-R[11].start: 0x7c000000, sz: 0x1600000 map: 0 name: ccci
+[7199] lk info.lk_info_base_addr: 0x80000000
+[7199] lk info.lk_info_size:      0xc40
+[7199] lk info.lk_info_tag_num:   0x1b
+[7199] [PROFILE] ------- load_modem_image init cost 404 ms ----
+[7199] [ccci-off]src clk ena = 0x1006300
+[7199] [PROFILE] ::: lvl(2) load modem image takes 404 ms
+[7200] Wake up bootstrap2.
+[7279] [PROFILE] ::: lvl(1) decompress_kernel takes 498 ms
+[7279] Wait for iothread...
+[7279] Met iothread.
+[7279] dtb_addr = 0x54000000, dtb_size = 0x00080000
+[7279] [LK] segment = 0x11
+[7280] model=MT6763V/B
+[7280]  mem_start=0x40000000 mem_sz=0xc0000000
+[7280]  mem_reg_property[12].start_hi = 0x00000000
+[7280]  mem_reg_property[12].start_lo = 0x00000040
+[7280]  mem_reg_property[12].size_hi  = 0x00000000
+[7280]  mem_reg_property[12].size_lo  = 0x000000C0
+[7284] j:0, mblock[0].rank: 0, size: 0x80000
+[7284] j:0, mblock[1].rank: 0, size: 0x7780000
+[7284] j:0, mblock[2].rank: 0, size: 0xf80000
+[7284] j:0, mblock[3].rank: 0, size: 0x22edb000
+[7286]  rsv mem rsv_mem_reg_property[0].start_hi = 0x00000000
+[7286]  rsv mem rsv_mem_reg_property[0].start_lo = 0x00501155
+[7286]  rsv mem rsv_mem_reg_property[0].size_hi = 0x00000000
+[7286]  rsv mem rsv_mem_reg_property[0].size_lo = 0x00B0ED22
+[7287] j:1, mblock[0].rank: 0, size: 0x80000
+[7287] j:1, mblock[1].rank: 0, size: 0x7780000
+[7287] j:1, mblock[2].rank: 0, size: 0xf80000
+[7287] j:1, mblock[3].rank: 0, size: 0x22edb000
+[7287] j:1, mblock[4].rank: 0, size: 0x4000000
+[7287] j:1, mblock[5].rank: 0, size: 0x1c20000
+[7287] j:1, mblock[6].rank: 0, size: 0x2ff00000
+[7287] j:1, mblock[7].rank: 1, size: 0x2eb00000
+[7289]  rsv mem rsv_mem_reg_property[1].start_hi = 0x00000000
+[7289]  rsv mem rsv_mem_reg_property[1].start_lo = 0x000000C0
+[7289]  rsv mem rsv_mem_reg_property[1].size_hi = 0x00000000
+[7289]  rsv mem rsv_mem_reg_property[1].size_lo = 0x0000B02E
+[7294] PASS memory DTS node
+[7294] SSPM: set reserved mem status=okay
+[7294] Can not find atf ram dump!
+[7298] memory_lowpwer_fixup: newstart: 180000000, size: 0xffc00000 => 0x3fc00000)
+[7301] target_atag_imix_r:170
+[7303] fg_swocv_v buf [43219], [0x560c43a8:0x560c43ad:5]
+[7304] fg_swocv_i buf [-15], [0x560c43a8:0x560c43ab:3]
+[7305] shutdown_time buf [0], [0x560c43a8:0x560c43a9:1]
+[7306] boot_voltage buf [4311], [0x560c43a8:0x560c43ac:4]
+[7307] boot_voltage buf [0], [0x560c43a8:0x560c43a9:1]
+[7308] Not Support VCORE DVFS
+[7309] SSSS:0x0
+[7309] SSSS:0x0
+[7309] SSSS:0x0
+[7309] SSSS:0x80000000
+[7309] SSSS:0x7600
+[7309] SSSS:0x690
+[7309] SSSS:0x0
+[7309] SSSS:0x11
+[7310] [DISP]func|disp_lcm_get_name
+[7310] [LK_DDP/RDMA] RDMA0 polling interrupt ret =9999 
+[7322] [LK_DDP/RDMA] RDMA0 polling interrupt ret =9881 
+[7340] [LK_DDP/RDMA] RDMA0 polling interrupt ret =9813 
+[7359] [LK_DDP/RDMA] RDMA0 polling interrupt ret =9813 
+[7359] mt_disp_get_lcd_time, fps=5310
+[7359] videolfb - fb_base    = 0x7f220000
+[7359] videolfb - islcmfound = 1
+[7360] videolfb - fps        = 5310
+[7360] videolfb - vram       = 13172736
+[7360] videolfb - lcmname    = ili9881c_dsi_hd720_vdo
+[7363] [ccci] create modem arguments info DT OK
+[7364] Create PTP DT OK
+start dump lk masp atag 
+dump sw sbc:0x22, sw sdl:0x22 , hw sbc: 0
+dump lock_state, 0x0
+[7365] create masp atag OK
+[7365] tee_reserved_mem not supported
+[7365] [LK] non_secure_sram (0x11b000, 0x5000)
+[7366] [PROFILE] 1st logo takes 1225 ms
+[7366] [PROFILE] ::: lvl(0) 1st logo time 1225 ms
+[7366] [PROFILE] ::: lvl(0) boot_time takes 7366 ms
+[7366] facsn add cmdline in boot_linux_fdt.
+[7366] ------andy----before config_data_smart_reset
+[7366] ------andy----after config_data_smart_reset
+[7366] [ccci]get_md_view_smem: ap_addr = 0x80100000, 0x40100000
+[7367] [LK_ENV]get_env usb2jtag from area 0
+[7367] [USB2JTAG] current setting is 0.
+[7367] [LK_ENV]get_env hibboot from area 0
+[7367] [LK_ENV]get_env resume from area 0
+[7380] mblock_create mblock start 54000000 size: 80000
+[7380] mblock_candidate_right->size = f80000 				mblock_candidate_left->size = 7780000 
+[7380] mblock-create-debug[0].start: 0x40000000, sz: 0x80000
+[7380] mblock-create-debug[1].start: 0x4c880000, sz: 0x7800000
+[7381] mblock-create-debug[2].start: 0x54080000, sz: 0xf80000
+[7381] mblock-create-debug[3].start: 0x55115000, sz: 0x22edb000
+[7381] mblock-create-debug[4].start: 0x78000000, sz: 0x4000000
+[7381] mblock-create-debug[5].start: 0x7d600000, sz: 0x1c20000
+[7381] mblock-create-debug[6].start: 0x80100000, sz: 0x2ff00000
+[7381] mblock-create-debug[7].start: 0xc0000000, sz: 0x2eb00000
+[7381] mblock-create-debug[8].start: 0xeff40000, sz: 0x100c0000
+[7381] mblock-create-debug-R[0].start: 0x7ff80000, sz: 0x80000 map: 1 name: log_store
+[7381] mblock-create-debug-R[1].start: 0x7fec0000, sz: 0xc0000 map: 0 name: SSPM-reserved
+[7381] mblock-create-debug-R[2].start: 0x7feb0000, sz: 0x10000 map: 0 name: SPM-reserved
+[7381] mblock-create-debug-R[3].start: 0xeeb00000, sz: 0x1440000 map: 0 name: tee-reserved
+[7381] mblock-create-debug-R[4].start: 0x40080000, sz: 0xc800000 map: 0 name: kernel_addr_mb
+[7381] mblock-create-debug-R[5].start: 0x55000000, sz: 0x115000 map: 0 name: ramdisk_addr_mb
+[7382] mblock-create-debug-R[6].start: 0x7f220000, sz: 0xc90000 map: 0 name: framebuffer
+[7382] mblock-create-debug-R[7].start: 0x77ff0000, sz: 0x10000 map: 0 name: SPM-reserved
+[7382] mblock-create-debug-R[8].start: 0x80000000, sz: 0x100000 map: 0 name: ccci
+[7382] mblock-create-debug-R[9].start: 0xb0000000, sz: 0x10000000 map: 1 name: ccci
+[7382] mblock-create-debug-R[10].start: 0x7c000000, sz: 0x1600000 map: 0 name: ccci
+[7382] mblock_create mblock start 40080000 size: c800000
+[7382] mblock_candidate_right->size = 7800000 				mblock_candidate_left->size = 80000 
+[7382] mblock-create-debug[0].start: 0x40000000, sz: 0x80000
+[7382] mblock-create-debug[1].start: 0x40080000, sz: 0x14000000
+[7382] mblock-create-debug[2].start: 0x54080000, sz: 0xf80000
+[7382] mblock-create-debug[3].start: 0x55115000, sz: 0x22edb000
+[7382] mblock-create-debug[4].start: 0x78000000, sz: 0x4000000
+[7382] mblock-create-debug[5].start: 0x7d600000, sz: 0x1c20000
+[7382] mblock-create-debug[6].start: 0x80100000, sz: 0x2ff00000
+[7383] mblock-create-debug[7].start: 0xc0000000, sz: 0x2eb00000
+[7383] mblock-create-debug[8].start: 0xeff40000, sz: 0x100c0000
+[7383] mblock-create-debug-R[0].start: 0x7ff80000, sz: 0x80000 map: 1 name: log_store
+[7383] mblock-create-debug-R[1].start: 0x7fec0000, sz: 0xc0000 map: 0 name: SSPM-reserved
+[7383] mblock-create-debug-R[2].start: 0x7feb0000, sz: 0x10000 map: 0 name: SPM-reserved
+[7383] mblock-create-debug-R[3].start: 0xeeb00000, sz: 0x1440000 map: 0 name: tee-reserved
+[7383] mblock-create-debug-R[4].start: 0x55000000, sz: 0x115000 map: 0 name: ramdisk_addr_mb
+[7383] mblock-create-debug-R[5].start: 0x7f220000, sz: 0xc90000 map: 0 name: framebuffer
+[7383] mblock-create-debug-R[6].start: 0x77ff0000, sz: 0x10000 map: 0 name: SPM-reserved
+[7383] mblock-create-debug-R[7].start: 0x80000000, sz: 0x100000 map: 0 name: ccci
+[7383] mblock-create-debug-R[8].start: 0xb0000000, sz: 0x10000000 map: 1 name: ccci
+[7383] mblock-create-debug-R[9].start: 0x7c000000, sz: 0x1600000 map: 0 name: ccci
+[7384] mblock_create mblock start 55000000 size: 115000
+[7384] mblock_candidate_right->size = 22edb000 				mblock_candidate_left->size = f80000 
+[7384] mblock-create-debug[0].start: 0x40000000, sz: 0x80000
+[7384] mblock-create-debug[1].start: 0x40080000, sz: 0x14000000
+[7384] mblock-create-debug[2].start: 0x54080000, sz: 0xf80000
+[7384] mblock-create-debug[3].start: 0x55000000, sz: 0x22ff0000
+[7384] mblock-create-debug[4].start: 0x78000000, sz: 0x4000000
+[7384] mblock-create-debug[5].start: 0x7d600000, sz: 0x1c20000
+[7384] mblock-create-debug[6].start: 0x80100000, sz: 0x2ff00000
+[7384] mblock-create-debug[7].start: 0xc0000000, sz: 0x2eb00000
+[7384] mblock-create-debug[8].start: 0xeff40000, sz: 0x100c0000
+[7384] mblock-create-debug-R[0].start: 0x7ff80000, sz: 0x80000 map: 1 name: log_store
+[7384] mblock-create-debug-R[1].start: 0x7fec0000, sz: 0xc0000 map: 0 name: SSPM-reserved
+[7384] mblock-create-debug-R[2].start: 0x7feb0000, sz: 0x10000 map: 0 name: SPM-reserved
+[7385] mblock-create-debug-R[3].start: 0xeeb00000, sz: 0x1440000 map: 0 name: tee-reserved
+[7385] mblock-create-debug-R[4].start: 0x7f220000, sz: 0xc90000 map: 0 name: framebuffer
+[7385] mblock-create-debug-R[5].start: 0x77ff0000, sz: 0x10000 map: 0 name: SPM-reserved
+[7385] mblock-create-debug-R[6].start: 0x80000000, sz: 0x100000 map: 0 name: ccci
+[7385] mblock-create-debug-R[7].start: 0xb0000000, sz: 0x10000000 map: 1 name: ccci
+[7385] mblock-create-debug-R[8].start: 0x7c000000, sz: 0x1600000 map: 0 name: ccci
+[7385] mblock_sanity_check:PASS
+[7385] DTS reserved start: 0x54410000 size: 0xe0000
+[7385] reserved_memory_conflict_check:PASS
+[7385] DTS reserved start: 0x54400000 size: 0x10000
+[7385] reserved_memory_conflict_check:PASS
+[7385] DTS reserved start: 0x544f0000 size: 0x10000
+[7386] reserved_memory_conflict_check:PASS
+[7386] DTS reserved start: 0x54600000 size: 0x40000
+[7386] reserved_memory_conflict_check:PASS
+[7386] mblock_reserved_append: add_subnode name=mblock-1-log_store start:0x7ff80000 size:0x80000
+[7387] mblock-reserved-memory is appended (0x7ff80000, 0x80000)
+[7387] mblock_reserved_append: add_subnode name=mblock-2-SSPM-reserved start:0x7fec0000 size:0xc0000
+[7390] mblock-reserved-memory is appended (0x7fec0000, 0xc0000)
+[7390] mblock_reserved_append: add_subnode name=mblock-3-SPM-reserved start:0x7feb0000 size:0x10000
+[7392] mblock-reserved-memory is appended (0x7feb0000, 0x10000)
+[7392] mblock_reserved_append: add_subnode name=mblock-4-tee-reserved start:0xeeb00000 size:0x1440000
+[7394] mblock-reserved-memory is appended (0xeeb00000, 0x1440000)
+[7394] mblock_reserved_append: add_subnode name=mblock-5-framebuffer start:0x7f220000 size:0xc90000
+[7396] mblock-reserved-memory is appended (0x7f220000, 0xc90000)
+[7396] mblock_reserved_append: add_subnode name=mblock-6-SPM-reserved start:0x77ff0000 size:0x10000
+[7398] mblock-reserved-memory is appended (0x77ff0000, 0x10000)
+[7398] mblock_reserved_append: add_subnode name=mblock-7-ccci start:0x80000000 size:0x100000
+[7400] mblock-reserved-memory is appended (0x80000000, 0x100000)
+[7401] mblock_reserved_append: add_subnode name=mblock-8-ccci start:0xb0000000 size:0x10000000
+[7402] mblock-reserved-memory is appended (0xb0000000, 0x10000000)
+[7402] mblock_reserved_append: add_subnode name=mblock-9-ccci start:0x7c000000 size:0x1600000
+[7404] mblock-reserved-memory is appended (0x7c000000, 0x1600000)
+[7411] booting linux @ 0x40080000, ramdisk @ 0x55000000 (1132435)
+[7411] [LEDS]LK: leds_deinit: LEDS off 
+[7411] [LEDS]LK: red level is 0 
+[7412] pwm    80: disable_clock PWM3
+[7412] [LEDS]LK: green level is 0 
+[7413] pwm    80: disable_clock PWM4
+[7413] [LEDS]LK: blue level is 0 
+[7413] [DEVAPC] sec_post_init
+[7413] [DEVAPC] platform_sec_post_init - SMC call to ATF from LK
+[7418] DRAM Rank :2
+[7418] DRAM Rank[0] Start = 0x40000000, Size = 0x3feb0000
+[7419] DRAM Rank[1] Start = 0x80000000, Size = 0x40000000
+[7420] mblock_magic:0x99999999 mblock_version:0x2
+[7420] mblock[0].start: 0x40000000, size: 0x80000
+[7421] mblock[1].start: 0x40080000, size: 0x14000000
+[7421] mblock[2].start: 0x54080000, size: 0xf80000
+[7422] mblock[3].start: 0x55000000, size: 0x22ff0000
+[7422] mblock[4].start: 0x78000000, size: 0x4000000
+[7423] mblock[5].start: 0x7d600000, size: 0x1c20000
+[7423] mblock[6].start: 0x80100000, size: 0x2ff00000
+[7424] mblock[7].start: 0xc0000000, size: 0x2eb00000
+[7424] mblock[8].start: 0xeff40000, size: 0x100c0000
+[7425] mblock[0].start: 0x7ff80000, size: 0x80000 map:1 name:log_store
+[7425] mblock[1].start: 0x7fec0000, size: 0xc0000 map:0 name:SSPM-reserved
+[7426] mblock[2].start: 0x7feb0000, size: 0x10000 map:0 name:SPM-reserved
+[7427] mblock[3].start: 0xeeb00000, size: 0x1440000 map:0 name:tee-reserved
+[7427] mblock[4].start: 0x7f220000, size: 0xc90000 map:0 name:framebuffer
+[7428] mblock[5].start: 0x77ff0000, size: 0x10000 map:0 name:SPM-reserved
+[7429] mblock[6].start: 0x80000000, size: 0x100000 map:0 name:ccci
+[7429] mblock[7].start: 0xb0000000, size: 0x10000000 map:1 name:ccci
+[7430] mblock[8].start: 0x7c000000, size: 0x1600000 map:0 name:ccci
+[7431] cmdline: console=tty0 console=ttyMT0,921600n1 root=/dev/ram vmalloc=496M slub_max_order=0 slub_debug=OFZPU androidboot.hardware=mt6763 maxcpus=8 firmware_class.path=/vendor/firmware has_battery_removed=0 androidboot.verifiedbootstate=orange bootopt=64S3,32N2,64N2 buildvariant=user androidboot.veritymode=enforcing androidboot.atm=disabled androidboot.meta_log_disable=0 printk.disable_uart=0 bootprof.pl_t=4711 bootprof.lk_t=7366 bootprof.logo_t=1225 boot_reason=4 androidboot.serialno=S19F00013 androidboot.secureboot=49 androidboot.specialid=0 dlconfig_tof_offset=0 dlconfig_tof_x_talk=0 config_data_tof_offset_cali_flag=0 config_data_tof_xtalk_cali_flag=0 config_data_cp_index=0 config_data_charge_current=0 config_data_charge_termination_current=0 config_data_charge_voltage=0 config_data_recharge_threshold=0 config_data_precharge_current=0 config_data_pid_target_temperature=0 config_data_battery_profile_id=0 cmdline_power_on_flag=1 power_key_flag=0 power_on_threshold=101 config_data_audio_check_test=0 offset_cali[7438] lk boot time = 7366 ms
+[7438] lk boot mode = 0
+[7439] lk boot reason = wdt_by_pass_pwk
+[7439] lk finished --> jump to linux kernel 64Bit
+
+[7440] 
+[LK]jump to K64 0x40080000
+[7440] smc jump
+================ END of FILE ===============
+
