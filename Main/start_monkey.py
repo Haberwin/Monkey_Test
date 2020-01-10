@@ -20,9 +20,7 @@ test_time = re.findall(r'\d+', config.get('monkey', 'test time'))
 
 def start_monkey():
     """ Start Monkey"""
-
     devices = get_devices()
-
     if not devices:
         print('No devices found. Exit')
         return
@@ -33,9 +31,6 @@ def start_monkey():
             config.write(f)
         print("Find devices:\n{}".format(devices))
         assert_monkey_ps(True)
-        # push_blacklist(no)
-        # run_monkey(no)
-        # thread_pull = pull_mtklog()
         thread_pull = threading.Thread(target=pull_mtklog)
         thread_pull.setDaemon(True)
         thread_pull.start()
@@ -50,7 +45,6 @@ def start_monkey():
                 if not thread_pull.is_alive():
                     thread_pull.start()
                 assert_monkey_ps(True)
-
         except KeyboardInterrupt:
             print('Monkey Interrupt because key Abort')
         finally:
@@ -67,7 +61,6 @@ def start_monkey():
 def get_devices():
     pipe = subprocess.Popen(
         'adb devices', stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-
     if not pipe.stderr:
         print('No adb found,please install adb! Abort test')
         return False
@@ -78,7 +71,7 @@ def get_devices():
 
 def run_monkey(serial_no):
     print("Push blacklist...")
-    subprocess.Popen('adb -s {0} push blacklist.txt /sdcard/'.format(serial_no),shell=True)
+    subprocess.Popen('adb -s {0} push blacklist.txt /sdcard/'.format(serial_no), shell=True)
     monkey_command = config.get('monkey', 'command')
     print('adb -s {0} shell {1} '.format(serial_no, monkey_command))
     run_cmd = 'start /b adb -s {0} shell "{1}" > {2}/monkey-{0}-{3}.txt'
@@ -100,7 +93,6 @@ def assert_monkey_ps(do_next=True):
         assert_cmd = 'adb -s {0} shell ps | grep monkey'
 
     for serial_no in devices:
-
         monkey_ps = subprocess.Popen(assert_cmd.format(serial_no), shell=True,
                                      stdout=subprocess.PIPE)
         is_monkey_run = False
