@@ -1,3 +1,0 @@
-Android Version: alps-mp-o1.mp1
-Modem Version: MOLY.LR12A.R2.MP.V61.22 2019/08/30 09:47
-Project:VE508(LWCTG_R2_6763)
